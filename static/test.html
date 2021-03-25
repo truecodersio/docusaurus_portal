@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="exampleDiv">
+        <h1 id="heading">This is a heading</h1>
+    </div>
+    <script>
+      const heading = document.getElementById("heading");
+      const parent = document.getElementById("exampleDiv");
+      parent.appendChild(heading);
+    </script>
+  </body>
+</html>

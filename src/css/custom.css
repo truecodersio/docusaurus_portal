@@ -1,0 +1,119 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --ifm-color-primary: #0094c8;
+  --blue: #008aff;
+  --indigo: #6e00ff;
+  --purple: #510fa8;
+  --pink: #f074ad;
+  --red: #f25767;
+  --orange: #ffbe3d;
+  --yellow: #ffc431;
+  --green: #5cc9a7;
+  --teal: #50b5ff;
+  --cyan: #4bd6e5;
+  --white: #fff;
+  --font-color: #718096;
+  --font-color-dark: #2d3748;
+  --heading-color: #152c5b;
+  --link-color: rgba(31, 45, 61, 0.6);
+  --primary: #0094c8;
+  --secondary: #8b8a8d;
+  --success: #5cc9a7;
+  --info: #50b5ff;
+  --warning: #ffbe3d;
+  --danger: #f25767;
+  --light: #eaecf3;
+  --dark: #171347;
+  --neutral: #fff;
+  --white: #fff;
+  --bg-color: #fff;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme="light"] .react-toggle-track {
+  background-color: lightgray;
+}
+
+.main-wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+#loginPage:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#loginPage {
+  height: 100%;
+  background: url("../../static/svg/globalmap.svg") repeat-x;
+  background-size: contain;
+  animation: slide 120s linear infinite;
+  min-height: 75vh;
+  width: 5076px;
+}
+
+.loginForm {
+  position: fixed;
+  max-width: 600px;
+  min-width: 450px;
+  padding: 3rem;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loginForm {
+    position: absolute;
+    width: 100vw;
+    padding: 5rem;
+    z-index: 2;
+  }
+}
