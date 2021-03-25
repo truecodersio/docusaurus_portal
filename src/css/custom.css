@@ -121,11 +121,10 @@ html[data-theme="light"] .react-toggle-track {
 }
 
 #loginPage {
-  height: 100%;
+  min-height: 75vh;
   background: url("../../static/svg/globalmap.svg") repeat-x;
   background-size: contain;
   animation: slide 120s linear infinite;
-  height: 100%;
   width: 5076px;
 }
 
