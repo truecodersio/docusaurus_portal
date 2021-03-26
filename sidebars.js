@@ -34,6 +34,8 @@ module.exports = {
         "javascript-loops",
         "javascript-functions",
         "javascript-objects",
+        "javascript-higher-order-functions",
+        "javascript-oop",
       ],
     },
   ],
