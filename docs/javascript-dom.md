@@ -363,25 +363,33 @@ The first parameter in the addEventListener() method is the type of Event thatâ€
 
 **Example:**
 
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+```
+element.addEventListener("click", myFunction);
+element.addEventListener("mouseover", myFunction);
 
-![alt_text](images/image25.png "image_tooltip")
+function myFunction() {
+    alert("Hello World");
+}
+```
 
-**<span style="text-decoration:underline;">Exercise</span>:**
+## Exercise:
 
 Fork and clone this repository to your computer and complete all the TODOâ€™s. Instructions are inside the files as comments.
 
 Repo Link: [JavaScript DOM](https://github.com/Bryantellius/JS_DOM-Events)
 
-```
+Exercise Walkthrough
 
-Click the gif to watch the exercise video
-```
+<video width="100%" height="auto" controls>
+  <source src="https://vimeo.com/508155488/2c0ce8a0f1" type="video/mp4" />
+</video>
 
-# **[Exercise Walkthrough Documentation](https://docs.google.com/document/u/1/d/1dCV5H7Nf3_Fmf7ejtHaFuXdf1TVQ_xGR38lKVPIkyIE/edit)**
+[Exercise Walkthrough Documentation](https://docs.google.com/document/u/1/d/1dCV5H7Nf3_Fmf7ejtHaFuXdf1TVQ_xGR38lKVPIkyIE/edit)
 
-**<span style="text-decoration:underline;">Quiz</span>:**
+## Quiz:
 
-**[JavaScript DOM Quiz](https://forms.gle/QbReiemx6WQk5j9U6)**
+[JavaScript DOM Quiz](https://forms.gle/QbReiemx6WQk5j9U6)
 
-**[DOM Quiz Review](https://vimeo.com/508155340/764252bb72)**
+<video width="100%" height="auto" controls>
+  <source src="https://vimeo.com/508155340/764252bb72" type="video/mp4" />
+</video>
