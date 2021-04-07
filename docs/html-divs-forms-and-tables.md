@@ -1,5 +1,5 @@
 ---
-title: "HTML Divs, Forms, and Tables"
+title: "Divs, Forms, and Tables"
 slug: "/html-divs-forms-and-tables"
 ---
 

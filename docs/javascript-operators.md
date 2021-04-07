@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Operators"
+title: "Operators"
 slug: "/javascript-operators"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "HTML Intro"
+title: "Intro"
 slug: "/html-intro"
 ---
 

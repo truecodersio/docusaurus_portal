@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Error Handling"
+title: "Error Handling"
 slug: "javascript-error-handling"
 ---
 

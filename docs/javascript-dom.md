@@ -1,5 +1,5 @@
 ---
-title: "JavaScript DOM"
+title: "DOM"
 slug: "javascript-dom"
 ---
 

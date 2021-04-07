@@ -40,6 +40,8 @@ module.exports = {
         "javascript-error-handling",
         "javascript-promises",
         "javascript-apis",
+        "javascript-npm-yarn-webpack",
+        "javascript-es6-modules",
       ],
     },
   ],

@@ -1,5 +1,5 @@
 ---
-title: "Git Intro"
+title: "Intro"
 slug: "/git-intro"
 ---
 

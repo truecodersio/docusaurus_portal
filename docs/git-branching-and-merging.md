@@ -1,5 +1,5 @@
 ---
-title: "Git Branching and Merging"
+title: "Branching and Merging"
 slug: "/git-branching-and-merging"
 ---
 

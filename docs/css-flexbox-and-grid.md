@@ -1,5 +1,5 @@
 ---
-title: "CSS Flexbox and Grid"
+title: "Flexbox and Grid"
 slug: "/css-flexbox-and-grid"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Functions"
+title: "Functions"
 slug: "/javascript-functions"
 ---
 

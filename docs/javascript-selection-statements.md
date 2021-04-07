@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Selection Statements"
+title: "Selection Statements"
 slug: "/javascript-selection-statements"
 ---
 

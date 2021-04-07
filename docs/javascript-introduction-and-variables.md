@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Introduction and Variables"
+title: "Introduction and Variables"
 slug: "/javascript-introduction-and-variables"
 ---
 

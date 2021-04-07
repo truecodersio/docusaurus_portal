@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Object-Oriented Programming"
+title: "Object-Oriented Programming"
 slug: "javascript-oop"
 ---
 

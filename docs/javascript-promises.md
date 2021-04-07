@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Promises"
+title: "Promises"
 slug: "javascript-promises"
 ---
 

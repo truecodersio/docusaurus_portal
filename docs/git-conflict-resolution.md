@@ -1,5 +1,5 @@
 ---
-title: "Git Conflict Resolution"
+title: "Conflict Resolution"
 slug: "/git-conflict-resolution"
 ---
 

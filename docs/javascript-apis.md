@@ -1,5 +1,5 @@
 ---
-title: "JavaScript APIs"
+title: "APIs"
 slug: "javascript-apis"
 ---
 

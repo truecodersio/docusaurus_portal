@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Objects"
+title: "Objects"
 slug: "javascript-objects"
 ---
 

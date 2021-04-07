@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Higher-Order Functions"
+title: "Higher-Order Functions"
 slug: "javascript-higher-order-functions"
 ---
 

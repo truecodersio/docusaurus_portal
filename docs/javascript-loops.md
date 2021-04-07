@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Loops"
+title: "Loops"
 slug: "/javascript-loops"
 ---
 
