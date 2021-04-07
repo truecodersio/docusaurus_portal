@@ -44,5 +44,10 @@ module.exports = {
         "javascript-es6-modules",
       ],
     },
+    {
+      type: "category",
+      label: "React",
+      items: ["react-intro"],
+    },
   ],
 };
