@@ -47,7 +47,14 @@ module.exports = {
     {
       type: "category",
       label: "React",
-      items: ["react-intro", "react-state-props", "react-lifecycle-methods"],
+      items: [
+        "react-intro",
+        "react-state-props",
+        "react-lifecycle-methods",
+        "react-hooks",
+        "react-router",
+        "react-router-hooks",
+      ],
     },
   ],
 };

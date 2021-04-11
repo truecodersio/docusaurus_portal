@@ -67,11 +67,11 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Lectures",
+          title: "Docs",
           items: [
             {
-              label: "Git",
-              to: "lectures/git-intro",
+              label: "Lectures",
+              to: "docs/",
             },
           ],
         },
