@@ -21,7 +21,7 @@ Today, not every user is viewing your web app with the same size screen. In fact
 
 Flexbox is an extremely useful tool for responsive web design. Here’s how it works
 
-![alt_text](../assets/lectures/css/flexbox-architecture.png)
+![alt_text](/assets/lectures/css/flexbox-architecture.png)
 
 > READING RESOURCE: [Flexbox Cheat Sheets in 2021 by Joy Shaheb](https://dev.to/joyshaheb/flexbox-cheat-sheets-in-2021-css-2021-3edl)
 > PRACTICE RESOURCE: [Flexbox Zombies, Learning Game](https://mastery.games/flexboxzombies/)
@@ -46,11 +46,11 @@ Flexbox is an extremely useful tool for responsive web design. Here’s how it w
 
 The result on desktop:
 
-![alt_text](../assets/lectures/css/desktop-result.png)
+![alt_text](/assets/lectures/css/desktop-result.png)
 
 The result on mobile:
 
-![alt_text](../assets/lectures/css/mobile-result.png)
+![alt_text](/assets/lectures/css/mobile-result.png)
 
 > "This is where the fun begins"
 
@@ -73,7 +73,7 @@ Above, we have 4 pixel values for the columns, and 4 pixel values for the rows.
 
 The values dictate how wide we want our columns to be (`200px`) and how tall we’d want our rows to be (`200px`). Let’s look at the result:
 
-![alt_text](../assets/lectures/css/grid-result.png)
+![alt_text](/assets/lectures/css/grid-result.png)
 
 We can position or resize the boxes selecting them and using the `grid-column-start`, `grid-column-end`, `grid-row-start` and `grid-row-end` properties
 
@@ -103,7 +103,7 @@ We can position or resize the boxes selecting them and using the `grid-column-st
 
 And now our grid looks like this:
 
-![alt_text](../assets/lectures/css/grid-result2.png)
+![alt_text](/assets/lectures/css/grid-result2.png)
 
 Neat! But, we still haven’t reached a _responsive_ grid layout. Introducing the **fraction unit**. The fraction unit, `fr`, allows you to split the wrapper into as many fractions as you want.
 

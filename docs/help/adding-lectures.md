@@ -116,16 +116,16 @@ Quiz Review Video
 
 ### Images
 
-- All lecture images are stored at `assets/lectures/<topic>/<lecture-name><image-number>`
-- Each topic will have it's own folder in the `assets/lectures/` directory. If a topic folder does not exist, create one, then add the new images to that folder for each lecture
+- All lecture images are stored at `/assets/lectures/<topic>/<lecture-name><image-number>`
+- Each topic will have it's own folder in the `/assets/lectures/` directory. If a topic folder does not exist, create one, then add the new images to that folder for each lecture
 - When using images in markdown, use the format from the following example:
 
 ```
-![alt text](assets/lectures/git/git-intro1.png)
+![alt text](/assets/lectures/git/git-intro1.png)
 ```
 
 - In this example, the image with the name, `git-intro1.png`, will be displayed in the document
-- Please note: All `Git` lecture images will be stored at `assets/lectures/git/`. The image name with image order number is important to differentiate images within topic folders.
+- Please note: All `Git` lecture images will be stored at `/assets/lectures/git/`. The image name with image order number is important to differentiate images within topic folders.
 
 ### Horizontal Lines
 

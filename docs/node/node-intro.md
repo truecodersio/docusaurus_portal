@@ -46,7 +46,7 @@ This process is almost exactly like the way that you would use addEventListener 
 
 The event loop is an important concept to understand how Node really works. As we've mentioned, Node is an asynchronous, event driven runtime environment for executing JavaScript server-side. Node is also _single threaded_. Now, the key combination is asynchronous code and the single thread to remain non-blocking. As you initiate an asynchronous action, the event loop with cycle through ticks infinitely. As an asynchronous action completes, it will execute the pending callback in the next tick (or cycle). Node balances actions between an Event Queue and accessible thread pool for completing or waiting on I/O operations, both of which are tied together with the event loop.
 
-![Event Loop in Action](../assets/lectures/node/event-loop.png)
+![Event Loop in Action](/assets/lectures/node/event-loop.png)
 
 ## How
 

@@ -33,11 +33,11 @@ The **master** branch is the default branch when you create a repository.
 
 We'll use other branches for development and then merge those branches back to the master branch upon completion.
 
-![alt_text](../assets/lectures/git/git-branching-and-merging1.png)
+![alt_text](/assets/lectures/git/git-branching-and-merging1.png)
 
 In this diagram below, we have two separate branches. Our Master Branch – which is our default branch – and our Feature branch. So we have two isolated lines of development:
 
-![alt_text](../assets/lectures/git/git-branching-and-merging2.png)
+![alt_text](/assets/lectures/git/git-branching-and-merging2.png)
 
 By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main master branch free from questionable code.
 

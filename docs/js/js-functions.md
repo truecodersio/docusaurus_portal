@@ -223,7 +223,7 @@ We’ve spent this whole time talking about declaring and defining functions, bu
 
 When you invoke a function, the context of the function in the program is placed in the call stack. The **call stack** is the place where the computer stores the context, or position, as it runs the code. When a function is invoked, the context is stored in memory on the top of the stack, when the function returns. It uses that context to continue the execution of your program.
 
-![Callstack](../assets/lectures/javascript/callstack.png)
+![Callstack](/assets/lectures/javascript/callstack.png)
 
 ## Takeaways
 

@@ -34,7 +34,7 @@ Just to name a few reasons on why to learn React.js:
 
 Applications built with React are made with (reusable) components. Components are your “building blocks” in React. To gain confidence using React, you should learn to divide your application or project into separate components. The following picture gives you an idea of how to do that with a very basic app.
 
-![alt_text](../assets/lectures/react/component-breakdown.png)
+![alt_text](/assets/lectures/react/component-breakdown.png)
 
 For example, this simple website could be divided into the following sections (components):
 
@@ -164,7 +164,7 @@ Now it’s done!
 
 cd into the project by typing `cd my-first-react-app`, and then open it in your text editor (visual studio code). If you want, you can view the project in the browser via the command `npm start`.
 
-![alt_text](../assets/lectures/react/react-project-peek.png)
+![alt_text](/assets/lectures/react/react-project-peek.png)
 
 ### `index.js` and `App.js`
 

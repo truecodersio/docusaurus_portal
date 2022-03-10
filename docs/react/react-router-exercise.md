@@ -47,14 +47,14 @@ We will be using the Studio Ghibli API to make calls, and display data in our ap
 
    - Say, for `/films`. After navigating to [localhost:3000/films](localhost:3000/films), you should see Studio Ghibli's list of films.
    - The data should only be loaded and displayed when you navigate to `/films`. You should use `componentDidMount()` and fetch to make this request.
-   - You will use ["https://ghibliapi.herokuapp.com/films"]("https://ghibliapi.herokuapp.com/films") for the api endpoint
+   - You will use [https://ghibliapi.herokuapp.com/films](https://ghibliapi.herokuapp.com/films) for the api endpoint
    - Construct a fetch request with .then and .catch. Remember to:
      - Fetch the data
      - If a response was resolved, parse the JSON object
      - Then set the response to the state of your Films component
      - In your render method, be sure to map through the films state and display the results to the browser
 
-5. Configure your second route. Repeat the steps from the `/films` route, but for `/people`. Use ["https://ghibliapi.herokuapp.com/people"]("https://ghibliapi.herokuapp.com/people").
+5. Configure your second route. Repeat the steps from the `/films` route, but for `/people`. Use [https://ghibliapi.herokuapp.com/people](https://ghibliapi.herokuapp.com/people).
 
 At the end of these tasks, you should have at least three pages in your application, and you should be able to navigate to them simply by clicking a link.
 

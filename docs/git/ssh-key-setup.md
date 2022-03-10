@@ -5,7 +5,7 @@ slug: "/ssh-key-setup"
 
 Lecture Video
 
-<video width="100%" height="auto" controls  poster="../assets/lectures/git/ssh-key-setup-thumbnail.gif">
+<video width="100%" height="auto" controls  poster="/assets/lectures/git/ssh-key-setup-thumbnail.gif">
   <source src="https://vimeo.com/589938750" type="video/mp4" />
 </video>
 
@@ -35,7 +35,7 @@ SSH was designed as a replacement for Telnet and for unsecured remote shell prot
 
 ### Summary
 
-![alt_text](../assets/lectures/git/ssh-key-setup1.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup1.png "image_tooltip")
 
 ### HTTPS Pros
 
@@ -125,28 +125,28 @@ clip > ~/.ssh/id_ed25519.pub
 - Tip: If clip isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.
 - Go to [GitHub](https://github.com/). In the upper-right corner of any page, click your profile photo, then click Settings.
 
-![alt_text](../assets/lectures/git/ssh-key-setup2.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup2.png "image_tooltip")
 
 - In the user settings sidebar, click SSH and GPG keys.
 
-![alt_text](../assets/lectures/git/ssh-key-setup3.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup3.png "image_tooltip")
 
 - Click New SSH key or Add SSH key.
 
-![alt_text](../assets/lectures/git/ssh-key-setup4.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup4.png "image_tooltip")
 
 - In the "Title" field, add a descriptive label for the new key.
 - Paste your key into the "Key" field.
 
-![alt_text](../assets/lectures/git/ssh-key-setup5.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup5.png "image_tooltip")
 
 - Click Add SSH key.
 
-![alt_text](../assets/lectures/git/ssh-key-setup6.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup6.png "image_tooltip")
 
 - If prompted, confirm your GitHub password.
 
-![alt_text](../assets/lectures/git/ssh-key-setup7.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup7.png "image_tooltip")
 
 ### Mac SSH Key instructions
 
@@ -232,28 +232,28 @@ pbcopy > ~/.ssh/id_ed25519.pub
 
 - Go to [GitHub](https://github.com/). In the upper-right corner of any page, click your profile photo, then click Settings.
 
-![alt_text](../assets/lectures/git/ssh-key-setup2.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup2.png "image_tooltip")
 
 - In the user settings sidebar, click SSH and GPG keys.
 
-![alt_text](../assets/lectures/git/ssh-key-setup3.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup3.png "image_tooltip")
 
 - Click New SSH key or Add SSH key.
 
-![alt_text](../assets/lectures/git/ssh-key-setup4.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup4.png "image_tooltip")
 
 - In the "Title" field, add a descriptive label for the new key.
 - Paste your key into the "Key" field.
 
-![alt_text](../assets/lectures/git/ssh-key-setup5.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup5.png "image_tooltip")
 
 - Click Add SSH key.
 
-![alt_text](../assets/lectures/git/ssh-key-setup6.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup6.png "image_tooltip")
 
 - If prompted, confirm your GitHub password.
 
-![alt_text](../assets/lectures/git/ssh-key-setup7.png "image_tooltip")
+![alt_text](/assets/lectures/git/ssh-key-setup7.png "image_tooltip")
 
 ## Exercise
 

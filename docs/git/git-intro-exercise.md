@@ -83,11 +83,11 @@ Work with git on a simple pizza delivery algorithm file that covers the steps in
 
 10. Using the Visual Studio Code application, create a new file named Algo inside of your PizzaAlgo folder and save it.
 
-    ![alt_text](../assets/lectures/git/git-intro6.png "image_tooltip")
+    ![alt_text](/assets/lectures/git/git-intro6.png "image_tooltip")
 
 11. Now we will add instructions for ordering pizza in this file
 
-    ![alt_text](../assets/lectures/git/git-intro7.png "image_tooltip")
+    ![alt_text](/assets/lectures/git/git-intro7.png "image_tooltip")
 
 12. Use git to commit your changes as you add steps to the file
 
@@ -100,15 +100,15 @@ Work with git on a simple pizza delivery algorithm file that covers the steps in
 
     Use the ‘new’ button on github:
 
-    ![alt_text](../assets/lectures/git/git-intro8.png "image_tooltip")
+    ![alt_text](/assets/lectures/git/git-intro8.png "image_tooltip")
 
     Your repository should look like this
 
-    ![alt_text](../assets/lectures/git/git-intro9.png "image_tooltip")
+    ![alt_text](/assets/lectures/git/git-intro9.png "image_tooltip")
 
     You will see a page that looks like this once created:
 
-    ![alt_text](../assets/lectures/git/git-intro10.png "image_tooltip")
+    ![alt_text](/assets/lectures/git/git-intro10.png "image_tooltip")
 
     Make sure SSH is enabled and NOT HTTPS
 
