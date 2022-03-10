@@ -11,8 +11,6 @@ slug: "/git-branching-and-merging-exercise"
 
 --- -->
 
-# Exercise
-
 ## Exercise 1: Interactive Tutorial
 
 [Katacode's Git Section](https://www.katacoda.com/courses/git) \*complete scenario 6

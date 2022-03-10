@@ -11,8 +11,6 @@ slug: "/git-merge-conflict-resolution-exercise"
 
 --- -->
 
-# Exercise
-
 ## Steps
 
 Fork and Clone this repository: [MergeConflictExercise](https://github.com/mvdoyle/MergeConflictExercise)

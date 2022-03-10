@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "TrueCoders Portal",
+  title: "TrueCoders Docs",
   tagline: "Learn to Code",
-  url: "https://truecoders.app",
+  url: "https://docs.truecoders.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -24,7 +24,12 @@ module.exports = {
         },
         { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://collab-two.vercel.app/",
+          label: "Collab↗",
+          position: "left",
+        },
+        {
+          href: "https://github.com/truecodersio",
           label: "GitHub",
           position: "right",
         },
@@ -45,7 +50,7 @@ module.exports = {
       // Dark/light switch icon options
       switchConfig: {
         // Icon for the switch while in dark mode
-        darkIcon: "\u{263E}",
+        darkIcon: "🌙",
 
         // CSS to apply to dark icon,
         // React inline style object
@@ -56,7 +61,7 @@ module.exports = {
 
         // Unicode icons such as '\u2600' will work
         // Unicode with 5 chars require brackets: '\u{1F602}'
-        lightIcon: "\u{263C}",
+        lightIcon: "☀️",
 
         lightIconStyle: {
           marginLeft: "1px",
@@ -76,19 +81,15 @@ module.exports = {
           ],
         },
         {
-          title: "Community",
+          title: "Support",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Schedule 1-on-1",
+              href: "https://truecoders.io/one-on-one-fswd",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Support Email",
+              href: "mailto:support@truecoders.io",
             },
           ],
         },
@@ -101,7 +102,11 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/TrueCoders/docusaurus",
+              href: "https://github.com/truecodersio",
+            },
+            {
+              label: "Collab↗",
+              href: "https://collab-two.vercel.app/",
             },
           ],
         },
