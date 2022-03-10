@@ -9,7 +9,7 @@ Lecture Video
   <source src="https://vimeo.com/truecodersio/review/510436355/800fa41344" type="video/mp4" />
 </video>
 
-# Lecture
+
 
 ## Why
 

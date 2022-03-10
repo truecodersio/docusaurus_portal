@@ -9,9 +9,12 @@ module.exports = {
       type: "category",
       label: "Git",
       items: [
-        "git-intro",
-        "git-branching-and-merging",
-        "git-conflict-resolution",
+        "git/git-intro",
+        "git/git-intro-exercise",
+        "git/git-branching-and-merging",
+        "git/git-branching-and-merging-exercise",
+        "git/git-merge-conflict-resolution",
+        "git/git-merge-conflict-resolution-exercise",
       ],
     },
     {

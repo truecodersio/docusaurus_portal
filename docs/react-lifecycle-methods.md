@@ -9,7 +9,7 @@ Lecture Video
   <source src="https://vimeo.com/511324148/21dd654893" type="video/mp4" />
 </video>
 
-# Lecture
+
 
 ## Why:
 

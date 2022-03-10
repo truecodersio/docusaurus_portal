@@ -17,7 +17,7 @@ Lecture Video 2
 
 ---
 
-# Lecture
+
 
 ## Why
 

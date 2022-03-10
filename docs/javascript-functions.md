@@ -9,7 +9,7 @@ No lecture video available. Coming soon!
 
 ---
 
-# Lecture
+
 
 ## Why:
 

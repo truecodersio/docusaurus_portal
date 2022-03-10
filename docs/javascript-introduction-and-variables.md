@@ -11,7 +11,7 @@ Lecture Video
 
 ---
 
-# Lecture
+
 
 [JavaScript is a programming language](https://www.fraudlabspro.com/resources/tutorials/add-fraudlabs-pro-agent-javascript-bigcommerce/) used primarily by Web browsers to create a dynamic and interactive experience for the user. Most of the functions and applications that make the Internet indispensable to modern life are coded in some form of JavaScript. In the past, Web pages were static, offering little user interaction beyond clicking links and [loading new pages](https://www.bigcommerce.com/blog/site-speed-stability-and-security-the-ecommerce-non-negotiables-all-online-businesses-must-deliver/). For the first time, JavaScript enabled animation, adaptive content and form validation on the page. Initially, JavaScript compatibility was a major issue across the most common platforms.
 

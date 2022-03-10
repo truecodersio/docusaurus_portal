@@ -56,7 +56,7 @@ slug: "/url-slug"
 
 ### Headings
 
-- The h1 (#) on the page will be `# Lecture`
+- The h1 (#) on the page will be ``
 - The h2 (##)'s on the page will be `## Why`, `## What`, `## How`, `## Exercise`, and `## Quiz`
 - All other subheadings will be h3 to h6 (### => ######), as makes semantic sense according to the content
 
@@ -130,7 +130,7 @@ Quiz Review Video
 ### Horizontal Lines
 
 - Add horizontal lines (`---`) between the following sections:
-  - Lecture videos and `# Lecture` heading
+  - Lecture videos and `` heading
   - `## How` section and `## Exercise` section
   - `## Exercise` section and `## Quiz` section
 

@@ -11,7 +11,7 @@ Lecture Video
 
 ---
 
-# Lecture
+
 
 ## Why:
 
@@ -64,10 +64,10 @@ The way we create an HTML form is by using the HTML `<form>` element:
 
 ```
 <form>
-    <label for="fname">First Name</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="fname">Last Name</label><br>
-    <input type="text" id="lname" name="lname"><br>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+    <label for="fname">Last Name</label>
+    <input type="text" id="lname" name="lname">
     <input type="submit" value="Submit">
 </form>
 ```
@@ -100,10 +100,10 @@ We would need this code:
 
 ```
 <form>
-    <label for="fname">First Name</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="fname">Last Name</label><br>
-    <input type="text" id="lname" name="lname"><br>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+    <label for="fname">Last Name</label>
+    <input type="text" id="lname" name="lname">
 </form>
 ```
 
@@ -185,16 +185,16 @@ In our body, we want to create a `<div>`, and inside the div we’ll start our f
 We can then create our labels for First Name and Last Name and give them input fields. At the end of the form, put a submit button.
 
 ```
-<label for="fname">First Name</label><br>
-<input type="text" id="fname" name="fname"><br>
-<label for="fname">Last Name</label><br>
-<input type="text" id="lname" name="lname"><br>
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="fname">
+<label for="fname">Last Name</label>
+<input type="text" id="lname" name="lname">
 <input type="submit" value="Submit">
 ```
 
 HTML also gives us the ability to implement Browser validation with the required attribute:
 
-`<input type="text" id="fname" name="fname" required><br>`
+`<input type="text" id="fname" name="fname" required>`
 
 When we try to submit the form with a missing value, we get this error:
 
@@ -216,11 +216,11 @@ We will be using the following code for this example, copy and paste into your e
         <div style="text-align: center;">
             <form>
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" required><br>
+                <input type="text" id="fname" name="fname" required>
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" required><br>
+                <input type="text" id="lname" name="lname" required>
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" required>
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -234,11 +234,11 @@ First thing we want to do is wrap our form in a `<table>` tag
 <table>
     <form>
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" required><br>
+        <input type="text" id="fname" name="fname" required>
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" required><br>
+        <input type="text" id="lname" name="lname" required>
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required>
         <input type="submit" value="Submit">
     </form>
 </table>
@@ -254,7 +254,7 @@ Next, were going to want to wrap each of our labels inputs in their own table ro
             <label for="fname">First name:</label>
         </td>
         <td>
-            <input type="text" id="fname" name="fname" required><br>
+            <input type="text" id="fname" name="fname" required>
         </td>
     </tr>
     <tr>
@@ -262,7 +262,7 @@ Next, were going to want to wrap each of our labels inputs in their own table ro
             <label for="lname">Last name:</label>
         </td>
         <td>
-            <input type="text" id="lname" name="lname" required><br>
+            <input type="text" id="lname" name="lname" required>
         </td>
     </tr>
     <tr>
@@ -270,7 +270,7 @@ Next, were going to want to wrap each of our labels inputs in their own table ro
             <label for="email">Email Address</label>
         </td>
         <td>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required>
         </td>
     </tr>
     <tr>

@@ -15,7 +15,7 @@ Lecture Video 2
   <source src="https://vimeo.com/509030596/8cb3bd8ba2" type="video/mp4" />
 </video>
 
-# Lecture
+
 
 ## Why:
 

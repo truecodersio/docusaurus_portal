@@ -32,7 +32,7 @@ module.exports = {
     },
     colorMode: {
       // "light" | "dark"
-      defaultMode: 'light',
+      defaultMode: "light",
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
