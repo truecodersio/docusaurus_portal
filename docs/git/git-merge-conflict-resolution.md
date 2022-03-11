@@ -94,9 +94,9 @@ We’ll show this merge conflict from this git repository: [Github - mvdoyle/Mer
 
 4. Resolve the merge conflict (choose which changes to keep)
 
-- Remove `>>>>>>>` and `==========` from your code along with the changes you want removed (current or incoming)
+   - Remove `>>>>>>>` and `==========` from your code along with the changes you want removed (current or incoming)
 
-  ![alt_text](/assets/lectures/git/git-merge-conflict-resolution4.png)
+   ![alt_text](/assets/lectures/git/git-merge-conflict-resolution4.png)
 
 5. After we have taken out the git markers and chosen what we want, we need to stage and commit:
 

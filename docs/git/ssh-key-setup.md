@@ -3,15 +3,13 @@ title: "SSH Key Setup"
 slug: "/ssh-key-setup"
 ---
 
-Lecture Video
+<!-- Lecture Video
 
 <video width="100%" height="auto" controls  poster="/assets/lectures/git/ssh-key-setup-thumbnail.gif">
   <source src="https://vimeo.com/589938750" type="video/mp4" />
 </video>
 
----
-
-
+--- -->
 
 ## Why
 
