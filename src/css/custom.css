@@ -74,6 +74,11 @@ html[data-theme="light"] .react-toggle-track {
   height: 100%;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -91,6 +96,23 @@ html[data-theme="light"] .react-toggle-track {
 }
 .p-6 {
   padding: 6rem;
+}
+
+.border-success {
+  border: 2px solid lightgreen;
+}
+
+.answer-hover {
+  border: 2px solid transparent;
+}
+
+.answer-hover:hover {
+  cursor: pointer;
+  border: 2px solid var(--link-color);
+}
+
+.border-danger {
+  border: 2px solid tomato;
 }
 
 .homeSection {

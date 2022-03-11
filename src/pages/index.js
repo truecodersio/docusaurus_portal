@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}
-      description="Description will go into a meta tag in <head />"
+      description="A place to read TrueCoders' Web Development Docs, all in one place!"
     >
       <main className="homeSection">
         {features && features.length > 0 && (
