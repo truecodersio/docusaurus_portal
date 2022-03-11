@@ -54,7 +54,7 @@ Object.prototype &lt;= Math.prototype, Object.prototype &lt;= Array.prototype, e
 
 The base object in JavaScript is the **Object prototype**. All objects that are based from the Object prototype share it’s properties and methods. You can override these properties or methods by defining them on a prototype object.
 
-![alt_text](/assets/lectures/javascript/prototype-chain.png)
+![alt_text](../assets/lectures/javascript/prototype-chain.png)
 
 You use **Object.create** to create an object with a specific prototype:
 

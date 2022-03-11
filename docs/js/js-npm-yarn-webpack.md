@@ -19,7 +19,7 @@ Lecture Video 2
 
 ## Why
 
-![alt_text](/assets/lectures/javascript/frontend-dino-comic.png)
+![alt_text](../assets/lectures/javascript/frontend-dino-comic.png)
 
 Why do we even need or want this stuff? What do you gain from all of this added complexity? These are good questions.. with good answers.
 

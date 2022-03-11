@@ -36,7 +36,7 @@ Version Control allows you to:
 
 Version Control Systems are usually represented with a tree data structure
 
-![alt_text](/assets/lectures/git/git-intro1.png)
+![alt_text](../assets/lectures/git/git-intro1.png)
 
 ### Git
 
@@ -58,7 +58,7 @@ The traditional software expression of "saving" is synonymous with the Git term 
 
 The `git commit` command captures a snapshot of the project's currently staged changes.
 
-![alt_text](/assets/lectures/git/git-intro2.png)
+![alt_text](../assets/lectures/git/git-intro2.png)
 
 Each circle in the above diagram is a commit – a **snapshot** of the project
 
@@ -98,7 +98,7 @@ The **git add** command adds a change in the working directory to the **staging 
 - `git add <filename>` - add a specific file to the staging area
 - `git add .` - add all modified files to the staging area. the period is what chooses all files
 
-![alt_text](/assets/lectures/git/git-intro3.png)
+![alt_text](../assets/lectures/git/git-intro3.png)
 
 #### Moreover on Staging
 

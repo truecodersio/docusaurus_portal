@@ -15,7 +15,7 @@ slug: "/css-flexbox-and-grid-exercise"
 
 KenKen is a popular spinoff(?) of Sudoku puzzles. Below is an example:
 
-![alt_text](/assets/lectures/css/kenken-example.png)
+![alt_text](../assets/lectures/css/kenken-example.png)
 
 ## Objective
 

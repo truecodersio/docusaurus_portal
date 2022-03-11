@@ -196,7 +196,7 @@ fetch(
 
 Now we have a JavaScript object and if you inspect it closely enough you’ll find that the data we need (an image URL) is nested rather deeply inside the object:
 
-![alt_text](/assets/lectures/javascript/giphy-response.png)
+![alt_text](../assets/lectures/javascript/giphy-response.png)
 
 To get to the data we need to drill down through the layers of the object until we find what we want!
 

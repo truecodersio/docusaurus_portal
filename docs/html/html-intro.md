@@ -35,13 +35,13 @@ So what is a markup language anyways? In computer text processing, a **markup la
 
 The HTML above will display "Hello world!" on the webpage. The text "This is a title" is in the head element and therefore will not be shown. Using the correct markup is important in conveying the correct semantic meaning of your text. Is this text a link? Is that text a source to display an image? Is this text supposed to be a heading? Is that paragraph related to the article? Semantic meaning answers all of those questions.
 
-![alt_text](/assets/lectures/html/helloworld.png)
+![alt_text](../assets/lectures/html/helloworld.png)
 
 ## How
 
 HTML documents are files that end with a `.html` or `.htm` extension. You can view them using any web browser (such as Google Chrome, Safari, or Mozilla Firefox). To open an HTML file double click on that file (with either a `.html` or `.htm` extension) and it will open up in your browser.
 
-![alt_text](/assets/lectures/html/file-explorer.png)
+![alt_text](../assets/lectures/html/file-explorer.png)
 
 > You can also open you command prompt and type `start index.html`, replacing `index.html` with the actual file path, and it will launch your default browser with the html file loaded
 > If you are using a Mac, open the terminal and type `open index.html` for the same result
@@ -74,11 +74,11 @@ The three block level tags every HTML document needs to contain are `<html>`, `<
 
 The Heading tags, `<h1></h1>`, are another common block-level tag and they range from `<h1></h1>` to `<h6></h6>`. The h1 tag is the largest and the h6 tag is the smallest.
 
-![alt_text](/assets/lectures/html/displayed-headings.png)
+![alt_text](../assets/lectures/html/displayed-headings.png)
 
 The Paragraph tag, `<p></p>`, is used to enclose text
 
-![alt_text](/assets/lectures/html/displayed-paragraphs.png)
+![alt_text](../assets/lectures/html/displayed-paragraphs.png)
 
 The Division tag, `<div></div>`, is a container which usually contains several other HTML elements within it, even including other div tags (nesting elements within elements).
 
@@ -97,7 +97,7 @@ Inline elements don't take up all the width like block level elements and they d
 
 > NOTE: With a `span` element we can format text inline without causing a line break, destroying the document's flow.
 
-![alt_text](/assets/lectures/html/displayed-spans.png)
+![alt_text](../assets/lectures/html/displayed-spans.png)
 
 Many inline tags are used to format text. For example, a `<strong></strong>` tag would render an element in `bold`, whereas `<em></em>` tags would show it in _italics_. Hyperlinks are also inline elements that require `<a></a>` tags and `href` attributes to indicate the link’s destination:
 

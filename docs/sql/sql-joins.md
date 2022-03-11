@@ -7,7 +7,7 @@ Combining multiple tables is where the real power of SQL lives. SQL can combine 
 
 A JOIN clause is used to combine rows from two or more tables, based on a related column between them. Here are several Venn diagrams showing the visual representation of the different Joins available:
 
-![alt_text](/assets/lectures/sql/pic1.jpg)
+![alt_text](../assets/lectures/sql/pic1.jpg)
 
 While the majority of your joins will tend to be `INNER` or `LEFT` join statements, we will go over all the joins available to you:
 
@@ -15,7 +15,7 @@ While the majority of your joins will tend to be `INNER` or `LEFT` join statemen
 
 The `INNER JOIN` statement in SQL gets only the records where a match occurs on both tables. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic2.png)
+![alt_text](../assets/lectures/sql/pic2.png)
 
 The `INNER JOIN` statement follows this syntax:
 
@@ -35,7 +35,7 @@ INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 
 The `LEFT JOIN` statement in SQL gets all the records from the left table and only records from the right table where a match occurs. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic3.png)
+![alt_text](../assets/lectures/sql/pic3.png)
 
 The `LEFT JOIN` statement follows this syntax:
 
@@ -56,7 +56,7 @@ ORDER BY Customers.CustomerName;
 
 The `RIGHT JOIN` statement in SQL gets all the records from the right table and only records from the left table where a match occurs. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic4.png)
+![alt_text](../assets/lectures/sql/pic4.png)
 
 The `RIGHT JOIN` statement follows this syntax:
 
@@ -79,7 +79,7 @@ ORDER BY Customers.CustomerName;
 
 The `FULL OUTER JOIN` statement in SQL gets all the records from both the left and right tables where a match occurs in either table. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic5.png)
+![alt_text](../assets/lectures/sql/pic5.png)
 
 The `FULL OUTER JOIN` statement follows this syntax:
 
@@ -102,7 +102,7 @@ ORDER BY Customers.CustomerName;
 
 The `LEFT EXCLUDING JOIN` statement in SQL gets all the records from the left table where a match does not occur on the right table. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic6.png)
+![alt_text](../assets/lectures/sql/pic6.png)
 
 The `LEFT EXCLUDING JOIN` statement follows this syntax:
 
@@ -123,7 +123,7 @@ WHERE Orders.CustomerID IS NULL;
 
 The `RIGHT EXCLUDING JOIN` statement in SQL gets all the records from the right table where a match does not occur on the left table. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic7.png)
+![alt_text](../assets/lectures/sql/pic7.png)
 
 The `RIGHT EXCLUDING JOIN` statement follows this syntax:
 
@@ -146,7 +146,7 @@ WHERE Orders.CustomerID IS NULL;
 
 The `FULL OUTER EXCLUDING JOIN` statement in SQL gets all the records from both the left and right tables where a match does not occur in either table. The result set looks like this:
 
-![alt_text](/assets/lectures/sql/pic8.png)
+![alt_text](../assets/lectures/sql/pic8.png)
 
 The `FULL OUTER EXCLUDING JOIN` statement follows this syntax:
 

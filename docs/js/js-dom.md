@@ -25,7 +25,7 @@ The **DOM of an HTML document** can be represented as a nested set of boxes (nod
 
 These nodes have certain relations to other nodes! For example, in our tree data structure (pictured below), if a node falls in a level below, yet directly correlated to the node above, then it’s known as a _CHILD_ node. Where the node that those elements fall underneath, is the _PARENT_ node. If two elements fall on the same level, then they’re known as _SIBLING_ nodes.
 
-![alt_text](/assets/lectures/javascript/dom-tree.png)
+![alt_text](../assets/lectures/javascript/dom-tree.png)
 
 For the example above:
 
@@ -280,7 +280,7 @@ Let's display an alert popup when the user clicks a specified button:
 </script>
 ```
 
-![alt_text](/assets/lectures/javascript/alert-result.png)
+![alt_text](../assets/lectures/javascript/alert-result.png)
 
 We can also assign event handlers to elements. First we assign an element to a variable using one of the selection methods. Then we use dot notation to specify an event (`element.onclick`) then assign a function to it.
 
