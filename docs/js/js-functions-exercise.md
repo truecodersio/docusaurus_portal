@@ -9,6 +9,8 @@ Your objective is to practice JavaScript functions with different parameter valu
 
 ## Steps
 
+[Fork and clone the Exercise Repo](https://github.com/Bryantellius/JavaScript_Functions)
+
 ### Exercise 1: Print Odds Continued
 
 In the past, we created a selection statement inside a loop that counted from 1 to 100 and only printed out the odd numbers.

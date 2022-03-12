@@ -3,14 +3,6 @@ title: "SSH Key Setup"
 slug: "/ssh-key-setup"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="../assets/lectures/git/ssh-key-setup-thumbnail.gif">
-  <source src="https://vimeo.com/589938750" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 One of the most important, yet often overlooked actions, is setting up your SSH Keys for a secure connection to Github. Through HTTPS you can clone and pull repositories without the need for authentication, but every time you push to Github you must provide your github password. And with your password and username compromised, all of your repositories can now be deleted, overwritten, or just messed around with. And NOBODY likes that!

@@ -9,6 +9,8 @@ Your objective is to display a gif to the DOM based on a user search. You will n
 
 ## Steps
 
+[Fork and Clone the Exercise Repo](https://github.com/Bryantellius/JavaScript_APIs)
+
 1. Open your index.html
 2. Beneath the p tag, but before the img tag, add a Label, input, and button.
    - Add an ID to your input element

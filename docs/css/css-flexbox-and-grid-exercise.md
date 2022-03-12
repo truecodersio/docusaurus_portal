@@ -3,15 +3,7 @@ title: "Exercise: CSS Flexbox and Grid"
 slug: "/css-flexbox-and-grid-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/512728838/1f2b5d7393" type="video/mp4" />
-</video>
-
---- -->
-
-[Exercise Repo Here](https://github.com/TannerDrayton/CSS-KenKen/tree/main)
+[Exercise Repo](https://github.com/TannerDrayton/CSS-KenKen/tree/main)
 
 KenKen is a popular spinoff(?) of Sudoku puzzles. Below is an example:
 

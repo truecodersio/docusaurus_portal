@@ -3,14 +3,6 @@ title: "Exercise: JS Loops"
 slug: "/js-loops-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/505435531/6d792ef097" type="video/mp4" />
-</video>
-
---- -->
-
 ## Getting Started
 
 Exercise Repo: [JavaScript Loops](https://github.com/Bryantellius/JavaScript_Selections_Loops)

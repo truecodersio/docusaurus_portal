@@ -3,13 +3,7 @@ title: "Exercise: HTML Intro"
 slug: "/html-intro-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/517342331/4c1f184265" type="video/mp4" />
-</video>
-
---- -->
+[Exercise Repo](https://github.com/Bryantellius/HTML_Exercise)
 
 ## Objective
 

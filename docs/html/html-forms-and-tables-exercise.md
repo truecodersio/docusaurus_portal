@@ -3,14 +3,6 @@ title: "Exercise: HTML Forms and Tables"
 slug: "/html-forms-and-tables-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/512728838/1f2b5d7393" type="video/mp4" />
-</video>
-
---- -->
-
 ## Objective
 
 Your objective is to practice using form and table elements.

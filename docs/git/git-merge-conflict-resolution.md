@@ -3,14 +3,6 @@ title: "Git Merge Conflict Resolution"
 slug: "/git-merge-conflict-resolution"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="">
-  <source src="" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 We teach conflict resolution in git because sometimes merging won’t be so simple. This is especially true when we start collaborating with others, whether in the community or in the workplace. Knowing how to resolve merge conflicts and utilizing the full power of git will give you a great advantage in the workplace and will allow your workflow to achieve new heights.

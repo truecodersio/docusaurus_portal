@@ -14,6 +14,8 @@ Your objective is to create an application based on the following parameters:
 
 ## Steps
 
+Exercise Repo: [React Hooks](https://github.com/Bryantellius/react_hooks)
+
 1. Create a components folder in your src directory and create a file for your component called Overview.js. Overview.js should just render our tasks, while App.js is going to handle the input field with the logic.
 
    ```txt

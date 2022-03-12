@@ -3,14 +3,6 @@ title: "Git Intro"
 slug: "/git-intro"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="">
-  <source src="" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 We cover Git because it is a **Distributed Version Control System**. Distributed means there is no central server required, so work can be done “Offline” simultaneously with someone else also working offline. In the past, with traditional **Centralized Version Controls Systems**, two people editing a file was very difficult and sometimes whomever saved the file last would overwrite someone else's work.

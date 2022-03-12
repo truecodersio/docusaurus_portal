@@ -3,6 +3,8 @@ title: "Exercise: Node Reddit Calls"
 slug: "/node-reddit-exercise"
 ---
 
+Exercise Repo: [Node Lab](https://github.com/Bryantellius/nodejs-lab)
+
 ## PART 1
 
 - Create a NodeJS project using npm init.
