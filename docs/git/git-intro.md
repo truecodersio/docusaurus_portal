@@ -85,7 +85,7 @@ With **Remote Repositories** we usually use these git commands:
 
 ### Staging with git add
 
-The **git add** command adds a change in the working directory to the **staging area**. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit THere are two ways to add a file(s) to the staging area:
+The **git add** command adds a change in the working directory to the **staging area**. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit There are two ways to add a file(s) to the staging area:
 
 - `git add <filename>` - add a specific file to the staging area
 - `git add .` - add all modified files to the staging area. the period is what chooses all files
