@@ -23,170 +23,111 @@ Some of the benefits of using _good_ markup practices are:
 
 ## How
 
-As you learn more about HTML — read more resources, look at more examples, etc. — you'll keep seeing a common theme: the importance of using semantic HTML (sometimes called POSH, or Plain Old Semantic HTML). This means using the correct HTML elements for their intended purpose as much as possible.
+As we continue to write and structure web pages, we'll want to follow best practices when it comes to semeantic HTML and accessibility. Let's go over a few scenarios and examples.
 
-You might wonder why this is so important. After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in whatever way you want. For example, a control button to play a video on your site could be marked up like this:
-
-```html
-<div>Play video</div>
-```
-
-But as you'll see in greater detail later on, it makes sense to use the correct element for the job:
-
-```html
-<button>Play video</button>
-```
-
-Not only do HTML `<button>`s have some suitable styling applied by default (which you will probably want to override), they also have built-in keyboard accessibility — users can navigate between buttons using the <kbd>Tab</kbd> key and activate their selection using <kbd>Return</kbd> or <kbd>Enter</kbd>.
-
-Let's get on and look at accessible HTML in more detail.
-
-### Text content
+### Structuring Text Content
 
 One of the best accessibility aids a screen reader user can have is an excellent content structure with headings, paragraphs, lists, etc. An excellent semantic example might look something like the following:
 
-```html example-good
-<h1>My heading</h1>
+```html
+<h1>Top Level Heading</h1>
 
-<p>This is the first section of my document.</p>
+<p>First Paragraph with some text.</p>
 
-<p>I'll add another paragraph here too.</p>
+<p>Second paragraph with some text.</p>
 
 <ol>
-  <li>Here is</li>
-  <li>a list for</li>
-  <li>you to read</li>
+  <li>Numbered list item 1</li>
+  <li>Numbered list item 2</li>
+  <li>Numbered list item 3</li>
 </ol>
 
-<h2>My subheading</h2>
+<h2>Sub Heading</h2>
 
-<p>
-  This is the first subsection of my document. I'd love people to be able to
-  find this content!
-</p>
+<p>First Paragraph under a subheading 2.</p>
 
-<h2>My 2nd subheading</h2>
+<h2>Second Sub heading</h2>
 
-<p>
-  This is the second subsection of my content. I think is more interesting than
-  the last one.
-</p>
+<p>First paragraph under a sub heading 2.</p>
 ```
 
-#### Using clear language
+#### Optional Considerations for Text
 
-The language you use can also affect accessibility. In general, you should use clear language that is not overly complex and doesn't use unnecessary jargon or slang terms. This not only benefits people with cognitive or other disabilities; it benefits readers for whom the text is not written in their first language, younger people ... everyone, in fact! Apart from this, you should try to avoid using language and characters that don't get read out clearly by the screen reader. For example:
+Once we have the semantic HTML written correctly, it is important to consider the text _content_ that we display to our users. Since there are many different users from many different backgrounds, we need to consider how to best relate and convey information to our users with the words, phrases, acronymns, or verbage we use. Some key notes to follow:
 
-- Don't use dashes if you can avoid it. Instead of writing 5–7, write 5 to 7.
-- Expand abbreviations — instead of writing Jan, write January.
-- Expand acronyms, at least once or twice, then use the [<abbr>](/en-US/docs/Web/HTML/Element/abbr) tag to describe them.
+- If you are writing a range, e.g. `1-5`, replace the dash with "to" -> `1 to 5`
+- If you use abbreviations, e.g. `Jan.`, consider spelling out the entire name -> `January`
+- If you use acronyms, use the expanded phrase or words near the first reference, then use the `<abbr>` element -> `<abbr title="HyperText Markup Language">HTML</abbr>`
 
-### Page layouts
+### Structuring a Page
 
-In the bad old days, people used to create page layouts using HTML tables — using different table cells to contain the header, footer, sidebar, main content column, etc. This is not a good idea because a screen reader will likely give out confusing readouts, especially if the layout is complex and has many nested tables.
+We've been introduced to the `<div>` element as a generic container element that can group other related elements together.
 
-Try our example [table-layout.html](https://mdn.github.io/learning-area/accessibility/html/table-layout.html) example, which looks something like this:
-
-```html
-<table width="1200">
-  <!-- main heading row -->
-  <tr id="heading">
-    <td colspan="6">
-      <h1 align="center">Header</h1>
-    </td>
-  </tr>
-  <!-- nav menu row  -->
-  <tr id="nav" bgcolor="#ffffff">
-    <td width="200">
-      <a href="#" align="center">Home</a>
-    </td>
-    <td width="200">
-      <a href="#" align="center">Our team</a>
-    </td>
-    <td width="200">
-      <a href="#" align="center">Projects</a>
-    </td>
-    <td width="200">
-      <a href="#" align="center">Contact</a>
-    </td>
-    <td width="300">
-      <form width="300">
-        <input type="search" name="q" placeholder="Search query" width="300" />
-      </form>
-    </td>
-    <td width="100">
-      <button width="100">Go!</button>
-    </td>
-  </tr>
-  <!-- spacer row -->
-  <tr id="spacer" height="10">
-    <td></td>
-  </tr>
-  <!-- main content and aside row -->
-  <tr id="main">
-    <td id="content" colspan="4" bgcolor="#ffffff">
-      <!-- main content goes here -->
-    </td>
-    <td id="aside" colspan="2" bgcolor="#ff80ff" valign="top">
-      <h2>Related</h2>
-
-      <!-- aside content goes here -->
-    </td>
-  </tr>
-  <!-- spacer row -->
-  <tr id="spacer" height="10">
-    <td></td>
-  </tr>
-  <!-- footer row -->
-  <tr id="footer" bgcolor="#ffffff">
-    <td colspan="6">
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
-    </td>
-  </tr>
-</table>
-```
-
-If you try to navigate this using a screen reader, it will probably tell you that there's a table to be looked at (although some screen readers can guess the difference between table layouts and data tables). You'll then likely (depending on which screen reader you're using) have to go down into the table as an object and look at its features separately, then get out of the table again to carry on navigating the content.
-
-Table layouts are a relic of the past — they made sense back when CSS support was not widespread in browsers, but now they just create confusion for screen reader users. Additionally, their source code requires more markup, which makes them less flexible and more difficult to maintain. You can verify these claims by comparing your previous experience with a [more modern website structure example](https://mdn.github.io/learning-area/html/introduction-to-html/document_and_website_structure/), which could look something like this:
+Our pages with have defined sections of content that we'll want to group together, and of course we _can_ use `<div>`'s, but now let's see how it would be _better_ to use semantic container elements instead. Take the following example:
 
 ```html
+<!-- site header -->
 <header>
-  <h1>Header</h1>
+  <h1>Site Logo/Title</h1>
+  <nav>
+    <!-- site navigation -->
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
-<nav>
-  <!-- main navigation in here -->
-</nav>
-
-<!-- Here is our page's main content -->
+<!-- main content -->
 <main>
   <!-- It contains an article -->
   <article>
     <h2>Article heading</h2>
 
-    <!-- article content in here -->
+    <!-- article content -->
   </article>
 
   <aside>
-    <h2>Related</h2>
+    <h2>Related/Table of Contents</h2>
 
-    <!-- aside content in here -->
+    <!-- aside content -->
   </aside>
 </main>
 
-<!-- And here is our main footer that is used across all the pages of our website -->
+<!-- site footer -->
 
 <footer>
-  <!-- footer content in here -->
+  <!-- footer content/site map -->
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/about">About</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a href="/privacy">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="/terms">Terms of Service</a>
+    </li>
+  </ul>
 </footer>
 ```
 
-If you try our more modern structure example with a screen reader, you'll see that the layout markup no longer gets in the way and confuses the content readout. It is also much leaner and smaller in terms of code size, which means easier to maintain code, and less bandwidth for the user to download (particularly prevalent for those on slow connections).
-
-Another consideration when creating layouts is using HTML5 semantic elements as seen in the above example (see [content sectioning](/en-US/docs/Web/HTML/Element#content_sectioning)) — you can create a layout using only nested {{htmlelement("div")}} elements, but it is better to use appropriate sectioning elements to wrap your main navigation ({{htmlelement("nav")}}), footer ({{htmlelement("footer")}}), repeating content units ({{htmlelement("article")}}), etc. These provide extra semantics for screen readers (and other tools) to give users extra clues about the content they are navigating (see [Screen Reader Support for new HTML5 Section Elements](https://www.weba11y.com/blog/2016/04/22/screen-reader-support-for-new-html5-section-elements/) for an idea of what screen reader support is like).
-
-> **Note:** In addition to having good semantics and an attractive layout, your content should make logical sense in its source order — you can always place it where you want using CSS later on, but you should get the source order right to start with, so what screen reader users get read out to them will make sense.
+Here we have container elements, `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, and `<footer>`, that have semantic meaning to what their content represents on a page.
 
 ### UI controls
 
