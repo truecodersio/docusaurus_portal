@@ -3,14 +3,6 @@ title: "JS Introduction and Variables"
 slug: "/js-introduction-and-variables"
 ---
 
-Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504606565/251f783c19" type="video/mp4" />
-</video>
-
----
-
 ## Brief Introduction to JavaScript
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is a programming used primarily by Web browsers to create a dynamic and interactive experience for the user. Most of the functions and applications that make the Internet indispensable to modern life are coded in some form of JavaScript. In the past, Web pages were static, offering little user interaction beyond clicking links and loading new pages. For the first time, JavaScript enabled animation, adaptive content and form validation on the page. Now, most modern browsers support the latest JavaScript updates.

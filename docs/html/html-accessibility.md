@@ -141,8 +141,6 @@ One key aspect of the accessibility of UI controls is that by default, browsers 
 
 You can then press Enter/Return to follow a focused link or press a button (we've included some JavaScript to make the buttons alert a message), or start typing to enter text in a text input. Other form elements have different controls; for example, the {{htmlelement("select")}} element can have its options displayed and cycled between using the up and down arrow keys.
 
-> **Note:** Different browsers may have different keyboard control options available. See [Using native keyboard accessibility](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#using_native_keyboard_accessibility) for more details.
-
 You essentially get this behavior for free, just by using the appropriate elements, e.g.
 
 ```html example-good
@@ -186,18 +184,6 @@ You essentially get this behavior for free, just by using the appropriate elemen
 </form>
 ```
 
-This means using links, buttons, form elements, and labels appropriately (including the {{htmlelement("label")}} element for form controls).
-
-However, it is again the case that people sometimes do strange things with HTML. For example, you sometimes see buttons marked up using {{htmlelement("div")}}s, for example:
-
-```html example-bad
-<div data-message="This is from the first button">Click me!</div>
-<div data-message="This is from the second button">Click me too!</div>
-<div data-message="This is from the third button">And me!</div>
-```
-
-But using such code is not advised — you immediately lose the native keyboard accessibility you would have had if you'd just used {{htmlelement("button")}} elements, plus you don't get any of the default CSS styling that buttons get.
-
 #### Building keyboard accessibility back in
 
 Adding such advantages back in takes a bit of work (you can see an example in our [fake-div-buttons.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html) example — also see the [source code](https://github.com/mdn/learning-area/blob/master/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html)). Here we've given our fake `<div>` buttons the ability to be focused (including via tab) by giving each one the attribute `tabindex="0"`:
@@ -209,26 +195,6 @@ Adding such advantages back in takes a bit of work (you can see an example in ou
 </div>
 <div data-message="This is from the third button" tabindex="0">And me!</div>
 ```
-
-Basically, the {{htmlattrxref("tabindex")}} attribute is primarily intended to allow tabbable elements to have a custom tab order (specified in positive numerical order), instead of just being tabbed through in their default source order. This is nearly always a bad idea, as it can cause major confusion. Use it only if you really need to, for example, if the layout shows things in a very different visual order to the source code, and you want to make things work more logically. There are two other options for `tabindex`:
-
-- `tabindex="0"` — as indicated above, this value allows elements that are not normally tabbable to become tabbable. This is the most useful value of `tabindex`.
-- `tabindex="-1"` — this allows not normally tabbable elements to receive focus programmatically, e.g., via JavaScript, or as the target of links.
-
-While the above addition allows us to tab to the buttons, it does not allow us to activate them via the <kbd>Enter</kbd>/<kbd>Return</kbd> key. To do that, we had to add the following bit of JavaScript trickery:
-
-```js
-document.onkeydown = function (e) {
-  if (e.key === "Enter") {
-    // The Enter/Return key
-    document.activeElement.click();
-  }
-};
-```
-
-Here we add a listener to the `document` object to detect when a button has been pressed on the keyboard. We check what button was pressed via the event object's [`key`](/en-US/docs/Web/API/KeyboardEvent/key) property; if the key pressed is <kbd>Enter</kbd>/<kbd>Return</kbd>, we run the function stored in the button's `onclick` handler using `document.activeElement.click()`. [`activeElement`](/en-US/docs/Web/API/Document/activeElement) which gives us the element that is currently focused on the page.
-
-This is a lot of extra hassle to build the functionality back in. And there's bound to be other problems with it. **Better to just use the right element for the right job in the first place.**
 
 #### Meaningful text labels
 
