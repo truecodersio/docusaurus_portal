@@ -3,14 +3,6 @@ title: "Exercise: Git Merge Conflict Resolution"
 slug: "/git-merge-conflict-resolution-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="">
-  <source src="" type="video/mp4" />
-</video>
-
---- -->
-
 ## Steps
 
 Fork and Clone this repository: [MergeConflictExercise](https://github.com/mvdoyle/MergeConflictExercise)

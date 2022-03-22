@@ -3,14 +3,6 @@ title: "HTML Intro"
 slug: "/html-intro"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/517342331/4c1f184265" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 **HyperText Markup Language**, or **HTML**, is the official language of the World Wide Web and was first widely introduced in 1990. HTML was originally created to allow those who were not specialized in SGML (Standard Generalized Markup Language) to publish and exchange scientific and other technical documents. HTML especially facilitated this exchange by incorporating the ability to link documents electronically using hyperlinks. Hypertext documents are interconnected by hyperlinks, which are typically activated by a mouse click, keypress, or by touching the screen. The first publicly available description of HTML was a document called “HTML Tags”, first mentioned on the Internet by Tim Berners-Lee in late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML.

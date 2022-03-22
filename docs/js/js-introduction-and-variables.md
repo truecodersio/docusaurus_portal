@@ -3,14 +3,6 @@ title: "JS Introduction and Variables"
 slug: "/js-introduction-and-variables"
 ---
 
-Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504606565/251f783c19" type="video/mp4" />
-</video>
-
----
-
 ## Brief Introduction to JavaScript
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is a programming used primarily by Web browsers to create a dynamic and interactive experience for the user. Most of the functions and applications that make the Internet indispensable to modern life are coded in some form of JavaScript. In the past, Web pages were static, offering little user interaction beyond clicking links and loading new pages. For the first time, JavaScript enabled animation, adaptive content and form validation on the page. Now, most modern browsers support the latest JavaScript updates.
@@ -33,9 +25,18 @@ We use variables to provide a way of labeling data with a descriptive name, so o
 
 ### Variables
 
-**Variables** are used to store information to be referenced and manipulated in a computer program.
+**Variables** are used to store information to be referenced and manipulated in a computer program. A variable is essentially a memory location where a _value_ is stored. A variable is referred to by an _identifier_, or name, and can hold a JavaScript value of any type.
 
-> NOTE: Naming variables can be one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader.
+Programming languages require certain naming conventions for variable identifiers. JavaScript requires the following rules:
+
+- A JavaScript identifier must start with a letter, underscore (`_`), or dollar sign (`$`). Subsequent characters can also be digits (`0–9`)
+- Because JavaScript is case sensitive, `apple`, `Apple`, and `APPLE` are all different names
+- Multi-word identifiers should be _camel cased_, where each new word is capitalized (ex: `thisIsCamelCased`)
+  - Although camel casing is popular in JavaScript, it is _not required_. Alternatives to camel casing are _Pascal Casing_ (ex: `ThisIsPascalCasing`) or underscores (ex: `this_uses_underscores_for_each_space`)
+- Some examples of valid names are: `Number_hits`, `temp99`, `$credit`, `_name`, and `topScore`
+- You can use most of ISO 8859-1 or Unicode letters such as `å` and `ü` in identifiers. (For more details, see [this blog post](https://mathiasbynens.be/notes/javascript-identifiers-es6).) You can also use the [Unicode escape sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals) as characters in identifiers.
+
+> NOTE: Naming variables can be one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader. A reader should be able to read a variable name and understand its use in your program without supplemental documentation. This is one way to make your code _self documenting_.
 
 When you assign a variable, you use the `=` assignment operator.
 
@@ -45,16 +46,9 @@ The name of the variable goes on the left and the value you want to store in the
 let x = 7;
 ```
 
-The names of variables, called [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier), conform to certain rules:
-
-- A JavaScript identifier must start with a letter, underscore (\_), or dollar sign ($). Subsequent characters can also be digits (0–9).
-- Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) as well as "a" through "z" (lowercase).
-- You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. (For more details, see [this blog post](https://mathiasbynens.be/notes/javascript-identifiers-es6).) You can also use the [Unicode escape sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals) as characters in identifiers.
-- Some examples of legal names are: `Number_hits`, `temp99`, `$credit`, and `_name`.
-
 ## How
 
-### Declaring Variables
+### Declaring and Assigning Variables
 
 You can declare a variable with one of three **declaration keywords**:
 

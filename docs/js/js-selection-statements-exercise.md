@@ -3,15 +3,6 @@ title: "Exercise: JS Selection Statements"
 slug: "/js-selection-statements-exercise"
 ---
 
-<!--
-Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984430/6429105714" type="video/mp4" />
-</video>
-
---- -->
-
 ## Objective
 
 Your objective is to practice JavaScript selection statements with number guessing validation logic. The user should be prompted to give a number guess, and receive feedback whether the number they guessed was the correct number or not.

@@ -3,14 +3,6 @@ title: "Exercise: Git Intro"
 slug: "/git/git-intro-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="">
-  <source src="" type="video/mp4" />
-</video>
-
---- -->
-
 ## Exercise 1
 
 Go to katacoda.com and complete scenario 1:

@@ -3,16 +3,6 @@ title: "Exercise: CSS Intro"
 slug: "/css-intro-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/510955954/8fe66e4b92" type="video/mp4" />
-</video>
-
---- -->
-
-# Exercise
-
 ## Objective
 
 Your objective is to style your html portfolio with an external css stylesheet.

@@ -3,14 +3,6 @@ title: "HTML Forms and Tables"
 slug: "/html-forms-and-tables"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/512728838/1f2b5d7393" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 Every element has a default display value depending on the type of element you are using.

@@ -19,6 +19,11 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Introductions to Web Development",
+      items: ["extras/internet-intro", "extras/intro-to-frontend"],
+    },
+    {
+      type: "category",
       label: "HTML and CSS",
       items: [
         "html/html-intro",

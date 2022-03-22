@@ -9,6 +9,8 @@ The objective is to use the Node `fs` module to work with the file system throug
 
 ## Steps
 
+Exercise Repo: [Node FS](https://github.com/Bryantellius/node_fs)
+
 1. Create a new project folder called node_fs
 2. Inside of node_fs, create the 4 following js files:
    - `createFile.js`

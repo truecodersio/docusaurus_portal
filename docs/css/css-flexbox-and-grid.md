@@ -3,14 +3,6 @@ title: "CSS Flexbox and Grid"
 slug: "/css-flexbox-and-grid"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/512728838/1f2b5d7393" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 Today, not every user is viewing your web app with the same size screen. In fact, users will be viewing your web pages with MANY different devices that all have varying device-width and device-height. This means that you need to account for each possible view that a user has on your apps. Thus, you need to add responsiveness to your web pages.

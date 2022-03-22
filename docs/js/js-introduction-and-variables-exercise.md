@@ -3,14 +3,6 @@ title: "Exercise: JS Introduction and Variables"
 slug: "/js-introduction-and-variables-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504606565/251f783c19" type="video/mp4" />
-</video>
-
---- -->
-
 ## Objective
 
 Your objective is to begin using variables to store and pass values throughout your program.

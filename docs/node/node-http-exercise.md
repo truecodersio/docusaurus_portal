@@ -9,6 +9,8 @@ The objective is to create a server that responds to requests on several routes.
 
 ## Steps
 
+Exercise Repo: [Node HTTP](https://github.com/Bryantellius/node_http)
+
 1. Create a project folder named ‘node_http’
 2. Create a new file named ‘server.js’
 3. Import the http module

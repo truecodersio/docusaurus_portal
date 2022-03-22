@@ -3,25 +3,13 @@ title: "Exercise: JS Operators"
 slug: "/js-operators-exercise"
 ---
 
-<!-- Lecture Video Part 1
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984084/bee103445e" type="video/mp4" />
-</video>
-
-Lecture Video Part 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984217/a665a7c3cc" type="video/mp4" />
-</video>
-
---- -->
-
 ## Objective
 
 Your objective is to practice using and reading operators and operation results between JavaScript values.
 
 ## Steps
+
+Exercise Repo: [JavaScript Operators](https://github.com/Bryantellius/JavaScript_Operators)
 
 ### Exercise 1
 

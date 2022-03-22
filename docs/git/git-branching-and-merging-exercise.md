@@ -3,14 +3,6 @@ title: "Exercise: Git Branching and Merging"
 slug: "/git-branching-and-merging-exercise"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="">
-  <source src="" type="video/mp4" />
-</video>
-
---- -->
-
 ## Exercise 1: Interactive Tutorial
 
 [Katacode's Git Section](https://www.katacoda.com/courses/git) \*complete scenario 6

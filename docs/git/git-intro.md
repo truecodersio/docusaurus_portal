@@ -3,14 +3,6 @@ title: "Git Intro"
 slug: "/git-intro"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls  poster="">
-  <source src="" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 We cover Git because it is a **Distributed Version Control System**. Distributed means there is no central server required, so work can be done “Offline” simultaneously with someone else also working offline. In the past, with traditional **Centralized Version Controls Systems**, two people editing a file was very difficult and sometimes whomever saved the file last would overwrite someone else's work.
@@ -93,7 +85,7 @@ With **Remote Repositories** we usually use these git commands:
 
 ### Staging with git add
 
-The **git add** command adds a change in the working directory to the **staging area**. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit THere are two ways to add a file(s) to the staging area:
+The **git add** command adds a change in the working directory to the **staging area**. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit There are two ways to add a file(s) to the staging area:
 
 - `git add <filename>` - add a specific file to the staging area
 - `git add .` - add all modified files to the staging area. the period is what chooses all files

@@ -3,14 +3,6 @@ title: "CSS Intro"
 slug: "/css-intro"
 ---
 
-Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/510955954/8fe66e4b92" type="video/mp4" />
-</video>
-
----
-
 ## Why
 
 So why use CSS? CSS helps you to keep the informational content of a document separate from the details of how to display it. The details of how to display the document are known as its style. You keep the style separate from the content so that you can avoid duplication, make maintenance easier, and use the same content with different styles for different purposes.

@@ -9,6 +9,8 @@ The objective is to become familiar with using streams in Node.js. You'll create
 
 ## Steps
 
+Exercise Repo: [Node Streams](https://github.com/Bryantellius/node_streams)
+
 ### Part 1
 
 1. In VS Code, create and open a new folder named “node_streams”
