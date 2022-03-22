@@ -58,9 +58,9 @@ The names of variables, called [identifiers](https://developer.mozilla.org/en-US
 
 You can declare a variable with one of three **declaration keywords**:
 
-1. `var` - creates a block-scoped variable whose value can be reassigned
-2. `let` - creates a function-scoped variable whose value can be reassigned
-3. `const` - creates a function-scoped variable whose value cannot be reassigned
+1. `var` - creates a **function**-scoped variable whose value can be reassigned
+2. `let` - creates a **block**-scoped variable whose value can be reassigned
+3. `const` - creates a **block**-scoped variable whose value cannot be reassigned
 
 Examples:
 
