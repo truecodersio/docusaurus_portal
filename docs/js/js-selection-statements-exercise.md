@@ -19,7 +19,7 @@ Clone the exercise repo: [JavaScript Selection Statements](https://github.com/tr
 4. Create an else-if statement that if the number is higher than the initial value, print out `"too high"`.
 5. Create an else statement that prints out `"Congratulations!!!"`.
 
-> `window.prompt()` will use display a popup dialog box in the brower with a prompt (text displayed to the user based on the string you include in parentheses are prompt), and an input field where the user can give an answer (which you will receive as a string result from the method call).
+> `window.prompt()` will be used to display a popup dialog box in the browser with a prompt (text displayed to the user based on the string you include in parentheses or prompt), and an input field where the user can give an answer (which you will receive as a string result from the method call).
 > Ex: `let userAnswer = window.prompt("What is your favorite color?");`
 
 ## Exercise 2
