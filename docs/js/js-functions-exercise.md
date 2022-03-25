@@ -70,7 +70,7 @@ For example:
 
 ### Exercise 5: Data Plan Status
 
-Write an function that will display feedback on cell phone data usage. Cell phone
+Write a function that will display feedback on cell phone data usage. Cell phone
 plans for this particular company give you a certain amount of data every 30 days
 which must be used or they are lost (no rollover). We want to track the average amount of data
  used per day and inform the user if they are using too much data or can
