@@ -53,8 +53,8 @@ the Cartesian plane, and prints out a message indicating if the point (x, y) lie
  For example:
 
  - (0, 2) is on the x axis
- - (1, 2) is in Quadrant 2
- - (-6, 18) is in Quadrant 1
+ - (1, 2) is in Quadrant 1
+ - (-6, 18) is in Quadrant 2
 
 ### Exercise 4: What type of triangle?
 
