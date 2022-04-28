@@ -124,6 +124,7 @@ module.exports = {
         "express/express-routing-exercise",
         "express/express-and-mysql",
         "express/express-and-mysql-exercise",
+        "express/custom-api-project",
       ],
     },
     {
