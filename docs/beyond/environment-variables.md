@@ -25,7 +25,9 @@ DB_SCHEMA=bestbuy
 
 ## How
 
-We specify environment variables in a ‘.env’ file. During application initialization, the environment variables are loaded into process.env. From there, we can access the variables with ‘process.env.VARIABLE_NAME’.
+### Server Side
+
+We specify environment variables in a `.env` file. During application initialization, the environment variables are loaded into process.env. From there, we can access the variables with `process.env.VARIABLE_NAME`.
 
 Before we get started, we’ll use an npm package, `dotenv`, in our projects. Install that now.
 
@@ -72,6 +74,19 @@ const connection = mysql.createPool(config.mysql);
 
 // rest of db/models/index.js file ...
 ```
+
+### Client Side (React)
+
+Since client side code is completely visible to the user, you won't be able to store secret values as environment variables, but you can still set them up to be read from a .env as more or less _configuration_ values.
+
+In react, name all of your environment variables starting with `REACT_APP_` in your `.env` files like the following:
+
+```txt
+REACT_APP_SERVER_URL=http://localhost:5000/api/v1
+REACT_APP_PUBLIC_KEY=abc123
+```
+
+### Wrapping Up
 
 Make sure to add `.env` to your `.gitignore` file so that you don’t push secret information to Github.
 
