@@ -127,15 +127,15 @@ module.exports = {
         "express/custom-api-project",
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "Beyond the Basics",
-    //   items: [
-    //     "beyond/environment-variables",
-    //     "beyond/typescript-intro",
-    //     "beyond/fullstack-template",
-    //     "beyond/user-authentication",
-    //   ],
-    // },
+    {
+      type: "category",
+      label: "Full Stack",
+      items: [
+        // "beyond/environment-variables",
+        // "beyond/typescript-intro",
+        "beyond/fullstack-template",
+        // "beyond/user-authentication",
+      ],
+    },
   ],
 };
