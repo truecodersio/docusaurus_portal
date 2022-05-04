@@ -64,7 +64,7 @@ The way we create an HTML form is by using the HTML `<form>` element:
   <input type="text" id="fname" name="fname" /><br />
   <label for="fname">Last Name</label><br />
   <input type="text" id="lname" name="lname" /><br />
-  <input type="submit" value="Submit" />
+  <button type="submit">Submit</button>
 </form>
 ```
 
