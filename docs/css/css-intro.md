@@ -175,7 +175,25 @@ span {
 }
 ```
 
-Click [here](https://www.w3schools.com/css/) for more css tutorials
+### Common CSS Properties
+
+| Property | Effect | Example |
+| --- | --- | --- |
+| color | text color | `black` |
+| font-size | text size | `20px` |
+| font-weight | text boldness | `800` |
+| text-align | text aligment within an element | `center` |
+| background-color | background color | `#0094c8` |
+| margin | shorthand for margin-top, -right, -bottom, -left | `10px 12px 14px 16px` |
+| padding | shorthand for padding-top, -right, -bottom, -left | `10px 12px 14px 16px` |
+| border | element border | `1px solid black` |
+| width | the width of an element | `50px` | 
+| height | the height of an element | `40px` |
+| max-width | the maximum width of an element | `600px` |
+| max-height | the maximum height of an element | `400px` |
+| display | changes the display behavior of an element | `block`, `inline`, `inline-block` |
+
+Visit [w3schools](https://www.w3schools.com/css/) for more css tutorials.
 
 ## Takeaways
 
