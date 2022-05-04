@@ -119,9 +119,7 @@ The List Item element, `<li></li>`, is used to add items to an unordered or orde
   <article>
     <section>
       <h2>Sub Heading</h2>
-      <div>
-        <p>Lorem ipsum...</p>
-      </div>
+      <p>Lorem ipsum...</p>
     </section>
     <section>
       <h2>Sub Heading</h2>

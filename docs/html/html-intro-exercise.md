@@ -41,10 +41,10 @@ Steps are to be completed under the div with `id="exercise3"`
 Steps are to be completed under the div with `id="exercise4"`
 
 1. Edit the **paragraph** element's text content so that:
-   - the word "span" is enclosed in a **span** element
-   - the word "underlined" is enclosed in an **underline** element
-   - the word "italicized" is enclosed in an **emphasis** element
-   - the word "bolded" is enclosed in an **strong** element
+   - the word "Bredon" is enclosed in a **span** element
+   - any word "play" is enclosed in an **underline** element
+   - any word "beautiful" is enclosed in an **emphasis** element
+   - any word "point" is enclosed in an **strong** element
 
 ## Exercise 5
 
@@ -54,10 +54,11 @@ Steps are to be completed under the div with `id="exercise5"`
    - You will need to use
      - **one main element**
      - **three section elements**
+     - **one article element**
      - **one header element**
-     - **one nav element**
-     - **one unordered list element**
-     - **three list item elements**
-     - **three anchor elements**
+     - **two nav element**
+     - **two unordered list element**
+     - **five list item elements**
+     - **five anchor elements**
      - **one footer element**
-   - To be completed, you should only have **three division elements** and **zero span elements** (not including the div with `id="exercise5"`)
+   - To be completed, you should only have **one division element** and **zero span elements** (not including the div with `id="exercise5"`)
