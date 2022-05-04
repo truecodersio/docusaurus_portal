@@ -79,10 +79,13 @@ Here are some examples:
 | Type                      | Description                                                      |
 | ------------------------- | ---------------------------------------------------------------- |
 | `<input type="text">`     | Displays a single-line text input field                          |
+| `<input type="email">`     | Displays a single-line email input field                          |
+| `<input type="tel">`     | Displays a single-line telephone number input field                          |
+| `<input type="color">`     | Displays a color picker field                          |
+| `<input type="date">`     | Displays a date picker field represented by a calendar                          |
 | `<input type="radio">`    | Displays a radio button (for selecting one of many choices)      |
 | `<input type="checkbox">` | Displays a checkbox (for selecting zero or more of many choices) |
 | `<input type="submit">`   | Displays a submit button (for submitting the form)               |
-| `<input type="button">`   | Displays a clickable button                                      |
 
 ## How
 
