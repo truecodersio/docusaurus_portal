@@ -137,5 +137,16 @@ module.exports = {
         // "beyond/user-authentication",
       ],
     },
+    {
+      type: "category",
+      label: "Study",
+      items: [
+        "study/javascript-questions",
+        "study/react-questions",
+        "study/node-questions",
+        "study/sql-questions",
+        "study/soft-skill-questions",
+      ],
+    },
   ],
 };

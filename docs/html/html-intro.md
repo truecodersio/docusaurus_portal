@@ -42,16 +42,16 @@ The **Document Object Model** (**DOM**) is the data representation of the object
 
 A Web page is a document.This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page. Each HTML page consists of a set of **tags** (also called **elements**), which you can refer to as the building blocks of web pages. They create a hierarchy that structures the content into sections, paragraphs, headings, and other content blocks. Most HTML elements have an opening and a closing that use the `<tag></tag>` syntax. HTML tags have two main types: **block-level** and **inline tags**.
 
-- **Block-level elements** take up the full available space and always start a new line in the document. Headings `<h1></h1>` and paragraphs `<p></p>` are a great example of block tags.
-- **Inline elements** only take up as much space as they need and don’t start a new line on the page. They usually serve to format the inner contents of block-level elements. Links and emphasized strings are good examples of inline tags.
+- **Block-level elements** take up the full available space and always start a new line in the document. Headings `<h1></h1>` and paragraphs `<p></p>` are a great example of block-level elements.
+- **Inline elements** only take up as much space as they need and don’t start a new line on the page. They usually serve to format the inner contents of block-level elements. Links and emphasized strings are good examples of inline elements.
 
 ### Block-Level Tags
 
-The three block level tags every HTML document needs to contain are `<html>`, `<head>`, and `<body>`.
+The three block level elements every HTML document needs to contain are `<html>`, `<head>`, and `<body>`.
 
-- The `<html></html>` tag is the highest level element that encloses every HTML page.
-- The `<head></head>` tag holds meta information such as the page’s title and charset.
-- The `<body></body>` tag encloses all the content that appears on the page.
+- The `<html></html>` element is the highest level element that encloses every HTML page.
+- The `<head></head>` element holds meta information such as the page’s title and charset.
+- The `<body></body>` element encloses all the content that appears on the page.
 
 ```html
 <html>
@@ -64,23 +64,91 @@ The three block level tags every HTML document needs to contain are `<html>`, `<
 </html>
 ```
 
-The Heading tags, `<h1></h1>`, are another common block-level tag and they range from `<h1></h1>` to `<h6></h6>`. The h1 tag is the largest and the h6 tag is the smallest.
+The Heading elements, `<h1></h1>`, are another common block-level tag and they range from `<h1></h1>` to `<h6></h6>`. The h1 element is the largest and the h6 element is the smallest.
 
 ![alt_text](../assets/lectures/html/displayed-headings.png)
 
-The Paragraph tag, `<p></p>`, is used to enclose text
+The Paragraph element, `<p></p>`, is used to enclose text
 
 ![alt_text](../assets/lectures/html/displayed-paragraphs.png)
 
-The Division tag, `<div></div>`, is a container which usually contains several other HTML elements within it, even including other div tags (nesting elements within elements).
+The Division element, `<div></div>`, is a generic container which usually contains several other HTML elements within it, even including other div elements (nesting elements within elements).
+
+The Main element, `<main></main>`, is a container used to contain the _main content_ of a web page.
+
+The Section element, `<section></section>`, is a container used to contain a section of the _main content_.
+
+The Article element, `<article></article>`, is a container used to contain any _article content_. A perfect example of this would be a blog or news article.
+
+The Aside element, `<aside></aside>`, is a container used to contain any content that is _aside_ or _ancillary_ to the _main content_.
+
+The Header element, `<header></header>`, is a container used to contain any heading or top-level content of a web page.
+
+The Nav element, `<nav></nav>`, is a container used to contain navigation links. Although this element can be found anywhere on a web page, it is usually found in the header element for top-level navigation.
+
+The Footer element, `<footer></footer>`, is a container used to contain footer content. This can be site links, copyright, attribution, etc.
+
+The Unordered List element, `<ul></ul>`, is a way to represent a list of _unordered_ information.
+
+The Ordered List element, `<ol></ol>`, is a way to represent a list of _ordered_ information.
+
+The List Item element, `<li></li>`, is used to add items to an unordered or ordered list.
 
 ```html
-<div>
-  <h1>HTML Heading</h1>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/projects">Projects</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Main Heading</h1>
+    <p>Author.. Bio...</p>
+  </section>
+  <article>
+    <section>
+      <h2>Sub Heading</h2>
+      <p>Lorem ipsum...</p>
+    </section>
+    <section>
+      <h2>Sub Heading</h2>
+      <p>Lorem ipsum...</p>
+      <div>
+        <h3>Another Sub Heading</h3>
+        <p>Lorem ipsum...</p>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <nav>
+    <ul>
+      <li>
+        <a href="/privacy">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="/terms">Terms and Conditions</a>
+      </li>
+    </ul>
+  </nav>
+
   <div>
-    <p>Lorem ipsum...</p>
+    <p>Powered by 🕯️</p>
+    <p>&copy; TrueCoders 2021-24</p>
   </div>
-</div>
+</footer>
 ```
 
 ### Inline Tags
@@ -99,10 +167,10 @@ Many inline tags are used to format text. For example, a `<strong></strong>` tag
 </div>
 ```
 
-Images are inline elements too. You can add one using `<img>` without any closing tag. But you will also need to use the `src` attribute to specify the image path, for example:
+Images are inline elements too. You can add one using `<img>` without any closing tag. But you will also need to use the `src` attribute to specify the path to the image, for example:
 
 ```html
-<img src="/html/truecoders.jpg" alt="TrueCoders example image" />
+<img src="./html/truecoders.jpg" alt="TrueCoders example image" />
 ```
 
 For a comprehensive list of all HTML tags [w3schools](https://www.w3schools.com/tags/).
@@ -135,7 +203,8 @@ This is meant to assist search engines and browsers. Example of english as the l
 
 ```html
 <!DOCTYPE html>
-<html lang="”en”">
+<html lang="en">
+  <head></head>
   <body></body>
 </html>
 ```
