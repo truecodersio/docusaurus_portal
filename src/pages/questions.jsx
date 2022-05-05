@@ -2,33 +2,42 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Layout from "@theme/Layout";
 
-const question = {
-  snippetA: `<img alt="HTML Best Practices" src="/img/logo.png">\n<hr />`,
-  snippetB: `<img alt="HTML Best Practices" src="/img/logo.png">\n<hr>`,
-  answer: "snippetA",
-};
+const questions = [
+  {
+    definition: `An Array method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.`,
+    term: `concat`,
+  },
+  {
+    definition: `An Array method shallow copies part of an array to another location in the same array and returns it without modifying its length.`,
+    term: `copyWithin`,
+  },
+  {
+    definition: `An Array method returns a new Array Iterator object that contains the key/value pairs for each index in the array.`,
+    term: `entries`,
+  },
+];
 
 const WelcomeCard = ({ onClick }) => {
   return (
     <div className="card-demo">
       <div className="card p-3">
         <div className="card__header">
-          <h1>HTML Best Practices</h1>
+          <h1>The Gauntlet</h1>
         </div>
         <div className="card__body">
           <p>
-            You will be show code snippets that contain good and bad practices.
-            Answer each question by selecting the <em>good practice</em>{" "}
-            snippet.
+            You will be shown a question in the form of a definition. Answer
+            each question by providing the term that <em>best</em> matches the
+            definition.
           </p>
-          <p>Let's see what've you learned!</p>
+          <p>Ready to enter the gauntlet?</p>
         </div>
         <div className="card__footer">
           <button
             className="button button--secondary button--block"
             onClick={onClick}
           >
-            Get Started
+            Enter
           </button>
         </div>
       </div>
@@ -36,79 +45,92 @@ const WelcomeCard = ({ onClick }) => {
   );
 };
 
-const QuestionCard = ({ snippetA, snippetB, answer, explanation, onNext }) => {
+const QuestionCard = ({ definition, term, onNext }) => {
   const [showAnswer, setShowAnswer] = useState(false);
+  const [answer, setAnswer] = useState("");
   const [isCorrect, setIsCorrect] = useState(null);
 
-  const onAnswer = (correct) => {
-    setIsCorrect(correct);
-    setShowAnswer(true);
+  const onAnswer = (e) => {
+    e.preventDefault();
+
+    if (showAnswer) {
+      onNext(isCorrect);
+      setShowAnswer(false);
+      setIsCorrect(null);
+      setAnswer("");
+    } else {
+      setIsCorrect(answer == term);
+      setShowAnswer(true);
+    }
   };
 
   return (
     <div className="card-demo">
       <div className="card p-3">
+        <small>Question</small>
         <div className="card__header">
-          <h1>Select the best practice...</h1>
+          <p className="h3">{definition}</p>
         </div>
-        {showAnswer ? (
-          <>
-            <div className="card__body">
-              <pre
-                className={
-                  answer == "snippetA" ? "border-success" : "border-danger"
-                }
+        <hr />
+        <div className="card__body">
+          <form onSubmit={onAnswer}>
+            {!showAnswer ? (
+              <input
+                className={`form-control`}
+                value={answer}
+                onChange={(e) => setAnswer(e.target.value)}
+                readOnly={showAnswer}
+              />
+            ) : (
+              <p
+                className={`rounded p-1 ${
+                  isCorrect ? "border-success" : "border-danger"
+                }`}
               >
-                <code>{snippetA}</code>
-              </pre>
-              <hr />
-              <pre
-                className={
-                  answer == "snippetB" ? "border-success" : "border-danger"
-                }
-              >
-                <code>{snippetB}</code>
-              </pre>
-            </div>
-            <div className="card__footer">
-              <p>{explanation}</p>
-              <button
-                className="button button--secondary button--block"
-                onClick={onNext}
-              >
-                Next
-              </button>
-            </div>
-          </>
-        ) : (
-          <div className="card__body">
-            <pre
-              className="answer-hover"
-              onClick={() => onAnswer(answer == snippetA)}
+                {isCorrect ? (
+                  <span>{answer}</span>
+                ) : (
+                  <>
+                    <s>{answer}</s> <span>{term}</span>
+                  </>
+                )}
+              </p>
+            )}
+            <button
+              className="button button--secondary button--block"
+              type="submit"
             >
-              <code>{snippetA}</code>
-            </pre>
-            <hr />
-            <pre
-              className="answer-hover"
-              onClick={() => onAnswer(answer == snippetB)}
-            >
-              <code>{snippetB}</code>
-            </pre>
-          </div>
-        )}
+              {showAnswer ? "Proceed" : "Answer"}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
 };
 
 const Questions = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [gameStatus, setGameStatus] = useState("start");
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
 
+  const statuses = {
+    start: () => <WelcomeCard onClick={onStart} />,
+    play: () => (
+      <QuestionCard {...questions[currentQuestion]} onNext={onNext} />
+    ),
+    end: () => <p>Game Over. Your Score: {score}</p>,
+  };
+
   const onStart = () => {
-    setIsPlaying(true);
+    setGameStatus("play");
+  };
+
+  const onNext = (isCorrect) => {
+    setScore(isCorrect ? 1 : -1);
+    let nextIdx = currentQuestion + 1;
+    if (questions[nextIdx]) setCurrentQuestion(nextIdx);
+    else setGameStatus("end");
   };
 
   return (
@@ -117,13 +139,7 @@ const Questions = () => {
         <section className={styles.features}>
           <div className="container">
             <div className="row">
-              <div className="col col--6 mx-auto">
-                {isPlaying ? (
-                  <QuestionCard {...question} />
-                ) : (
-                  <WelcomeCard onClick={onStart} />
-                )}
-              </div>
+              <div className="col col--6 mx-auto">{statuses[gameStatus]()}</div>
             </div>
           </div>
         </section>
