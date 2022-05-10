@@ -146,6 +146,38 @@ The `minmax(min, max)` function determines a size range greater than or equal to
 
 Now our columns will always be at least `200px`, but if there is more space, our grid will distribute the space equally to each of the columns, as the columns become 1 `fr` instead of `200px`.
 
+### Relative Units and Media Queries
+
+Up to this point, we've used many static units for sizing elements, padding, margin, border, etc. If we are trying to accomplish a responsive web design, _responsive units_ are very convenient.
+
+| Value | Description |
+| --- | --- |
+| `%` | percentage of the container's size |
+| `em` |	ratio size based on the cascaded font-size |
+| `rem` |	ratio size based on the root font-size |
+| `vw` |	percentage of the viewport width |
+| `vh` |	percentage of viewport height |
+| `vmin` |	percentage of viewport smaller dimension |
+| `vmax` |	percentage of viewport larger dimension |
+
+Along with relative units, we can use _media queries_ to apply specific rulesets based on the size of the media.
+
+For example, if we wanted the width of our sidebar to be 30% of the container's width on laptop or desktop screens, but 5% on tablet or mobile devices, we could add the following media query:
+
+```css
+.sidebar {
+  width: 5%;
+}
+
+@media only screen and (min-width: 998px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+```
+
+Above we have a ruleset applied to the element with classname `sidebar`. The width is set to 5% of the container's width. We also have a media query that checks for the viewport to have _atleast_ a width of 998px, and if so, will apply a width of 30% to the `sidebar` element.
+
 ### Bootstrap
 
 > READING RESOURCE: [Bootstrap Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
