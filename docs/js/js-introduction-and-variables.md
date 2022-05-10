@@ -239,6 +239,12 @@ For the most part, it makes sense. You can't perform addition when one of the tw
 
 Type Coercion is central to how JavaScript will interpret and execute your program. We will cover more examples in a future lesson with JavaScript Operators.
 
+## Seeing Your Work
+
+As we begin to learn more about the JavaScript language, it's helpful to see print outs of what we are doing. You can print values to the _browser console_ with `console.log("value")`.
+
+To view the browser console, you can right-click the page and select "Inspect...", or press <kbd>fn + F12</kbd> to open up your browser's _developer tools_. Once you open the developer tools, toggle the tab labeled "Console". There you will see any value passed inbetween parentheses to `console.log("Will be logged to the browser console.")`.
+
 ## Takeaways
 
 1. JavaScript is a _dynamically_ typed, _interpreted scripting_ language used to create rich and dynamic user interfaces and experiences on webpages
