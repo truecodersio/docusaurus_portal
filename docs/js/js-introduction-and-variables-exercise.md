@@ -7,49 +7,49 @@ slug: "/js-introduction-and-variables-exercise"
 
 Your objective is to begin using variables to store and pass values throughout your program.
 
-## Steps
+> To see your work, you can _log_, or print, the values stored in your variables to the _console_. Use `console.log(variableName)` to see your results in the browser console.
 
-### Getting Started
+## Exercise 1: Declaring Variables
 
-Repo Link: [JavaScript Variables](https://github.com/Bryantellius/JavaScript_Variables)
+Steps are to be completed in the `app.js` file.
 
-- Fork this repository to start a new project in your repos folder => `git clone <your github repo url>`
-- `cd JavaScript_Variables` to navigate into your new repo directory
-- Type the command `code .` to open VSC with the `JavaScript_Variables` folder
-- Open the `app.js` file
-- Complete the exercises below
+1. Declare a variable named `firstName` using the `const` keyword
+2. Declare a variable named `lastName` using the `let` keyword, and assign your name as the **string** value
+3. Declare a variable named `age` using the `var` keyword, and assign your age as the **number** value
 
-### Exercise 1: Declaring Variables
+## Exercise 2: Assigning Values to Variables
 
-- Declare a variable named firstName using the `const` keyword, and assign your name as the **string** value
-- Declare a variable named lastName using the `let` keyword, and assign your name as the **string** value
-- Declare a variable named age using the `var` keyword, and assign your age as the **number** value
+Steps are to be completed in the `app.js` file.
 
-### Exercise 2: Working with Strings
+1. Assign your first name as the **string** value to the variable `firstName`
+2. Assign your last name as the **string** value to the variable `lastName`
+3. Assign your age as the **number** value to the variable `age`
 
-- Declare a variable named `fullName` using the `let` keyword, and assign your `firstName` plus your `lastName` as the **string** value
-  - You will need to use **concatenation**, combining two string values with the `+` operator
-  - Ex: `"FirstName" + "LastName" // would equal "FirstNameLastName"`
-- Print the value of `fullName` to the console (to open you browser console in Google Chrome, right-click and press "Inspect" or <kbd>fn+F12</kbd>)
+## Exercise 3: Declaring and Assigning Values to Variables
 
-### Exercise 3
+Steps are to be completed in the `app.js` file.
 
-- Declare a variable named `myStory` using the `let` keyword, and assign a **string** with 3 sentences detailing:
-  - An introduction using your `fullName` variable.
-  - An introduction using your `city` variable.
-  - An introduction using your `favorite` pastime variable.
-- Be sure to use variables as the above answers (declare and assign variables if you haven't already)
-- Print the result of `myStory` to the browser console using `console.log()` (passing any value into the parentheses to be printed)
-- Example
+1. Declare a variable named `language` using the `let` keyword, and assign it the value `"JavaScript"` (string)
+2. Declare a variable named `createdYear` using the `let` keyword, and assign it the value `1995` (number)
+3. Declare a variable named `isCaseSensitive` using the `let` keyword, and assign it the value `true` (boolean)
 
-```js
-let myStory = `Hello! My name is ${fullName}. I live in ${city}. I enjoy ${pastime} and coding!`;
-console.log(myStory);
-```
+## Exercise 4: Declaring and Assigning Values to Variables x2
 
-- BONUS: Complete step two using a **template literal string** instead of concatenation
-  - Template strings can include **placeholders**, `${variableValue}`, where you can inject variable values into a string
+Steps are to be completed in the `app.js` file.
 
----
+1. Declare a variable named `price` using the `let` keyword, and assign it the value `19.99` (number)
+2. Declare a variable named `isOnSale` using the `let` keyword, and assign it the value `false` (boolean)
+3. Declare a variable named `salePercentage` using the `let` keyword, and assign it the value `15` (number)
+4. Declare a variable named `stock` using the `let` keyword, and assign it the value `0` (number)
+5. Declare a variable named `inStock` using the `let` keyword, and assign it the value `false` (boolean)
+6. Declare a variable named `selectedSize` using the `let` keyword, and assign it the value `"M"` (string)
 
-[Exercise Walkthrough Documentation](https://docs.google.com/document/d/1K5U9CyzSl49mFt7KjJB-GGBs16guQBLik4WuqUBFHRA/edit?usp=sharing)
+## Exercise 5: Declaring and Assigning Values to Variables x3
+
+Steps are to be completed in the `app.js` file.
+
+1. Declare a variable named `title` using the `let` keyword, and assign it the value `"Name of the Wind"` (string)
+2. Declare a variable named `author` using the `let` keyword, and assign it the value `"Patrick Rothfuss"` (string)
+3. Declare a variable named `pageCount` using the `let` keyword, and assign it the value `722` (number)
+4. Declare a variable named `bookmark` using the `let` keyword, and assign it the value `456` (number)
+5. Declare a variable named `hasRead` using the `let` keyword, and assign it the value `true` (boolean)
