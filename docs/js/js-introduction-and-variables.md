@@ -27,23 +27,34 @@ We use variables to provide a way of labeling data with a descriptive name, so o
 
 **Variables** are used to store information to be referenced and manipulated in a computer program. A variable is essentially a memory location where a _value_ is stored. A variable is referred to by an _identifier_, or name, and can hold a JavaScript value of any type.
 
+We can create and give a variable a value like so:
+
+```js
+let count = 1;
+```
+
+In the example, we create, or **declare**, a variable named `count`, and give, or **assign**, it a number value with `= 10`.
+
+We gave the variable the name `count`, which is all-_lowercase letters_. We actually can use _uppercase letters_ and even a few _symbols_ in our variable names. 
+
 Programming languages require certain naming conventions for variable identifiers. JavaScript requires the following rules:
 
 - A JavaScript identifier must start with a letter, underscore (`_`), or dollar sign (`$`). Subsequent characters can also be digits (`0–9`)
-- Because JavaScript is case sensitive, `apple`, `Apple`, and `APPLE` are all different names
-- Multi-word identifiers should be _camel cased_, where each new word is capitalized (ex: `thisIsCamelCased`)
-  - Although camel casing is popular in JavaScript, it is _not required_. Alternatives to camel casing are _Pascal Casing_ (ex: `ThisIsPascalCasing`) or underscores (ex: `this_uses_underscores_for_each_space`)
+- Because JavaScript is **case sensitive**, `apple`, `Apple`, and `APPLE` are all different names
+- Multi-word identifiers should be _camel cased_, where each new word is capitalized
+  - Ex: `thisIsCamelCased`
 - Some examples of valid names are: `Number_hits`, `temp99`, `$credit`, `_name`, and `topScore`
-- You can use most of ISO 8859-1 or Unicode letters such as `å` and `ü` in identifiers. (For more details, see [this blog post](https://mathiasbynens.be/notes/javascript-identifiers-es6).) You can also use the [Unicode escape sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals) as characters in identifiers.
 
-> NOTE: Naming variables can be one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader. A reader should be able to read a variable name and understand its use in your program without supplemental documentation. This is one way to make your code _self documenting_.
+> Although camel casing is popular in JavaScript, it is _not required_. Alternatives to camel casing are _Pascal Casing_ (ex: `ThisIsPascalCasing`) or underscores (ex: `this_uses_underscores_for_each_space`)
 
-When you assign a variable, you use the `=` assignment operator.
+Naming variables can be one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader. A reader should be able to read a variable name and understand its use in your program without supplemental documentation. This is one way to make your code _self documenting_.
 
-The name of the variable goes on the left and the value you want to store in the variable goes on the right.
+Like above, you assign a value to a variable by using the `=` _assignment operator_.
+
+The name of the variable goes on the left-hand side and the value you want to store in the variable goes on the right-hand side of the _assignment operator_.
 
 ```js
-let x = 7;
+let name = "Frodo";
 ```
 
 ## How
@@ -75,6 +86,8 @@ var x; // variable that is declared but not assigned a value
 
 ### JavaScript Data Types
 
+Now that we know we can create variable to store data in our programs, well introduce the different types of data we can use in our programs.
+
 #### Primitive Data Types
 
 1. [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
@@ -90,6 +103,7 @@ var x; // variable that is declared but not assigned a value
 3. [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
    - Used for logical values, true or false; yes or no; on or off
    - Ex: `let isOnline = true;`
+
 4. [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
    - Used for any number value; integer, floating point, decimal, etc
@@ -196,19 +210,17 @@ var carName;
 
 #### Duck Typing
 
-Javascript is an **interpreted language**, meaning the interpreter assigns variables a type based on the variable’s value at run-time.
+Javascript is an **interpreted language**, meaning the interpreter assigns variables a type based on the variable’s value at _run-time_.
 
-Moreover, interpreted languages are languages that are not compiled but are parsed upon execution. Javascript and other languages fall into this category, as you don’t have a compile step prior to running. Simply save the script and refresh.
+Moreover, _interpreted languages_ are languages that are not compiled but are parsed upon execution. Javascript and other languages fall into this category, as you don’t have a compile step prior to running. Simply save the script and refresh.
 
-When referring to **Duck Typing**, many use the saying,
-
-> “If it quacks like a duck, walks like a duck...it’s a duck”
+When referring to **Duck Typing**, many use the saying, "If it quacks like a duck, walks like a duck...it’s a duck."
 
 Duck Typing refers to a duck test program. You will test something, if it quacks like a duck, and walks like a duck, it is a duck. If a method responds to any given object call, it passes the _"Duck Test"._
 
 Duck Typing is a feature in JavaScript where the variable attempts to behave in the manner it is used. So if it’s used as a string, it’s a string, etc.
 
-In C# or other _statically typed_ languages, passing methods into objects is deemed suitable based on its type. With duck typing, however, objects are determined whether or not suitable based on what it does, not what it is. It doesn’t matter the type if both objects do the same thing or better yet, have the same capabilities. If the method responds to the object call, basically as long as the object responds **TYPE DOESN’T MATTER!**
+In C# or other _statically typed_ languages, passing methods into objects is deemed suitable based on its type. With duck typing, however, objects are determined whether or not suitable based on what it does, not what it is. It doesn’t matter the type if both objects do the same thing or better yet, have the same capabilities. If the method responds to the object call, basically as long as the object responds _type doesn't matter_.
 
 Duck Typing is _polymorphism_ without hierarchy, dynamic dispatch without _inheritance_ hierarchy, and no explicit _interfaces_. Essentially checking for capability, not compatibility.
 
@@ -216,7 +228,7 @@ Duck Typing is used in many programming languages, Ruby and Python for example, 
 
 #### Type Coercion
 
-Duck Tests in JavaScript involve a core concept called **Type Coercion**. Type Coercion is the interpreted nature of JavaScript to morph a data type from one to another based on the attempt to complete an action. For example, if you try and perform an arithmetic operation between a number and a string, JavaScript will change of the two values to match the other.
+A central pillar of JavaScript involves the core concept called **Type Coercion**. Type Coercion is the interpreted nature of JavaScript to morph a data type from one to another based on the attempt to complete an action. For example, if you try and perform an arithmetic operation between a number and a string, JavaScript will change of the two values to match the other.
 
 For the most part, it makes sense. You can't perform addition when one of the two values isn't even a number. JavaScript recognizes that and will try and interpret your intention to give a result. Let's take a look:
 
