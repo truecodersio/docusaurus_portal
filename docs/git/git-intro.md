@@ -11,7 +11,9 @@ We cover Git because it is a **Distributed Version Control System**. Distributed
 
 While we are using Git, we will be using the command prompt / terminal a lot. Here are a couple of great cheat sheets for Git and GitHub commands:
 
-[Git Reference Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)
+[Unix/Linux Reference Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)
+
+[Windows CMD Reference Sheet](http://www.cs.columbia.edu/~sedwards/classes/2017/1102-spring/Command%20Prompt%20Cheatsheet.pdf)
 
 [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
