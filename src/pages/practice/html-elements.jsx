@@ -1,43 +1,28 @@
 import React, { useState } from "react";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 import Layout from "@theme/Layout";
-
-const questions = [
-  {
-    definition: `An Array method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.`,
-    term: `concat`,
-  },
-  {
-    definition: `An Array method shallow copies part of an array to another location in the same array and returns it without modifying its length.`,
-    term: `copyWithin`,
-  },
-  {
-    definition: `An Array method returns a new Array Iterator object that contains the key/value pairs for each index in the array.`,
-    term: `entries`,
-  },
-];
 
 const WelcomeCard = ({ onClick }) => {
   return (
     <div className="card-demo">
       <div className="card p-3">
         <div className="card__header">
-          <h1>The Gauntlet</h1>
+          <h1>Practice: HTML Elements</h1>
         </div>
         <div className="card__body">
           <p>
-            You will be shown a question in the form of a definition. Answer
-            each question by providing the term that <em>best</em> matches the
-            definition.
+            You will be shown the description of a HTML element. Answer each
+            question by providing the <em>tag name</em> of the element that
+            matches the description.
           </p>
-          <p>Ready to enter the gauntlet?</p>
+          <p>Ready to test your knowledge?</p>
         </div>
         <div className="card__footer">
           <button
             className="button button--secondary button--block"
             onClick={onClick}
           >
-            Enter
+            Begin
           </button>
         </div>
       </div>
