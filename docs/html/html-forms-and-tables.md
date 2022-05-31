@@ -167,7 +167,7 @@ We will adding to our previous form example:
 </html>
 ```
 
-First thing we want to do is add a `<table>` element about our `<form>`:
+First thing we want to do is add a `<table>` element above our `<form>`:
 
 ```html
 <table>
