@@ -9,7 +9,7 @@ Your objective is to practice JavaScript selection statements with number guessi
 
 ## Steps
 
-Clone the exercise repo: [JavaScript Selection Statements](https://github.com/truecodersio/JavaScript_Selection_Statements)
+Clone the exercise repo: [JavaScript Selection Statements](https://github.com/Bryantellius/JavaScript_Selection_Statements)
 
 ## Prerequisites
 
@@ -100,7 +100,3 @@ After you refactor your program to use switch cases inplace of if/else statement
 ```txt
 Product: Large Purple Tank Top
 ```
-
----
-
-[Exercise Walkthrough Documentation](https://docs.google.com/document/u/1/d/1DUrGSTy8XDMChQLx-RCWr2AfAQm4iVkkhGt-673G1bU/edit)
