@@ -26,7 +26,7 @@ const features = [
       <>Schedule 1-on-1 time with an instructor to receive the help you need.</>
     ),
     linkPrompt: "Train",
-    linkUrl: "practice/css-properties",
+    linkUrl: "practice/html-elements", // duplicate to avoid error on current push to prod
   }
 ];
 
