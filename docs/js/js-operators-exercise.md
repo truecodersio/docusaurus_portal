@@ -13,7 +13,7 @@ Exercise Repo: [JavaScript Operators](https://github.com/Bryantellius/JavaScript
 
 ### Exercise 1
 
-1. Declare 2 variables, `a` and `b`, and assign `20` to `a` and `4` to `b`
+1. Declare 2 variables, `a` and `b`, and assign 20 to `a` and 4 to `b`
 2. Declare a variable `add` that uses the `+` operator to store the result of adding the values stored in `a` and `b`
 3. Declare a variable `minus` that uses the `-` operator to store the result of subtracting the values stored in `a` and `b`
 4. Declare a variable `multiply` that uses the `*` operator to store the result of multiplying the values stored in `a` and `b`
@@ -25,45 +25,44 @@ You can print the value of the variables to the browser console (ex: `console.lo
 
 1. Use the following code to answer the questions below:
 
-```js
-let a = 11;
+```
+let num = 11;
 let str = "11";
 let str2 = "eleven";
 let isPresent = true;
-let firstName = "Jackie";
-let lastName = "Chan";
+let firstName = "Frodo";
+let lastName = "Baggins";
 ```
 
-- What is the value of: `a + str`?
-- What is the value of: `a + str2`?
-- What is the value of: `a + isPresent`?
-- What is the value of: `a + firstName`?
-- What is the value of: `a + lastName`?
+- What is the value of: num + str?
+- What is the value of: num + str2?
+- What is the value of: num + isPresent?
+- What is the value of: firstName + num?
+- What is the value of: isPresent + str?
+- What is the value of: firstName + lastName?
 
 Use the code above to test and print the results.
 
-## Exercise 3
+### Exercise 3
 
 1. Use the following code to answer the questions below:
 
-```js
-let d = 5;
-let str3 = "5";
-let str4 = "five";
-let isPresent2 = false;
-let firstName2 = "Robin";
-let lastName2 = "Williams";
+```
+let val = 5;
+let str = "5";
+let str2 = "five";
+let isPresent = false;
 ```
 
-- What is the value of: `d == str3`?
-- What is the value of: `d === str3`?
-- What is the value of: `!isPresent2`?
-- What is the value of: `("eleven" == str4 && d >= str3)`?
-- What is the value of: `(!isPresent2 || isPresent2)`?
-- What is the value of: `0 == false`?
-- What is the value of: `0 === false`?
-- What is the value of: `0 != false`?
-- What is the value of `0 !== false`?
+- What is the value of: val == str?
+- What is the value of: val === str?
+- What is the value of: !isPresent?
+- What is the value of: (“eleven” == str2 && val >= str)?
+- What is the value of: (!isPresent || isPresent)?
+- What is the value of: 0 == false?
+- What is the value of: 0 === false?
+- What is the value of: 0 != false?
+- What is the value of 0 !== false?
 
 Use the code above to test and print the results.
 
