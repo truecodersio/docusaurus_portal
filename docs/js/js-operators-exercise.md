@@ -65,7 +65,3 @@ let isPresent = false;
 - What is the value of 0 !== false?
 
 Use the code above to test and print the results.
-
----
-
-[Exercise Walkthrough Documentation](https://docs.google.com/document/d/1O4dkANafXzl1gzvR4W7sQpQHnayMaULyyE4WPTdFvgw/edit?usp=sharing)
