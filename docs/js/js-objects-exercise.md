@@ -47,6 +47,69 @@ Exercise Repo: [JavaScript Objects and Arrays](https://github.com/Bryantellius/J
 3. Using dot notation, add a method named info to the book object that returns a string that combines the title, pages, and readCount as an informational string. Ex: The Hobbit by J.R.R Tolkien, 295 pages, read 3 times.
 4. After you have added the properties and method to the object, call the book.info() method inside console.log to print out the returned string.
 
----
+### Exercise 3: Reverse a String
 
-[Exercise Walkthrough Documentation](https://docs.google.com/document/d/1VrthmnNsMheDExqlY700AP2oM4RW5fCNmYtEDw-AulQ/edit?usp=sharing)
+You will be give a string sentence. Your task is to reverse _every word_ in the sentence. 
+
+1. Start with the following code:
+
+```js
+let sentence = "The quick brown fox jumps over the lazy dog";
+```
+
+2. Convert the sentence into an array of words
+3. Iterate over each word
+4. Convert each word to an array of characters
+5. Reverse each array of characters and update the array of words
+6. Convert the array of reversed words back into a string
+
+You final result given the starting sentence should be:
+
+```txt
+ehT kciuq nworb xof spmuj revo eht yzal god
+```
+
+### Exercise 4: Parse a CSV
+
+Your task is to parse a csv string into an object.
+
+> _csv_ stands for "Comma Seperated Values", and is a common file type when working and storing table data. Each data field is seperated by a comma, while each row is seperated by a _newline_ (`\n` escape character)
+
+1. Start with the following code:
+
+```js
+let csvData = "name,age\nFrodo,50\nSam,38\nMerry,36\nPippin,26";
+```
+
+2. Parse the string into an array of rows (split based on`\n` newlines)
+3. Split the first row into an array of string headers (result should be `["name", "age"]`)
+4. Iterate over each remaining row in the array
+5. For each row, split the data values (by `,`)
+6. And create an object for each row (or table record)
+7. Assign the values from the parsed row values to `name` and `age` values on the object
+8. Add each new object to a result array (should be defined before the loop block
+
+Your final result should resemble:
+
+```js
+[
+   {
+      name: "Frodo",
+      age: 50
+   },
+   {
+      name: "Sam",
+      age: 38
+   },
+   {
+      name: "Merry",
+      age: 36
+   },
+   {
+      name: "Pippin",
+      age: 36
+   },
+]
+```
+
+---
