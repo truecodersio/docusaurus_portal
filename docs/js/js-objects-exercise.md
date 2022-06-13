@@ -107,7 +107,7 @@ Your final result should resemble:
    },
    {
       name: "Pippin",
-      age: 36
+      age: 26
    },
 ]
 ```
