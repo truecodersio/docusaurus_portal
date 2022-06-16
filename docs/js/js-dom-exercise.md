@@ -28,17 +28,22 @@ Fork and clone [the exercise repository](https://github.com/Bryantellius/JS_DOM-
 - Replace the "Child Node" with a new `<p>` element that reads "New Child Node" using the `replaceChild()` method.
 - Remove the "New Child Node" using the `remove()` method or `removeChild()` method.
 
-### Exercise #4: ANIMATIONS
+### Exercise #4: ELEMENTS FROM AN ARRAY
 
-- Create an animation that makes the box inside the container move from left to right.
-  - Start by Selecting the box inside the container, then incrementing it’s position gradually to create the effect of the box moving across the container.
-- BONUS - Make the red box go all the way around the perimeter of the green box
+Use the following array of values to generate a list on the DOM
 
-> NOTE: Since you can complete this exercise using just CSS3 (and we encourage using CSS for animations as much as possible for modern development), you can complete this using JavaScript or CSS.
+```js
+let list = [ "apples", "bananas", "carrots", "dragon fruit", "eggplant", "fish", "grapes", "honey", "ice bag", "juice (any kind)" ];
+```
+
+- Create an unordered list element
+- Iterate over the array values, and create a list item element for each
+- Append the new list items to the unordered list element
+- Append the unordered list to the `div#container` under exercise 4 
 
 ### Exercise #5: DOM EVENTS
 
-- Write a function called `show` which creates a new div with an alerting message to the user with this message -> "Clicking the button triggers the onclick event, which calls the JS function show()... which alerts the user”
+- Write a function called `show` which creates a new div with an alerting message to the user with this message -> "Clicking the button triggers the onclick event, which calls the JS function show()... which alerts the user"
 - This div should be a 'modal' that covers the main content on the screen
 - BONUS: The modal popup should be able to be closed. Refactor for this functionality
 
