@@ -7,7 +7,9 @@ slug: "react-state-props-exercise"
 
 Your objective is to create squares of different colors appear on the screen. When a square is clicked, it should update to a random color. State and props should be used to achieve this functionality.
 
-## Getting Started
+## Steps
+
+### Getting Started
 
 Repo Link: [React State and Props](https://github.com/Bryantellius/react_props_state)
 
@@ -18,46 +20,41 @@ Repo Link: [React State and Props](https://github.com/Bryantellius/react_props_s
 - Follow the instructions on the `README.md` file to complete exercises
 - Open the `App.jsx` file to get started
 
-## Steps
+### Exercise 1
 
-- In your `App.jsx`
+Complete the following steps in your `App.jsx`
 
-1. Create a variable boxes and assign it an empty array
-2. Create a variable numBoxes and assign it the number 24
-3. Write a loop that iterates from 0 to numBoxes, and pushes a box object to boxes array during each iteration
+1. Assign the array stored in `BOXES` to a property called `boxes` in App state
+2. Create a class method called `getRandomColor` that does the following:
+   - returns a random number between 0 and 255
 
-   ```jsx
-   {
-       id: i,
-       color: `rgb(${this.getRandomColor()}, ${this.getRandomColor()}, ${this.getRandomColor()})`
-   }
-   ```
+### Exercise 2
 
-4. Assign boxes to the App state
-5. Create a method `handleBoxClick` that takes an `HTMLChangeEvent (e)` as a param, and does the following:
-   - Creates a variable newBoxes
-   - Maps through the boxes state
-   - If the box id is equal to the event target id value, then set the box's color value to `rgb(${this.getRandomColor()}, ${this.getRandomColor()}, ${this.getRandomColor()})`
-   - Sets the boxes state equal to `newBoxes`
-6. Earlier we used a `getRandomColor` method. Create this method beneath `handleBoxClick`. It should:
-   - Create a variable `rgb` that is assigned a random number between 1-255
-   - Return `rgb`
-   - This method is called during the creation of the boxes, and during the `onclick` event listener to randomize the box colors
-7. Inside the render method, create a variable `renderBoxes` that maps through the boxes state, and returns a `<Box />` component for each box in the array
-8. You should pass the following props to each Box component:
+Complete the following steps in your `App.jsx`
+
+1. Create a class method called `handleBoxClick` that takes an `HTMLChangeEvent (e)` as a param, and does the following:
+   - Creates a variable `newBoxes`
+   - Maps through the `boxes` state
+   - If the box `id` is equal to the event target id value, then set the box's color value to `rgb(${this.getRandomColor()}, ${this.getRandomColor()}, ${this.getRandomColor()})`
+   - Sets the `boxes` state equal to `newBoxes`
+2. Bind `this.handleBoxClick` to `this.handleBoxClick.bind(this)` in the class constructor
+3. Inside the render method, create a variable `renderBoxes` that maps through the boxes state, and returns a `<Box />` component for each box in the array
+4. You should pass the following props to each Box component:
    - key = box.id
    - id = box.id
    - color = box.color
    - handleClick = this.handleBoxClick
 
-- In your `Box.jsx`
+### Exercise 3
 
-1. Add an onClick attribute to the return div, and pass in the props.handleClick
-2. Add an id attribute to the return div, and assign it the props.id
-3. Add props.color as the span text content
-4. Lastly, add a backgroundColor property to the inline-styling of the return div, and assign it prop.color
+Complete the following steps in your `Box.jsx`
 
-- Your finished product should display 24 squares on the DOM, all with random color values. Each square's background color should randomize when you click on it.
+1. Add an `onClick` attribute to the return div, and pass in the `props.handleClick`
+2. Add an `id` attribute to the return div, and assign it the `props.id`
+3. Add `props.color` as the span text content
+4. Lastly, add a `backgroundColor` property to the inline-styling of the return div, and assign it `prop.color`
+
+Your finished product should display 24 squares on the DOM, all with random color values. Each square's background color should randomize when you click on it.
 
 ---
 
