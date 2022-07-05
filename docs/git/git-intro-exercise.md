@@ -5,26 +5,6 @@ slug: "/git/git-intro-exercise"
 
 ## Exercise 1
 
-Go to katacoda.com and complete scenario 1:
-
-- Go to [katacode's git section](https://www.katacoda.com/courses/git)
-- Under Scenario 1 click Start Scenario
-- Read all the instructions and complete all 5 steps
-
-Topics covered in the tutorial:
-
-- git init
-- git status
-- untracked files
-- git add
-- git commit -m “message”
-- gitignore
-- git diff
-- git diff --staged
-- git log
-
-## Exercise 2
-
 Work with git on a simple pizza delivery algorithm file that covers the steps involved with ordering a pizza, and show how cool git can be with backing up our work:
 
 1. Open terminal / command prompt / git bash on your computer
