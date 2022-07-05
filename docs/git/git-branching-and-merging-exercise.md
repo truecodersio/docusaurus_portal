@@ -3,24 +3,13 @@ title: "Exercise: Git Branching and Merging"
 slug: "/git-branching-and-merging-exercise"
 ---
 
-## Exercise 1: Interactive Tutorial
-
-[Katacode's Git Section](https://www.katacoda.com/courses/git) \*complete scenario 6
-
-Topics covered in the tutorial:
-
-- git checkout
-- branching
-- merging
-- deleting branches
-
-## Exercise 2 Objective
+## Exercise 1 Objective
 
 1. Switch to the test branch and complete additional steps to your algorithm - for example, what if they send you the wrong order?
 2. Commit your additional work and push the test branch to GitHub
 3. Finally, we’ll switch to our local main branch and merge in the changes from the test branch to the main branch
 
-### Steps for Exercise 2
+### Steps for Exercise 1
 
 Using the PizzaAlgo repo from earlier... In the Command prompt / Terminal:
 
