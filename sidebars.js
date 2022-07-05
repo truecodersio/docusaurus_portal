@@ -58,6 +58,7 @@ module.exports = {
         "js/js-oop-exercise",
         "js/js-dom",
         "js/js-dom-exercise",
+        "js/js-dom-exercise-walkthrough",
         "js/js-error-handling",
         "js/js-error-handling-exercise",
         "js/js-promises",
