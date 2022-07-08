@@ -3,15 +3,6 @@ title: "React Lifecycle Methods"
 slug: "react-lifecycle-methods"
 ---
 
-<!--
-Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/511324148/21dd654893" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 Lifecycle methods are special methods built-in to React, used to operate on components throughout their duration in the DOM. For example, when the component mounts, renders, updates, or unmounts. You already know the most important lifecycle method, the render method. Soon you will know a few more, with a good understanding of when to use them and what tasks should be done within them.

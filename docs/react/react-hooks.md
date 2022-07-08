@@ -3,14 +3,6 @@ title: "React Hooks"
 slug: "/react-hooks"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/511784716/81ba606ccf" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 Up until now, we’ve created class components, handled state, passed props, and rendered ReactDOM elements to create applications. Now let’s talk about **React Hooks**.

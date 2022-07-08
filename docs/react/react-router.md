@@ -3,20 +3,6 @@ title: "React Router"
 slug: "/react-router"
 ---
 
-<!-- Lecture Video 1
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/512688952/cf667b10f7" type="video/mp4" />
-</video>
-
-Lecture Video 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/513159042/c08596be42" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 **React Router** is a standard library for **routing in React**. It enables the navigation among views of various components in a **React** Application, allows changing the browser URL, and keeps the UI in sync with the URL

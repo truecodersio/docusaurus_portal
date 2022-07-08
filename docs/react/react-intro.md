@@ -3,20 +3,6 @@ title: "React Intro"
 slug: "react-intro"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510436774/3b57480035" type="video/mp4" />
-</video>
-
-Lecture Video 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510881202/f8287a451e" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 React is one of the most powerful and widely used frontend libraries.

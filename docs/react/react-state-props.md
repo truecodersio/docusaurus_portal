@@ -3,20 +3,6 @@ title: "React State and Props"
 slug: "react-state-props"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510881329/013d63a934" type="video/mp4" />
-</video>
-
-Lecture Video 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510881453/982a3e65a5" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 There is just a little bit more you have to understand to write your first React application. If you’ve done the previous lesson, you should now have a great foundation for the next concepts that you will learn. Make sure you pay attention to this lesson because it covers one of the most important concepts to get you started with React.

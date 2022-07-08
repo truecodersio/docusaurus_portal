@@ -3,15 +3,6 @@ title: "React Router Hooks"
 slug: "/react-router-hooks"
 ---
 
-<!--
-Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/511784716/81ba606ccf" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 With React Router, we can create navigation to different webpages by adding routes, a Routes, and a BrowserRouter. React Router ships with a few hooks that let you access the state of the router and perform navigation from inside your components.
