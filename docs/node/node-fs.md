@@ -57,8 +57,7 @@ http
     // Uses the readFile method from the fs module
     fs.readFile("index.html", function (err, data) {
       if (err) {
-        console.log(err);
-        return;
+        return console.log(err);
       }
       res.writeHead(200, { "Content-Type": "text/html" });
       res.write(data);
@@ -90,8 +89,7 @@ let to_dos = "Clean the house";
 
 fs.appendFile("todo.txt", to_dos, (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log("Successfully appended to file.");
 });
@@ -113,8 +111,7 @@ let contacts = [
 
 fs.writeFile("todo.txt", JSON.stringify(contacts), (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log("Successfully wrote file.");
 });
@@ -129,8 +126,7 @@ const fs = require("fs");
 
 fs.unlink("open.txt", (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log("Successfully deleted file.");
 });
@@ -145,8 +141,7 @@ const fs = require("fs");
 
 fs.rename("HelloWorld.txt", "message.txt", (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log("Successfully renamed file.");
 });
@@ -171,13 +166,12 @@ let foundFolder = fs.existsSync("source");
 if (foundFolder) {
   console.log("Folder already exists!");
 } else {
-  fs.mkdir("source", to_dos, (err, files) => {
+  fs.mkdir("source", (err) => {
     if (err) {
-      console.log(err);
-      return;
+      return console.log(err);
     }
-    console.log(files.join("\n"));
-    console.log("Successfully read folder.");
+    
+    console.log("Successfully created folder.");
   });
 }
 ```
@@ -187,11 +181,11 @@ if (foundFolder) {
 ```js
 const fs = require("fs");
 
-fs.readdir("src", to_dos, (err, files) => {
+fs.readdir("src", (err, files) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
+  
   console.log(files.join("\n"));
   console.log("Successfully read folder.");
 });
@@ -204,8 +198,7 @@ const fs = require("fs");
 
 fs.rename("./source", "./src", (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log("Successfully renamed folder.");
 });
@@ -218,8 +211,7 @@ const fs = require("fs");
 
 fs.rmdir("src", { recursive: true }, (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log("Successfully removed folder.");
 });
@@ -234,10 +226,9 @@ const fs = require("fs");
 
 fs.rm("src", { recursive: true }, (err) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
-  console.log(files.join("\n"));
+  
   console.log("Successfully removed folder.");
 });
 ```
@@ -294,8 +285,7 @@ Then, we need to call the asynchronous version of the readFile() function:
 ```js
 fs.readFile(dataPath, "utf8", (err, data) => {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
   console.log(data);
 });
