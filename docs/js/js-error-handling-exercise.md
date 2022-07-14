@@ -26,7 +26,7 @@ Complete the following in your `app.js` file
 
 1. Enable JavaScript's "Strict Mode" for the _file_
 
-### Exercise 3: Using Try/Catch
+### Exercise 2: Using Try/Catch
 
 Complete the following in your `app.js` file
 

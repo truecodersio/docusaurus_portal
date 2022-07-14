@@ -20,8 +20,10 @@ Repo link: [JavaScript Promises](https://github.com/Bryantellius/JavaScript_Prom
 
 ## Exercise 1
 
+You will start with the following code in your `app.js` file:
+
 ```js
-function watchTurorialCallback(callback, errorCallback) {
+function watchTutorialCallback(callback, errorCallback) {
   let userLeft = false;
 
   if (userLeft) {
@@ -31,7 +33,7 @@ function watchTurorialCallback(callback, errorCallback) {
   }
 }
 
-watchTurorialCallback(
+watchTutorialCallback(
   (message) => {
     console.log(message);
   },
@@ -41,16 +43,21 @@ watchTurorialCallback(
 );
 ```
 
-- The above function can be replicated as a Promise.
-  1. Declare a variable watching and assign it a new promise object
-  2. Inside of the promise constructor, declare a variable named userLeft.
-  3. Add a if/else conditional that checks if userLeft is `true`
-  4. If userLeft is `true`, call the `reject` method with "User left."
-  5. If `false`, call the resolve method with "Thumbs up and subscribe!"
-- Once you have created your new promise:
-  1. Call watching and add a promise chain using `.then` and `.catch`
-  2. Pass in a function callback to `.then` that takes in a message and console.log's the message
-  3. Pass in a function callback to `.catch` that takes in an error and console.log's the error
+The above function can be replicated as a Promise.
+
+1. Declare a variable watching and assign it a new promise object
+2. Inside of the promise constructor, declare a variable named userLeft.
+3. Add a if/else conditional that checks if userLeft is `true`
+4. If userLeft is `true`, call the `reject` method with "User left."
+5. If `false`, call the resolve method with "Thumbs up and subscribe!"
+
+## Exercise 2
+
+Once you have created your new promise:
+
+1. Call watching and add a promise chain using `.then` and `.catch`
+2. Pass in a function callback to `.then` that takes in a message and console.log's the message
+3. Pass in a function callback to `.catch` that takes in an error and console.log's the error
 
 ---
 
