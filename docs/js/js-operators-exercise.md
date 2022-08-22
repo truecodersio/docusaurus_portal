@@ -51,14 +51,14 @@ Use the code above to test and print the results.
 let val = 5;
 let str3 = "5";
 let str4 = "five";
-let isPresent = false;
+let isAwake = false;
 ```
 
 - What is the value of: val == str3?
 - What is the value of: val === str3?
-- What is the value of: !isPresent?
-- What is the value of: (“eleven” == str4 && val >= str3)?
-- What is the value of: (!isPresent || isPresent)?
+- What is the value of: !isAwake?
+- What is the value of: ("eleven" == str4 && val >= str3)?
+- What is the value of: (!isAwake || isAwake)?
 - What is the value of: 0 == false?
 - What is the value of: 0 === false?
 - What is the value of: 0 != false?

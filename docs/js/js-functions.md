@@ -3,12 +3,6 @@ title: "JS Functions"
 slug: "/js-functions"
 ---
 
-Lecture Video
-
-No lecture video available. Coming soon!
-
----
-
 ## Why
 
 In JavaScript, a **function** is a block of code that does a particular task. Often while coding, you’ll find yourself writing the same code statements and expressions repetitively. Functions allow you to assign a block of code, even a sub-program in our project, to be called, or _invoked_, with a single identifier. The use of functions is a central concept in JavaScript programming.
