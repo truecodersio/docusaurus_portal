@@ -3,6 +3,8 @@ title: "Exercise: JS Introduction and Variables"
 slug: "/js-introduction-and-variables-exercise"
 ---
 
+[Exercise Repo](https://github.com/Bryantellius/JavaScript_Variables)
+
 ## Objective
 
 Your objective is to begin using variables to store and pass values throughout your program.
