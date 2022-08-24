@@ -84,11 +84,11 @@ The following example gets all paragraph elements of the page and changes their 
 ```js
 const pElements = document.getElementsByTagName("p");
 for (let ele of pElements) {
-  p.innerHTML = "We were found by our tag name";
+  ele.textContent = "We were found by our tag name";
 }
 ```
 
-The script above grabs all of the `p` elements in the DOM. Then loops through the array returned, and changes each element’s `innerHTML` to "We were found by our tag name!".
+The script above grabs all of the `p` elements in the DOM. Then loops through the array returned, and changes each element’s `textContent` to "We were found by our tag name!".
 
 ### Changing Attributes
 
@@ -127,7 +127,7 @@ let h1 = document.createElement("h1");
 Awesome! But our newly created elements will not show up on the DOM until we `append` them to the document. We can use the following methods to add elements to the DOM:
 
 - `appendChild(element)` - appends a new element at the end of the DOM tree
-- `insertBefore(elementBefore, element)` - inserts a new element before the specified element
+- `insertBefore(newElement, childElement)` - inserts a new element before the specified element
 
 ```js
 let h1 = document.createElement("h1");
