@@ -5,34 +5,71 @@ slug: "react-lifecycle-methods-exercise"
 
 ## Objective
 
-Your objective is to create a input field that updates the dom as you change the text input. Add console.log's to your lifecycle methods to investigate when and how lifecycle events are handled.
-
-## Getting Started
-
-Repo Link: [React Lifecycle Methods](https://github.com/Bryantellius/react_lifecycle_methods)
-
-- Open your command line and navigate to your repos directory (if you do not have a repos folder, then you can use mkdir repos to create one)
-- Use this template repository to start a new project in your repos folder: `git clone <repo_name>` cd repo_name to navigate into your new repo directory
-- Make sure to run `npm install` to fetch the dependencies for the project
-- Start Visual Studio Code and select 'Open Folder'. Then select repo_name to open the folder in the editor (or just type code . in your terminal inside the repo directory)
-- Follow the instructions on the README.md file to complete exercises
-- Open the `App.jsx` file to get started
+Your objective is to create a Films component that will fetch a list of films from the Studio Ghibli API, and display them to the screen as a rendered list.
 
 ## Steps
 
-Here is a basic App class component rendered in the browser through `index.js`.
+### Getting Started
 
-1. Initialize state in the App class component, and define a new property called "text" with some string as the value.
-2. Add an input element to your App.
-   - Use the text state to define its placeholder attribute.
-3. Create a method `handleInput` that takes a HTML change event as a param (e) and calls `this.setState`, setting the event target value as the text state
-4. Add an `onChange` event to the input that calls `this.handleInput`.
-5. Notice how this changes the ReactDOM. Why might that be important?
-6. Create a method `handleClick` that toggles the boolean value `hasLoaded` in the App state
-7. Add a button beneath that input with an `onClick` event that calls the `handleClick` method
-8. Change your render method. Write a conditional statement that checks whether or not the `hasLoaded` property is true. If it is, return the elements that you have already defined. If false, return a new heading with the text "Loading...".
-9. Add a button beneath it that is identical to the one you created earlier.
-10. Save and reload the browser. Which React elements are displayed first? Do you know why?
-11. Write a new method with the name `componentDidMount`, that will set the state property `hasLoaded` to true.
+We'll be in the same react repository that you created during the **React Intro Exercise**.
 
-Now what happens when the application re-renders? Which React elements are displayed first, and why?
+### Exercise 1: FilmsList Component
+
+We'll start by creating a new class component.
+
+1. Create a new file called `filmsList.jsx` in your `components/` folder
+2. Import and destructure the `Component` from the `react` package
+3. Add a class called `FilmsList` that renders an empty unordered list
+4. You should have:
+
+```jsx
+class FilmsList {
+  render() {
+    return <ul></ul>;
+  }
+}
+```
+
+### Exercise 2: Films State
+
+We will manage the list of Studio Ghibli films with component state.
+
+1. Create a constructor for the `FilmsList` class
+2. Define a `list` property on `this.state` that is assigned an empty array
+
+### Exercise 3: Method to Get Films
+
+Next, we'll create a method to retrieve the list of films.
+
+1. Create a method called `getFilms` on the `FilmsList` class
+2. The method should call the `fetch` function with the following url parameter: [https://ghibliapi.herokuapp.com/films](https://ghibliapi.herokuapp.com/films)
+3. Call the `then` method on the returned promise
+   - the first `then` call should receive a callback function that **returns the result parsed to json**
+4. Make another `then` call on the returned promise
+   - the second `then` call should receive a callback function that uses `this.setState()` to **set `this.state.list` equal to the result**
+5. Lastly add a `catch` method call that should receive a callback function that will handle an error if one occurs
+
+### Exercise 4: Fetch Films
+
+Due to the component lifecycle, we need to call our `getFilms()` method once the component mounts.
+
+1. Create a `componentDidMount` method on the `FilmsList` class
+2. Call `getFilms` within the method body
+
+### Exercise 4: Render the Films List
+
+Now that we are retrieving our list of films and setting it to state, we need to render the list to the DOM.
+
+1. In the `render` method, update the content of the `ul` element to be a JSX expression that calls the `map` method on `this.state.list`
+2. Pass a callback function to the `map` method that returns a `li` element for each film in `this.state.list`
+3. Add the film's title as the text content of the `li`
+4. Add a `key` prop to the `li` that is set to the film's `id`
+
+Feel free to add more content from each film to the list item's inner html.
+
+### Exercise 5: Render FilmsList Component
+
+All that's left to do is render the `FilmsList` component. Head over to your `App.jsx` file.
+
+1. Import the `FilmsList` component from `./components/FilmsList`
+2. In the `render` method of the `App` class, render the `FilmsList` component below the`ul` from the previous lesson
