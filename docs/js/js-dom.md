@@ -59,8 +59,8 @@ Since `body` is an element of the **DOM**, we can grab it using the `document` o
 We can select HTML elements on the DOM in multiple ways:
 
 - `getElementById()` - returns one element based on the id we pass as a parameter
-- `getElementByClassName()` - returns multiple elements based on the classname we pass as a parameter
-- `getElementByTagName()` - returns multiple elements based on the tagname we pass as a parameter
+- `getElementsByClassName()` - returns multiple elements based on the classname we pass as a parameter
+- `getElementsByTagName()` - returns multiple elements based on the tagname we pass as a parameter
 - `querySelector()` - returns the first element that matches the css selector we pass as a parameter
 - `querySelectorAll()` - returns multiple elements that match the css selector we pass as a parameter
 
