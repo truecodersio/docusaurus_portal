@@ -26,7 +26,15 @@ Complete the following in your `app.js` file
 
 1. Enable JavaScript's "Strict Mode" for the _file_
 
-### Exercise 2: Using Try/Catch
+### Exercise 2: Function Syntax Debugging
+
+Complete the following in your `app.js` file
+
+1. There is a problem with the function syntax. Fix the issue before you finish.
+
+> HINT: The issue will cause `data` to be read as `null`.
+
+### Exercise 3: Using Try/Catch
 
 Complete the following in your `app.js` file
 
@@ -36,14 +44,6 @@ Complete the following in your `app.js` file
 4. If an exception is caught:
    1. Print the error to the console
    2. Return null
-
-### Exercise 3: Function Syntax Debugging
-
-Complete the following in your `app.js` file
-
-1. There is a problem with the function syntax. Fix the issue before you finish.
-
-> HINT: The issue will cause `data` to be read as `null`.
 
 ### On Complete
 
