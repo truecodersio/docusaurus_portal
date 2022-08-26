@@ -1,64 +1,52 @@
 ---
 title: "Exercise: JS Promises"
 slug: "js-promises-exercise"
+description: "JavaScript Promises Exercise with Steps"
+keywords: [javascript, promises, asynchronous programming]
 ---
 
 ## Objective
 
-Your objective is to turn the given function into a new promise, and handle success or failures from the asynchronous code.
+Your objective is to handle the result of a promise with promise consumers, and update the DOM based on resolution or rejection. The Promise will resolve with an array of hobbits that should be rendered on the DOM in the form of list items. If any errors occur, feedback should be displayed to the user on the DOM.
 
 ## Getting Started
 
-Repo link: [JavaScript Promises](https://github.com/Bryantellius/JavaScript_Promises)
+Fork and Close the Exercise Repo to get started: [JavaScript Promises](https://github.com/Bryantellius/JavaScript_Promises)
 
-1. Open your command line and navigate to your repos directory (if you do not have a repos folder, then you can use mkdir repos to create one)
-2. Use this template repository to start a new project in your repos folder: `git clone <repo_name>`
-3. cd repo_name to navigate into your new repo directory
-4. Start Visual Studio Code and select 'Open Folder'. Then select repo_name to open the folder in the editor (or just type `code .` in your terminal inside the repo directory)
-5. Follow the instructions on the README.md file to complete exercises
-6. Open the app.js file to get started
+## Steps
 
-## Exercise 1
+The JavaScript Promises exercise has multiple steps:
 
-You will start with the following code in your `app.js` file:
+- [Exercise 1: Select the Needed DOM Elements](#exercise-1-select-the-needed-dom-elements)
+- [Exercise 2: Handle the Promise](#exercise-2-handle-the-promise)
+- [Exercise 3: Update the DOM](#exercise-3-update-the-dom)
 
-```js
-function watchTutorialCallback(callback, errorCallback) {
-  let userLeft = false;
+### Exercise 1: Select the Needed DOM Elements
 
-  if (userLeft) {
-    errorCallback("User left.");
-  } else {
-    callback("Thumbs up and Subscribe!");
-  }
-}
+1. Select the paragraph with `id="error"` and assign it to a variable
+2. Select the unordered list with `id="list"` and assign it to a variable
 
-watchTutorialCallback(
-  (message) => {
-    console.log(message);
-  },
-  (error) => {
-    console.log(error.name + " " + error.message);
-  }
-);
-```
+### Exercise 2: Handle the Promise
 
-The above function can be replicated as a Promise.
+1. Call `getList`
+2. From the result, call the `then` promise consumer method and pass in a callback function
+   - The callback function should receive the resolved value as the parameter
+   - Start out just logging the result to console to check if it is the value you expect
+3. From the result of the `then` promise consumer method, chain a `catch` method consumer and pass in a callback function
+   - The callback function should receive the resolved value as the parameter
+   - Start out just logging the result to console to check if it is the value you expect
 
-1. Declare a variable watching and assign it a new promise object
-2. Inside of the promise constructor, declare a variable named userLeft.
-3. Add a if/else conditional that checks if userLeft is `true`
-4. If userLeft is `true`, call the `reject` method with "User left."
-5. If `false`, call the resolve method with "Thumbs up and subscribe!"
+### Exercise 3: Update the DOM
 
-## Exercise 2
+1. Replace the `console.log` statement in the `then` method callback parameter to
+   - iterate through the resolved list of hobbits
+   - create a `li` for each hobbit, and append the `li` to the selected `ul` from the DOM
+2. Replace the `console.log` statement in the `catch` method callback parameter to
+   - display the resolved failure object's `message` property as the text content of the selected `p` from the DOM
 
-Once you have created your new promise:
+## Helpful Links
 
-1. Call watching and add a promise chain using `.then` and `.catch`
-2. Pass in a function callback to `.then` that takes in a message and console.log's the message
-3. Pass in a function callback to `.catch` that takes in an error and console.log's the error
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
 
----
-
-[Exercise Walkthrough Documentation](https://docs.google.com/document/d/1YQpP1WqzL3xxxYJQVvYkZpwJz2vbMfh7yKqBrT1NE3c/edit?usp=sharing)
+- [JavaScript Promises Exercise Video on Vimeo](#)
+- [JavaScript Promises Exercise Repo on Github](https://github.com/Bryantellius/JavaScript_Promises/tree/Answer)
