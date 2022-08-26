@@ -92,3 +92,10 @@ Add functionality to add a new item to the todo list.
    - `this.onSubmit = this.onSubmit.bind(this);`
 
 At this point, you should be able to type a new task in the input element, click add, and see the new list item displayed in the unordered list on the screen!
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+- [React #2: React State and Props Exercise Video](https://vimeo.com/742848779) on Vimeo
+- [React #2: React State and Props Exercise Repo](https://github.com/Bryantellius/react-exercise/tree/react-state-props-exercise) on Github

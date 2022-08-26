@@ -63,3 +63,10 @@ Make changes!
    - an unordered list with 3 list items
 
 We're going to be spending a lot of time in React, but for now, you've created a new React project with the `create-react-app` tool, investigated the template source code, started the React development server, and made some initial changes!
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+- [React #1: React Intro Exercise Video](https://vimeo.com/742848883) on Vimeo
+- [React #1: React Intro Exercise Repo](https://github.com/Bryantellius/react-exercise/tree/react-intro-exercise) on Github
