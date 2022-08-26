@@ -1,42 +1,83 @@
 ---
 title: "Exercise: React Hooks"
 slug: "/react-hooks-exercise"
+description: React Hooks Exercise with Steps
+keywords: [javascript, react.js, react hooks]
 ---
 
 ## Objective
 
-Your objective is to create an application based on the following parameters:
+Your objective is to rewrite your `App` and `FilmsList` class components as functional components with hooks.
 
-- Our application will be made of two components, App and Overview.
-- Your application should render an input field and a submit button.
-- With the submit button, you can add the content from your input to a “tasks array” that is managed in a state hook.
-- Finally, for each task in the tasks array, an HTML list element should be rendered.
+## Getting Started
+
+This is part 4 of TrueCoders' React Exercise Series.
+
+We'll be in the same react repository that you worked in for **part 3**.
 
 ## Steps
 
-Exercise Repo: [React Hooks](https://github.com/Bryantellius/react_hooks)
+React Series Part 4 has multiple exercises
 
-1. Create a components folder in your src directory and create a file for your component called Overview.js. Overview.js should just render our tasks, while App.js is going to handle the input field with the logic.
+- [Exercise 1: FilmsList from Class to Function](#exercise-1-filmslist-from-class-to-function)
+- [Exercise 2: State Hook in FilmsList](#exercise-2-state-hook-in-filmslist)
+- [Exercise 3: Update getFilms](#exercise-3-update-getfilms)
+- [Exercise 4: Effect Hook in FilmsList](#exercise-4-effect-hook-in-filmslist)
+- [Exercise 5: App from Class to Function](#exercise-5-app-from-class-to-function)
+- [Exercise 6: State Hook in App](#exercise-6-state-hook-in-app)
+- [Exercise 7: Update onSubmit](#exercise-7-update-onsubmit)
 
-   ```txt
-   src
-       components/
-           Overview.jsx
-       App.css
-       App.jsx
-       index.js
-   ```
+### Exercise 1: FilmsList from Class to Function
 
-2. With the intended functionality explained, it’s your turn to implement this React app (again). You can do it.
-3. After you get the functionality working, style the app. Practice, practice, practice.
+1. Change the `FilmsList` from a class to a function
+2. Remove the `render` method surround the `return <ul>...</ul>` statement
+   - we'll still be using the returned JSX, so be sure to keep that
+3. Specify `props` as the parameter to the `FilmsList` function
 
-- REMEMBER: Use the JavaScript function map to map over your tasks array. You will need to provide a unique key to each item (read the warning, you’ll know it when you see it in the console!). And there is a difference between handling input fields in plain JavaScript and in React. Give a whirl and stretch yourself, but fear not, we will again provide an overview of our solution below.
+### Exercise 2: State Hook in FilmsList
 
-## BONUS
+1. Import and destructure `useState` from the `react` package
+2. Remove the constructor
+3. Add a declaration for `list` and `setList` that will be destructured from an array that is returned from calling `useState([])`
+4. Update the return statement to map over `list` instead of `this.state.list`
 
-- Add a feature to be able to check off completed tasks
-- Add colors (or indicator of choice) for priority status
+### Exercise 3: Update getFilms
 
----
+1. `getFilms` is currently a method. Add the `function` keyword to make it a function value within this component scope
+2. Update the promise consumer that updates the list state
+   - Change `this.setState()` to `setList`
+   - Be sure to only pass in the `films` data, no longer `{ list: films }`
 
-[Exercise Walkthrough Documentation](https://docs.google.com/document/d/19fMFkWmm5Ob5VcSubAgJg-orsvkMdGYBRyputV8c_tg/edit?usp=sharing)
+### Exercise 4: Effect Hook in FilmsList
+
+1. Import and destructure `useEffect` from the `react` package
+2. Remove the `componentDidMount` method
+3. Call `useEffect`
+   - first, pass in a callback function that will call `getFilms`
+   - second, pass in an empty dependency array
+
+### Exercise 5: App from Class to Function
+
+1. Change the `App` from a class to a function
+2. Remove the `render` method surround the `return ...` statement
+   - we'll still be using the returned JSX, so be sure to keep that
+3. Specify `props` as the parameter to the `App` function
+
+### Exercise 6: State Hook in App
+
+1. Import and destructure `useState` from the `react` package
+2. Remove the constructor
+3. Add a declaration for `list` and `setList` that will be destructured from an array that is returned from calling `useState(["ready", "set", "GO"])`
+4. Add a declaration for `text` and `setText` that will be destructured from an array that is returned from calling `useState("")`
+5. Update the return statement to map over `list` instead of `this.state.list`
+6. Update the return statement's `input` value to be `text` instead of `this.state.text`
+7. Update the return statement's `input` onChange to call `setText` instead of `this.setState`
+
+### Exercise 7: Update onSubmit
+
+1. `onSubmit` is currently a method. Add the `function` keyword to make it a function value within this component scope
+2. Update the function to:
+   - use `list` instead of `this.state.list`
+   - use `text` instead of `this.state.text`
+   - use `setList` instead of `this.setState`
+3. Update the return statement's `form` onSubmit to be `onSubmit` instead of `this.onSubmit`

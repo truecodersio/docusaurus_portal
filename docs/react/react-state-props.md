@@ -1,6 +1,8 @@
 ---
 title: "React State and Props"
 slug: "react-state-props"
+description: React State and Props Lesson Material
+keywords: [javascript, react.js, react state and props, react data flow]
 ---
 
 ## Why

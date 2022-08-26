@@ -1,6 +1,8 @@
 ---
 title: "React Hooks"
 slug: "/react-hooks"
+description: React Hooks Lesson Material
+keywords: [javascript, react.js, react hooks]
 ---
 
 ## Why
