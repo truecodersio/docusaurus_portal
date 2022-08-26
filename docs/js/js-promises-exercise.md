@@ -48,5 +48,5 @@ The JavaScript Promises exercise has multiple steps:
 
 If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
 
-- [JavaScript Promises Exercise Video on Vimeo](#)
+<!-- - [JavaScript Promises Exercise Video on Vimeo](#) -->
 - [JavaScript Promises Exercise Repo on Github](https://github.com/Bryantellius/JavaScript_Promises/tree/Answer)
