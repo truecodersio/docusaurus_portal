@@ -1,6 +1,8 @@
 ---
 title: "React Router"
 slug: "/react-router"
+description: React Router Lesson Material
+keywords: [javascript, react.js, react router]
 ---
 
 ## Why

@@ -1,6 +1,8 @@
 ---
 title: "React Lifecycle Methods"
 slug: "react-lifecycle-methods"
+description: React Lifecycle methods Lesson Material
+keywords: [javascript, react.js]
 ---
 
 ## Why

@@ -1,17 +1,29 @@
 ---
 title: "Exercise: React State and Props"
 slug: "react-state-props-exercise"
+description: React State and Props Exercise with Steps
+keywords: [javascript, react.js, react state and props, react data flow]
 ---
 
 ## Objective
 
 Your objective is to create a todo list that can be viewed by the user, and a form where the user can add new items to the todo list stored in state.
 
+## Getting Started
+
+This is part 2 of TrueCoders' React Exercise Series.
+
+We'll be in the same react repository that you worked in for **part 1**.
+
 ## Steps
 
-### Getting Started
+React Series Part 2 has multiple exercises
 
-We'll be in the same react repository that you created during the **React Intro Exercise**.
+- [Exercise 1: Project Structure](#exercise-1-project-structure)
+- [Exercise 2: Managing State](#exercise-2-managing-state)
+- [Exercise 3: Rendered Lists](#exercise-3-rendering-lists)
+- [Exercise 4: Controlled Inputs](#exercise-4-controlled-inputs)
+- [Exercise 5: Updating State](#exercise-5-updating-state)
 
 ### Exercise 1: Project Structure
 
@@ -33,7 +45,7 @@ class App extends React.Component {
 
 ### Exercise 2: Managing State
 
-We want to manage a todo list with state. We also want to manage the controlled input with state.
+Manage a todo list and controlled input with state.
 
 1. Create a constructor for the `App` class
 2. In the body of the constructor, assign an object to a property called `state`
@@ -45,7 +57,7 @@ We want to manage a todo list with state. We also want to manage the controlled 
 
 ### Exercise 3: Rendering Lists
 
-A **rendered list** in React is an array of JSX that we return to the ReactDOM. Let's render the state list as a React rendered list.
+A **rendered list** in React is an array of JSX that we return to the ReactDOM. Render the state list as a React rendered list.
 
 1. Update the return statement of the `render` method to have an `ul` underneath the `h1`.
 2. As a child of the `ul`, call `this.state.list.map` within a JSX expression
@@ -55,7 +67,7 @@ A **rendered list** in React is an array of JSX that we return to the ReactDOM. 
 
 ### Exercise 4: Controlled Inputs
 
-A **controlled input** in React is an input where it's `value` attribute is set to a state value, and when the value of the input changes, the component state changes.
+A **controlled input** in React is an input where it's `value` attribute is set to a state value, and when the value of the input changes, the component state changes. Create a controlled input so that `this.state.text` is bound to the input.
 
 1. Update the return statement of the `render` method to have an `input` above the `ul`.
 2. Add a `value` prop to the `input` that is set to `this.state.text`
@@ -65,7 +77,7 @@ A **controlled input** in React is an input where it's `value` attribute is set 
 
 ### Exercise 5: Updating State
 
-Now that we are managing our todo list and text input with state, let's add the functionality to add a new item to the todo list!
+Add functionality to add a new item to the todo list.
 
 1. Wrap the `input` element in a `form` element
 2. Add a `button` element below the `input` element at the bottom of the `form` element

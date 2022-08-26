@@ -1,21 +1,33 @@
 ---
 title: "Exercise: React Lifecycle Methods"
 slug: "react-lifecycle-methods-exercise"
+description: React Lifecycle Methods Exercise with Steps
+keywords: [javascript, react.js]
 ---
 
 ## Objective
 
 Your objective is to create a Films component that will fetch a list of films from the Studio Ghibli API, and display them to the screen as a rendered list.
 
+## Getting Started
+
+This is part 3 of TrueCoders' React Exercise Series.
+
+We'll be in the same react repository that you worked in for **part 2**.
+
 ## Steps
 
-### Getting Started
+React Series Part 3 has multiple exercises
 
-We'll be in the same react repository that you created during the **React Intro Exercise**.
+- [Exercise 1: FilmsList Component](#exercise-1-filmslist-component)
+- [Exercise 2: Films State](#exercise-2-films-state)
+- [Exercise 3: Method to Get Films](#exercise-3-method-to-get-films)
+- [Exercise 4: Fetch Films](#exercise-4-fetch-films)
+- [Exercise 5: Render FilmsList Component](#exercise-5-render-filmslist-component)
 
 ### Exercise 1: FilmsList Component
 
-We'll start by creating a new class component.
+Create a new class component.
 
 1. Create a new file called `filmsList.jsx` in your `components/` folder
 2. Import and destructure the `Component` from the `react` package
@@ -32,14 +44,14 @@ class FilmsList {
 
 ### Exercise 2: Films State
 
-We will manage the list of Studio Ghibli films with component state.
+Create state to manage the list of Studio Ghibli films.
 
 1. Create a constructor for the `FilmsList` class
 2. Define a `list` property on `this.state` that is assigned an empty array
 
 ### Exercise 3: Method to Get Films
 
-Next, we'll create a method to retrieve the list of films.
+Create a method to retrieve the list of films.
 
 1. Create a method called `getFilms` on the `FilmsList` class
 2. The method should call the `fetch` function with the following url parameter: [https://ghibliapi.herokuapp.com/films](https://ghibliapi.herokuapp.com/films)
@@ -51,14 +63,14 @@ Next, we'll create a method to retrieve the list of films.
 
 ### Exercise 4: Fetch Films
 
-Due to the component lifecycle, we need to call our `getFilms()` method once the component mounts.
+Call `getFilms()` once the component mounts.
 
 1. Create a `componentDidMount` method on the `FilmsList` class
 2. Call `getFilms` within the method body
 
 ### Exercise 4: Render the Films List
 
-Now that we are retrieving our list of films and setting it to state, we need to render the list to the DOM.
+Render the list to the DOM.
 
 1. In the `render` method, update the content of the `ul` element to be a JSX expression that calls the `map` method on `this.state.list`
 2. Pass a callback function to the `map` method that returns a `li` element for each film in `this.state.list`
@@ -69,7 +81,7 @@ Feel free to add more content from each film to the list item's inner html.
 
 ### Exercise 5: Render FilmsList Component
 
-All that's left to do is render the `FilmsList` component. Head over to your `App.jsx` file.
+Render the `FilmsList` component in `App`.
 
 1. Import the `FilmsList` component from `./components/FilmsList`
 2. In the `render` method of the `App` class, render the `FilmsList` component below the`ul` from the previous lesson

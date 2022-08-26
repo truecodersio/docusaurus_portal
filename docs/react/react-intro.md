@@ -1,6 +1,8 @@
 ---
 title: "React Intro"
 slug: "react-intro"
+description: React Intro Lesson Material
+keywords: [javascript, react.js]
 ---
 
 ## Why
