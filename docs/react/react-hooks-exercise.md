@@ -81,3 +81,10 @@ React Series Part 4 has multiple exercises
    - use `text` instead of `this.state.text`
    - use `setList` instead of `this.setState`
 3. Update the return statement's `form` onSubmit to be `onSubmit` instead of `this.onSubmit`
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+- [React #4: React Hooks Exercise Video](https://vimeo.com/743441262) on Vimeo
+- [React #4: React Hooks Exercise Repo](https://github.com/Bryantellius/react-exercise/tree/react-hooks-exercise) on Github

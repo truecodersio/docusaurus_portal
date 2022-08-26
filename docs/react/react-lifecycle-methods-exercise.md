@@ -85,3 +85,10 @@ Render the `FilmsList` component in `App`.
 
 1. Import the `FilmsList` component from `./components/FilmsList`
 2. In the `render` method of the `App` class, render the `FilmsList` component below the`ul` from the previous lesson
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+- [React #3: React Lifecycle Methods Exercise Video](https://vimeo.com/742848950) on Vimeo
+- [React #3: React Lifecycle Methods Exercise Repo](https://github.com/Bryantellius/react-exercise/tree/react-lifecycle-methods-exercise) on Github
