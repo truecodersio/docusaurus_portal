@@ -150,16 +150,17 @@ export { HomePage, FilmsPage };
 
 Setup React Router in `App.jsx`.
 
-1. Import `BrowserRouter`, `NavLink`, `Routes` and `Route` from `react-router-dom`
-2. Import `HomePage` and `FilmsPage` from the `index.js` file in `pages/`
-3. Clear the current contents of `App`
-4. Add a return statement that:
+1. Use npm to install `react-router-dom` (from your terminal)
+2. In `App.jsx`, import `BrowserRouter`, `NavLink`, `Routes` and `Route` from `react-router-dom`
+3. Import `HomePage` and `FilmsPage` from the `index.js` file in `pages/`
+4. Clear the current contents of `App`
+5. Add a return statement that:
    - returns `BrowserRouter`
    - with `Routes` rendered as a child of `BrowserRouter`
    - with two `Route` components
      - `HomePage` should be rendered for `"/"`
      - `FilmsPage` should be rendered for `"films"`
-5. Add a `nav` inside the `BrowserRouter` above the `Routes`
+6. Add a `nav` inside the `BrowserRouter` above the `Routes`
    - with a `ul` of two `li`
    - each `li` should contain a `NavLink`
    - match one `NavLink`'s `to` prop to `"/"`, and give it text that displays "Home"
