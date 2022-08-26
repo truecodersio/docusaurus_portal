@@ -90,8 +90,8 @@ export function HomePage() {
 
 Convert `FilmsList` to a page component.
 
-1. Create a new file in `components/` called `film.page.jsx`
-2. Copy the contents of `FilmsList` into `films.page.jsx`
+1. Create a new file in `pages/` called `films.page.jsx`
+2. Copy the contents of `components/FilmsList.jsx` into `films.page.jsx`
 3. Rename `FilmsList` to `FilmsPage`
 4. Add to the return statement
    - wrap the `ul` in a `div`
