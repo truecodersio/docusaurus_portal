@@ -204,7 +204,7 @@ list - [
         { title: "Grave of the Fireflies", director: "Isao Takahata" },
         { title: "My Neighbor Totoro", director: "Hayao Miyazaki" }
       ]
-prop - "Hayao Miyazaki"
+director - "Hayao Miyazaki"
 
 Output:
 [
