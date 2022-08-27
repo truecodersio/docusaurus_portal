@@ -170,3 +170,10 @@ Create several elements for displaying average film score, latest film and total
   </div>
 </div>
 ```
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+- [React #6: React Router Hooks Exercise Video](https://vimeo.com/743625815) on Vimeo
+- [React #6: React Router Hooks Exercise Repo](https://github.com/Bryantellius/react-exercise/tree/react-router-hooks-exercise) on Github

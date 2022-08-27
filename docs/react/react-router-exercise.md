@@ -246,3 +246,10 @@ Output:
 4. In your return statement, within your `select` and below the `<option value="">All</option>`
    - use the `map` array method to return a new array of `option` elements, one per item in `directors`
    - the `value` prop and text content should both be set to the director
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+- [React #5: React Router Exercise Video](https://vimeo.com/743625699) on Vimeo
+- [React #5: React Router Exercise Repo](https://github.com/Bryantellius/react-exercise/tree/react-router-exercise) on Github
