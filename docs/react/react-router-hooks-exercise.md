@@ -118,6 +118,8 @@ Lastly, set up a route for `SingleFilmPage`.
 
 ### Exercise 1: Create `getFilmStats`
 
+Create and export a new helper function in `film.helpers.js` called `getFilmStats`.
+
 The goal of `getFilmStats` is to receive `list` (array) parameter, and return a object that contains the following:
 
 - `avg_score` as a number, being the average `rt_score` of the list of films
