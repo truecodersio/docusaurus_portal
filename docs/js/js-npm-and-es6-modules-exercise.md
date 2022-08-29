@@ -18,9 +18,14 @@ Fork and Close the Exercise Repo to get started: [JavaScript ES6 Modules](https:
 The JavaScript ES6 Modules exercise has multiple steps:
 
 - [Exercise 1: Project Setup](#exercise-1-project-setup)
-- [Exercise 2: Use the Fetch API](#exercise-2-use-the-fetch-api)
-- [Exercise 3: Consume the API](#exercise-3-consume-the-api)
-- [Exercise 4: Update the DOM](#exercise-4-update-the-dom)
+- [Exercise 2: Install Webpack](#exercise-2-install-webpack)
+- [Exercise 3: Create a Car Class](#exercise-3-create-a-car-class)
+- [Exercise 4: Create a WishList Class](#exercise-4-create-a-wishlist-class)
+- [Exercise 5: Import WishList and Select Elements](#exercise-5-import-wishlist-and-select-elements)
+- [Exercise 6: Create showCardDetails](#exercise-6-create-showcardetails)
+- [Exercise 7: Create updateDOMList](#exercise-7-create-updatedomlist)
+- [Exercise 8: Create addCar](#exercise-8-create-addcar)
+- [Exercise 9: Create removeCar](#exercise-9-create-removecar)
 
 ### Exercise 1: Project Setup
 
@@ -102,30 +107,109 @@ The contents of your `index.html` can resemble the following:
 </html>
 ```
 
-## Part 2
+### Exercise 2: Install Webpack
 
-- We’re going to be using ES6 modules. So let’s take this time to configure Webpack to bundle our project
-- Initialize npm in your project to create a package.json file
-- Install webpack and webpack-cli
-- Create a dist/ and src/ folder in the root directory of your project
-- Move your index.html file to the dist/ folder
-- Move your index.js file to the src/ folder
-- Open your package.json file, and make sure to add `"scripts": {"build": "webpack"}`
-- Make sure you change the js script in your index.html to ...src=”main.js”...
-- From the command line/terminal, run “npm run build” for webpack to bundle your project
+Configure Webpack to bundle your project
 
-## Part 3
+1. Install webpack and webpack-cli
+2. Open your `package.json` file, and make sure to add `"scripts": {"build": "webpack"}`
+3. From the command line/terminal, run `npm run build` for webpack to bundle your project
 
-- Create a car.js file, then do the following:
-  - Create a class called Car
-  - Add a constructor that takes a make, model, and year
-  - Create an info() function that displays the car’s info to the document
-- Create a wishlist.js file
-  - Create a class WishList
-  - At minimum, the WishList class should have a method for adding or removing cars from the WishList
-- Our users should be able to view the cars in the WishList from the document, so either as a method on the WishList class, or a separate function in the index.js file, you should account for this functionality of displaying and updating the DOM
+> The `webpack.config.js` file is provided for you, but it would be a good idea to inspect the contents of that file to see the basic configuration that this project has in regards to webpack bundling.
 
-- Inside of index.js
-- Import our Car and WishList modules
-- Create a new instance of our WishList
-- Users should be able to interact with our web page (DOM) to add new Car instances to their Wish List
+### Exercise 3: Create a Car Class
+
+1. Create a new file in your `src/` folder called `car.js`
+2. Inside of `car.js`, create and export a `Car` class
+3. Create a `constructor` for the `Car` class that:
+   - takes in `id`, `make`, `model`, and `year` parameters
+   - sets each parameter to a property on the instance
+   - Example `this.id = id`
+
+### Exercise 4: Create a Wishlist Class
+
+1. Create a new file in your `src/` folder called `wishlist.js`
+2. Inside of `car.js`, create and export a `WishList` class
+3. Import `Car` from `car.js`
+4. Create two properties on the `WishList` class:
+   - `list` that is initialized as `[]`
+   - `nextId` that is initialized as `0`
+5. Create an `add` method that
+   - Takes in `make`, `model`, and `year` parameters
+   - Uses the `Car` constructor to create a car instance from `++this.nextId`, `make`, `model`, and `year` values
+   - Adds the car instance to `this.list`
+6. Create a `remove` method that:
+   - Takes in `carId` as a parameter
+   - Removes the car instance whose `id` matches `carId` from `this.list`
+
+### Exercise 5: Import WishList and Select Elements
+
+Open up `index.js` and complete the wishlist functionality with the DOM manipulation.
+
+1. Import `WishList` from `wishlist.js`
+2. Select the form
+3. Select the input for car make
+4. Select the input for car model
+5. Select the input for car year
+6. Select the paragraph element for car make
+7. Select the paragraph element for car model
+8. Select the paragraph element for car year
+9. Select the remove button
+10. Select the wishlist unordered list element
+11. Call the `WishList` constructor to create an instance from the `WishList` class
+
+> For selecting elements, these instructions are for the html template code from [exercise 1](#exercise-1-project-setup). If you used different html elements, make sure you are selecting the correct elements.
+
+### Exercise 6: Create `showCarDetails`
+
+Create a function called `showCarDetails` that will update the details card with the details from the selected car. It should:
+
+1. Take in a `car` parameter
+2. Reset the content of the make display to `car.make`
+3. Reset the content of the model display to `car.model`
+4. Reset the content of the year display to `car.year`
+5. Enable the remove button
+6. Call `setAttribute("data-carId", car.id)` on the remove button
+   - This will set a custom `data-` attribute on the DOM element that corresponds with the selected element
+
+### Exercise 7: Create `updateDOMList`
+
+Create a function called `updateDOMList` that will update the ul with the latest cars in `wishlist`. It should:
+
+1. Clear the contents of the `ul`
+2. Iterate over each car in `wishlist.list`
+3. For each car, it should create a `li` that displays the car's make and model
+4. Add a click event listener to the `li` that passes in an inline callback function that
+   - calls `showCarDetails` (which will be created later) and passes it the `car` object
+   - Syntax example: `ele.addEventListener("click", () => func(obj))`
+5. Append each `li` to the `ul`
+
+### Exercise 8: Create `addCar`
+
+Create a function called `addCar` that will add a car to `wishlist`. It should:
+
+1. Take in an `event` parameter
+2. Prevent the default for the submission event
+3. Call `wishlist.add` with the values from the make, model and year inputs passed in as parameters
+4. Call `updateDOMList`
+
+### Exercise 9: Create `removeCar`
+
+Create a function called `removeCar` that will remove a car from `wishlist`. It should:
+
+1. Assign the return of `Number(removeBtn.getAttribute("data-carId"))` to a variable called `carId`
+   - This will grab the value of a custom `data-` attribute that will correspond with the shown car in the details card
+2. Call `wishlist.remove` with `carId` passed in as a parameter
+3. Call `updateDOMList`
+4. Reset the content of the make display to `""`
+5. Reset the content of the model display to `""`
+6. Reset the content of the year display to `""`
+7. Disable the remove button
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+<!-- - [JavaScript ES6 Modules Exercise Video on Vimeo](https://vimeo.com/743632725) -->
+
+- [JavaScript ES6 Modules Exercise Repo on Github](https://github.com/Bryantellius/es6_modules/tree/answer)
