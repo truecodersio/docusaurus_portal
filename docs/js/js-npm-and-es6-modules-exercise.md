@@ -18,7 +18,7 @@ Fork and Close the Exercise Repo to get started: [JavaScript ES6 Modules](https:
 The JavaScript ES6 Modules exercise has multiple steps:
 
 - [Exercise 1: Project Setup](#exercise-1-project-setup)
-- [Exercise 2: Use the Fetch API](#exercise-2-use-the-fetch-api)
+- [Exercise 2: Install Webpack](#exercise-2-install-webpack)
 - [Exercise 3: Consume the API](#exercise-3-consume-the-api)
 - [Exercise 4: Update the DOM](#exercise-4-update-the-dom)
 
@@ -102,30 +102,49 @@ The contents of your `index.html` can resemble the following:
 </html>
 ```
 
-## Part 2
+### Exercise 2: Install Webpack
 
-- We’re going to be using ES6 modules. So let’s take this time to configure Webpack to bundle our project
-- Initialize npm in your project to create a package.json file
-- Install webpack and webpack-cli
-- Create a dist/ and src/ folder in the root directory of your project
-- Move your index.html file to the dist/ folder
-- Move your index.js file to the src/ folder
-- Open your package.json file, and make sure to add `"scripts": {"build": "webpack"}`
-- Make sure you change the js script in your index.html to ...src=”main.js”...
-- From the command line/terminal, run “npm run build” for webpack to bundle your project
+Configure Webpack to bundle your project
 
-## Part 3
+1. Install webpack and webpack-cli
+2. Open your `package.json` file, and make sure to add `"scripts": {"build": "webpack"}`
+3. From the command line/terminal, run `npm run build` for webpack to bundle your project
 
-- Create a car.js file, then do the following:
-  - Create a class called Car
-  - Add a constructor that takes a make, model, and year
-  - Create an info() function that displays the car’s info to the document
-- Create a wishlist.js file
-  - Create a class WishList
-  - At minimum, the WishList class should have a method for adding or removing cars from the WishList
-- Our users should be able to view the cars in the WishList from the document, so either as a method on the WishList class, or a separate function in the index.js file, you should account for this functionality of displaying and updating the DOM
+> The `webpack.config.js` file is provided for you, but it would be a good idea to inspect the contents of that file to see the basic configuration that this project has in regards to webpack bundling.
 
-- Inside of index.js
-- Import our Car and WishList modules
-- Create a new instance of our WishList
-- Users should be able to interact with our web page (DOM) to add new Car instances to their Wish List
+### Exercise 3: Create a Car Class
+
+1. Create a new file in your `src/` folder called `car.js`
+2. Inside of `car.js`, create and export a `Car` class
+3. Create a `constructor` for the `Car` class that:
+   - takes in `id`, `make`, `model`, and `year` parameters
+   - sets each parameter to a property on the instance
+   - Example `this.id = id`
+
+### Exercise 4: Create a Wishlist Class
+
+1. Create a new file in your `src/` folder called `wishlist.js`
+2. Inside of `car.js`, create and export a `WishList` class
+3. Import `Car` from `car.js`
+4. Create two properties on the `WishList` class:
+   - `list` that is initialized as `[]`
+   - `nextId` that is initialized as `0`
+5. Create an `add` method that
+   - Takes in `make`, `model`, and `year` parameters
+   - Uses the `Car` constructor to create a car instance from `++this.nextId`, `make`, `model`, and `year` values
+   - Adds the car instance to `this.list`
+6. Create a `remove` method that:
+   - Takes in `carId` as a parameter
+   - Removes the car instance whose `id` matches `carId` from `this.list`
+
+### Exercise 5: Select Elements and Add Event Listeners
+
+
+
+## Helpful Links
+
+If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
+
+<!-- - [JavaScript ES6 Modules Exercise Video on Vimeo](https://vimeo.com/743632725) -->
+
+- [JavaScript ES6 Modules Exercise Repo on Github](https://github.com/Bryantellius/es6_modules/tree/answer)
