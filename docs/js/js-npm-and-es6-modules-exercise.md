@@ -19,8 +19,13 @@ The JavaScript ES6 Modules exercise has multiple steps:
 
 - [Exercise 1: Project Setup](#exercise-1-project-setup)
 - [Exercise 2: Install Webpack](#exercise-2-install-webpack)
-- [Exercise 3: Consume the API](#exercise-3-consume-the-api)
-- [Exercise 4: Update the DOM](#exercise-4-update-the-dom)
+- [Exercise 3: Create a Car Class](#exercise-3-create-a-car-class)
+- [Exercise 4: Create a WishList Class](#exercise-4-create-a-wishlist-class)
+- [Exercise 5: Import WishList and Select Elements](#exercise-5-import-wishlist-and-select-elements)
+- [Exercise 6: Create showCardDetails](#exercise-6-create-showcardetails)
+- [Exercise 7: Create updateDOMList](#exercise-7-create-updatedomlist)
+- [Exercise 8: Create addCar](#exercise-8-create-addcar)
+- [Exercise 9: Create removeCar](#exercise-9-create-removecar)
 
 ### Exercise 1: Project Setup
 
@@ -137,9 +142,69 @@ Configure Webpack to bundle your project
    - Takes in `carId` as a parameter
    - Removes the car instance whose `id` matches `carId` from `this.list`
 
-### Exercise 5: Select Elements and Add Event Listeners
+### Exercise 5: Import WishList and Select Elements
 
+Open up `index.js` and complete the wishlist functionality with the DOM manipulation.
 
+1. Import `WishList` from `wishlist.js`
+2. Select the form
+3. Select the input for car make
+4. Select the input for car model
+5. Select the input for car year
+6. Select the paragraph element for car make
+7. Select the paragraph element for car model
+8. Select the paragraph element for car year
+9. Select the remove button
+10. Select the wishlist unordered list element
+11. Call the `WishList` constructor to create an instance from the `WishList` class
+
+> For selecting elements, these instructions are for the html template code from [exercise 1](#exercise-1-project-setup). If you used different html elements, make sure you are selecting the correct elements.
+
+### Exercise 6: Create `showCarDetails`
+
+Create a function called `showCarDetails` that will update the details card with the details from the selected car. It should:
+
+1. Take in a `car` parameter
+2. Reset the content of the make display to `car.make`
+3. Reset the content of the model display to `car.model`
+4. Reset the content of the year display to `car.year`
+5. Enable the remove button
+6. Call `setAttribute("data-carId", car.id)` on the remove button
+   - This will set a custom `data-` attribute on the DOM element that corresponds with the selected element
+
+### Exercise 7: Create `updateDOMList`
+
+Create a function called `updateDOMList` that will update the ul with the latest cars in `wishlist`. It should:
+
+1. Clear the contents of the `ul`
+2. Iterate over each car in `wishlist.list`
+3. For each car, it should create a `li` that displays the car's make and model
+4. Add a click event listener to the `li` that passes in an inline callback function that
+   - calls `showCarDetails` (which will be created later) and passes it the `car` object
+   - Syntax example: `ele.addEventListener("click", () => func(obj))`
+5. Append each `li` to the `ul`
+
+### Exercise 8: Create `addCar`
+
+Create a function called `addCar` that will add a car to `wishlist`. It should:
+
+1. Take in an `event` parameter
+2. Prevent the default for the submission event
+3. Call `wishlist.add` with the values from the make, model and year inputs passed in as parameters
+4. Call `updateDOMList`
+
+### Exercise 9: Create `removeCar`
+
+Create a function called `removeCar` that will remove a car from `wishlist`. It should:
+
+1. Assign the return of `Number(removeBtn.getAttribute("data-carId"))` to a variable called `carId`
+   - This will grab the value of a custom `data-` attribute that will correspond with the shown car in the details card
+2. Call `wishlist.remove` with `carId` passed in as a parameter
+3. Call `updateDOMList`
+4. Reset the content of the make display to `""`
+5. Reset the content of the model display to `""`
+6. Reset the content of the year display to `""`
+7. Disable the remove button
 
 ## Helpful Links
 
