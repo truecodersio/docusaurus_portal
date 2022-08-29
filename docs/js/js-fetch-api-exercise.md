@@ -19,11 +19,12 @@ If you do have not a Giphy Developer account, visit [developers.giphy.com](https
 
 ## Steps
 
-The JavaScript Promises exercise has multiple steps:
+The JavaScript Fetch API exercise has multiple steps:
 
-- [Exercise 1: Select the Needed DOM Elements](#exercise-1-select-the-needed-dom-elements)
-- [Exercise 2: Handle the Promise](#exercise-2-handle-the-promise)
-- [Exercise 3: Update the DOM](#exercise-3-update-the-dom)
+- [Exercise 1: Inspect and Select Elements](#exercise-1-inspect-and-select-elements)
+- [Exercise 2: Use the Fetch API](#exercise-2-use-the-fetch-api)
+- [Exercise 3: Consume the API](#exercise-3-consume-the-api)
+- [Exercise 4: Update the DOM](#exercise-4-update-the-dom)
 
 ### Exercise 1: Inspect and Select Elements
 
@@ -88,4 +89,5 @@ Use the result from the Fetch API with promise consumers.
 If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
 
 <!-- - [JavaScript Promises Exercise Video on Vimeo](https://vimeo.com/743632725) -->
+
 - [JavaScript Promises Exercise Repo on Github](https://github.com/Bryantellius/JavaScript_Promises/tree/Answer)

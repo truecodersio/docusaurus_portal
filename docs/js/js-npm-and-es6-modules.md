@@ -1,6 +1,8 @@
 ---
 title: "NPM and ES6 Modules"
 slug: "js-npm-and-es6-modules"
+description: "JavaScript ES6 Modules Lesson Material"
+keywords: [javascript, es6, esm, modules, npm]
 ---
 
 ## Why
