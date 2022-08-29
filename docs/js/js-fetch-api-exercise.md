@@ -88,6 +88,5 @@ Use the result from the Fetch API with promise consumers.
 
 If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
 
-<!-- - [JavaScript Promises Exercise Video on Vimeo](https://vimeo.com/743632725) -->
-
-- [JavaScript Promises Exercise Repo on Github](https://github.com/Bryantellius/JavaScript_Promises/tree/Answer)
+<!-- - [JavaScript Fetch API Exercise Video on Vimeo](https://vimeo.com/743632725) -->
+- [JavaScript Fetch API Exercise Repo on Github](https://github.com/Bryantellius/JavaScript_APIs/tree/Answer)
