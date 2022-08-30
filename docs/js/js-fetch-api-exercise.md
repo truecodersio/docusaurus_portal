@@ -69,8 +69,6 @@ Use the result from the Fetch API with promise consumers.
 2. From the result of the first `then` promise consumer, chain another `then` promise consumer method and pass in a callback function
    - The callback function should receive the resolved response body parsed to JSON as the parameter
    - Start out just logging the result to console to check if it is the value you expect
-   - Reset the feedback `p`'s text content
-     - This will hide previous errors on subsequent successful fetch requests by the user
 3. From the result of the `then` promise consumer method, chain a `catch` method consumer and pass in a callback function
    - The callback function should receive the resolved value as the parameter
    - Start out just logging the result to console to check if it is the value you expect
@@ -81,6 +79,8 @@ Use the result from the Fetch API with promise consumers.
    - Update the image element's `src` attribute to `res.data.images.original.url`
      - The giphy response returns many urls, so feel free to learn more about the others
    - Reset the value of the search input element
+   - Reset the feedback `p`'s text content
+     - This will hide previous errors on subsequent successful fetch requests by the user
 2. Below the `console.error` statement in the `catch` method
    - display the resolved failure object's `message` property as the text content of the selected feedback `p` from the DOM
 
