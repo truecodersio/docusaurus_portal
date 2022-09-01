@@ -129,7 +129,7 @@ Configure Webpack to bundle your project
 ### Exercise 4: Create a Wishlist Class
 
 1. Create a new file in your `src/` folder called `wishlist.js`
-2. Inside of `car.js`, create and export a `WishList` class
+2. Inside of `wishlist.js`, create and export a `WishList` class
 3. Import `Car` from `car.js`
 4. Create two properties on the `WishList` class:
    - `list` that is initialized as `[]`
