@@ -3,20 +3,6 @@ title: "JS Fetch API"
 slug: "js-fetch-api"
 ---
 
-<!-- Lecture Video 1
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984084/bee103445e" type="video/mp4" />
-</video>
-
-Lecture Video 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/509030596/8cb3bd8ba2" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 One of the most powerful things a web developer can do is fetching data from a server and displaying it creatively on their site. In many cases, the server solely exists for that specific site. The server could contain blog posts, user data, high scores for a game or anything else. In other cases, the server is an open service that serves data to anyone that wants to use it (i.e. weather data or stock prices). In either case, the methods of accessing and then using that data are essentially the same.

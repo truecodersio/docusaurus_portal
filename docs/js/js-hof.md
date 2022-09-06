@@ -3,14 +3,6 @@ title: "JS Higher-Order Functions"
 slug: "js-higher-order-functions"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/507274492/dba36788bf" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 In JavaScript, we can define **functions** that contain blocks of code that perform particular tasks. As you begin to create programs, you will begin to realize that your programs can become very large. Large programs are costly in time and size. Size leads to complexity and complexity leads to confusion. As we’ve discussed, the use of functions is a central concept in JavaScript programming.

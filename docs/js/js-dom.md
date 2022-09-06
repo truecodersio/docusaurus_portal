@@ -3,14 +3,6 @@ title: "JS DOM"
 slug: "js-dom"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/507738803/cc3ff07589" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 Do you know all those cool animations that you see around, that make you think to yourself, “Wow, I wish I could make something like that”? All of those animations are made by manipulating the DOM.

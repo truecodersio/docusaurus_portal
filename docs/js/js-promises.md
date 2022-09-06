@@ -3,14 +3,6 @@ title: "JS Promises"
 slug: "js-promises"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984084/bee103445e" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 Promises are a cleaner way to execute **callbacks**. Callbacks are a great way to handle a function execution. If we want to execute a function right after the return of another function, then callbacks can be used. Promises are used to **handle asynchronous operations in JavaScript**. They are easy to manage when dealing with multiple asynchronous operations where multiple callbacks can create unmanageable code. Promises also provide better error handling than callbacks.

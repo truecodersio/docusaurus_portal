@@ -3,20 +3,6 @@ title: "NPM, Yarn, & Webpack"
 slug: "js-npm-yarn-webpack"
 ---
 
-<!-- Lecture Video 1
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510425628/fcc15e2ed0" type="video/mp4" />
-</video>
-
-Lecture Video 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510436005/a49e95e076" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 ![alt_text](../assets/lectures/javascript/frontend-dino-comic.png)

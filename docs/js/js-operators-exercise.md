@@ -25,7 +25,7 @@ You can print the value of the variables to the browser console (ex: `console.lo
 
 1. Use the following code to answer the questions below:
 
-```
+```js
 let num = 11;
 let str = "11";
 let str2 = "eleven";
@@ -47,7 +47,7 @@ Use the code above to test and print the results.
 
 1. Use the following code to answer the questions below:
 
-```
+```js
 let val = 5;
 let str = "5";
 let str2 = "five";

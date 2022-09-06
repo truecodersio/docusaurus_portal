@@ -3,14 +3,6 @@ title: "JS Error Handling"
 slug: "js-error-handling"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/508155630/eb581665ce" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 We’ve been learning our way through the JavaScript language, and by now we’ve encountered an error or three.

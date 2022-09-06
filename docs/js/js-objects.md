@@ -3,15 +3,6 @@ title: "JS Objects"
 slug: "js-objects"
 ---
 
-<!-- Lecture Video
-
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/506288392/c19283183a" type="video/mp4" />
-</video>
-
---- -->
-
 ## What
 
 Objects are a very important part of the JavaScript language, and while for the most part you can accomplish simple and even intermediate tasks without worrying about them, any real project that you’re going to attempt is going to feature Objects. In fact, we’ve actually been using objects all along, without even realizing it! The uses of Objects in JavaScript can get deep relatively quickly, so let’s begin with the basics.

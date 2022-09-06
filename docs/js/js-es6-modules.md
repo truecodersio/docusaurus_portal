@@ -3,14 +3,6 @@ title: "JS ES6 Modules"
 slug: "js-es6-modules"
 ---
 
-<!-- Lecture Video
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/truecodersio/review/510436355/800fa41344" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 So what is the difference between ECMAscript and Javascript?

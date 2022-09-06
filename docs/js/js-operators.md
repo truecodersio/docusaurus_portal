@@ -3,20 +3,6 @@ title: "JS Operators"
 slug: "/js-operators"
 ---
 
-<!-- Lecture Video Part 1
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984084/bee103445e" type="video/mp4" />
-</video>
-
-Lecture Video Part 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/504984217/a665a7c3cc" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 JavaScript includes operators as other languages do. An operator performs some operation on single or multiple operands (values) and produces a result.

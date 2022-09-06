@@ -3,20 +3,6 @@ title: "JS Object-Oriented Programming"
 slug: "js-oop"
 ---
 
-<!-- Lecture Video Part 1
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/507274745/d24c33169b#t=1458s" type="video/mp4" />
-</video>
-
-Lecture Video Part 2
-
-<video width="100%" height="auto" controls>
-  <source src="https://vimeo.com/507738547/d48e95d16b" type="video/mp4" />
-</video>
-
---- -->
-
 ## Why
 
 The concepts of **Object-oriented programming** have shaped the design of many programming languages, including JavaScript. Object-oriented programming aims at breaking a program into smaller pieces that interact with each other to perform tasks.
