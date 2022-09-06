@@ -61,4 +61,4 @@ Steps are to be completed under the div with `id="exercise5"`
      - **five list item elements**
      - **five anchor elements**
      - **one footer element**
-   - To be completed, you should only have **one division element** and **zero span elements** (not including the div with `id="exercise5"`)
+   - To be completed, you should have no more than **three division elements** and **zero span elements** (not including the div with `id="exercise5"`)

@@ -1,6 +1,8 @@
 ---
 title: "React Router Hooks"
 slug: "/react-router-hooks"
+description: React Router Hooks
+keywords: [javascript, react.js, react router, react hooks]
 ---
 
 ## Why

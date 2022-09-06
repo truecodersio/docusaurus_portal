@@ -65,10 +65,8 @@ module.exports = {
         "js/js-promises-exercise",
         "js/js-fetch-api",
         "js/js-fetch-api-exercise",
-        "js/js-npm-yarn-webpack",
-        "js/js-npm-yarn-webpack-exercise",
-        "js/js-es6-modules",
-        "js/js-es6-modules-exercise",
+        "js/js-npm-and-es6-modules",
+        "js/js-npm-and-es6-modules-exercise",
       ],
     },
     {

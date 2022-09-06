@@ -51,8 +51,8 @@ Since `body` is an element of the **DOM**, we can grab it using the `document` o
 We can select HTML elements on the DOM in multiple ways:
 
 - `getElementById()` - returns one element based on the id we pass as a parameter
-- `getElementByClassName()` - returns multiple elements based on the classname we pass as a parameter
-- `getElementByTagName()` - returns multiple elements based on the tagname we pass as a parameter
+- `getElementsByClassName()` - returns multiple elements based on the classname we pass as a parameter
+- `getElementsByTagName()` - returns multiple elements based on the tagname we pass as a parameter
 - `querySelector()` - returns the first element that matches the css selector we pass as a parameter
 - `querySelectorAll()` - returns multiple elements that match the css selector we pass as a parameter
 
@@ -76,11 +76,11 @@ The following example gets all paragraph elements of the page and changes their 
 ```js
 const pElements = document.getElementsByTagName("p");
 for (let ele of pElements) {
-  p.innerHTML = "We were found by our tag name";
+  ele.textContent = "We were found by our tag name";
 }
 ```
 
-The script above grabs all of the `p` elements in the DOM. Then loops through the array returned, and changes each element’s `innerHTML` to "We were found by our tag name!".
+The script above grabs all of the `p` elements in the DOM. Then loops through the array returned, and changes each element’s `textContent` to "We were found by our tag name!".
 
 ### Changing Attributes
 
@@ -119,7 +119,7 @@ let h1 = document.createElement("h1");
 Awesome! But our newly created elements will not show up on the DOM until we `append` them to the document. We can use the following methods to add elements to the DOM:
 
 - `appendChild(element)` - appends a new element at the end of the DOM tree
-- `insertBefore(elementBefore, element)` - inserts a new element before the specified element
+- `insertBefore(newElement, childElement)` - inserts a new element before the specified element
 
 ```js
 let h1 = document.createElement("h1");

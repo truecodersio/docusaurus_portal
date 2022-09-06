@@ -1,6 +1,8 @@
 ---
 title: "React Lifecycle Methods"
 slug: "react-lifecycle-methods"
+description: React Lifecycle methods Lesson Material
+keywords: [javascript, react.js]
 ---
 
 ## Why
@@ -50,20 +52,24 @@ A few examples are:
 
 ## How
 
-Let’s walk through React Lifecycle Methods.
+Let’s walk through an example of using React Lifecycle Methods.
 
-### Mounting Phase
+### Fetching Data in React Components
 
-So let’s go to the `App.js` and implement the mounting phase:
+So let’s go to the `App.jsx` and implement the mounting phase:
 
-Create a constructor, but don't forget to call the constructor of the parent class using `super()`:
+Create a constructor, but don't forget to call the constructor of the parent class using `super()`. Define a property on the state object called `list` and assign it an empty array. Then, define a property called `controller` that will be assigned a new instance of an AbortController. Your constructor should resemble the following:
 
 ```jsx
 class App extends Component {
   constructor(props) {
     super(props);
 
-    console.log("App - Constructor");
+    this.state = {
+      list: [],
+    };
+
+    this.controller = new AbortController();
   }
 }
 ```
@@ -73,22 +79,36 @@ Then below our constructor we’ll add our first lifecycle hook, `componentDidMo
 ```jsx
 componentDidMount() {
     console.log("App - Mount");
+    // to be implemented
 }
 ```
 
-Next, we’ll add our `componentDidUpdate()` lifecycle hook. This method is called after our component state is updated. It takes in a parameter that represents the previous state.
+Next, we’ll create a method called `getData()` that will be responsible for using the `fetch` api to request data from a server. We will call this method in the `componentDidMount`.
 
 ```jsx
-componentDidUpdate(prevState) {
-    console.log("App - Update (prevState)", prevState);
+getData() {
+    fetch("https://ghibliapi.herokuapp.com/people", { signal: this.controller.signal })
+    .then((res) => res.json())
+    .then((list) => this.setState({ list }))
+    .catch((err) => console.error(err))
 }
 ```
 
-Lastly, we’ll add our `componentWillUnmount()` lifecycle hook. This method is called after our component is removed from the DOM.
+```jsx
+componentDidMount() {
+    console.log("App - Mount");
+    this.getData()
+}
+```
+
+The `fetch` api is being used to get a list of people objects from an api resource that provides data about Studio Ghibli films. It will be passed on options object where we define a signal that is assigned the AbortController's signal. This will be used in the `componentWillUnmount` to cleanup any unresolved fetch requests.
+
+Lastly, we’ll add our `componentWillUnmount()` lifecycle hook. This method is called after our component is removed from the DOM. We'll use this lifecycle method to cleanup and memory leaks in our app.
 
 ```jsx
 componentWillUnmount() {
     console.log("App - Unmount");
+    this.controller.abort()
 }
 ```
 
@@ -100,18 +120,33 @@ class App extends Component {
     super(props);
 
     console.log("App - Constructor");
+
+    this.state = {
+      list: [],
+    };
+
+    this.controller = new AbortController();
   }
 
   componentDidMount() {
     console.log("App - Mount");
+
+    this.getData();
   }
 
-  componentDidUpdate(prevState) {
-    console.log("App - Update (prevState)", prevState);
+  getData() {
+    fetch("https://ghibliapi.herokuapp.com/people", {
+      signal: this.controller.signal,
+    })
+      .then((res) => res.json())
+      .then((list) => this.setState({ list }))
+      .catch((err) => console.error(err));
   }
 
   componentWillUnmount() {
     console.log("App - Unmount");
+
+    this.controller.abort();
   }
 
   render() {
@@ -121,30 +156,50 @@ class App extends Component {
 }
 ```
 
-Save then look at our inspector console.
+### Rendering Lists in React Components
 
-Now lets add a console.log to each of the `App.js` children components in the render() method. This will show us the actual process of the code before it actually gets mounted to the DOM:
+A _rendered list_ in React is an array of JSX elements that can be returned to the ReactDOM.
 
-In `navbar.jsx`:
+Start by creating a new component called `List` in a new file named `list.jsx`. The new component will receive an array value from props, and render JSX elements for each array element. We'll expect to get the list of people that is handled by our `App` component.
 
 ```jsx
-class NavBar extends Component {
-    constructor(props) {
-        super(props)
-
-        console.log("Navbar - Constructor");
-    };
-
-    render() {
-        console.log("Navbar - Rendered");
-        ...
-    }
+export default class List extends Component {
+  render() {
+    return (
+      <ul>
+        {this.props.list.map((item) => {
+          return <li key={item.id}>{item.name}</li>;
+        })}
+      </ul>
+    );
+  }
 }
 ```
 
-Check the console in the inspector window now.
+Notice that we are calling `map` on the `props.list` array. Map will return a new array based on the values returned from the callback function. We are adding a `key` prop to the returned `li` elements. This prop is required in rendered lists by the ReactDOM. The `key` prop value should be a _unique_ value per list. In our case, we are using the `item.id` as the unique value.
 
-First, our App constructor gets called. Then the App component is rendered. Next, each of the App component’s children will have their constructor called, and components rendered to the DOM. Lastly, the App component is mounted to the DOM.
+Next, we'll render our `List` component in our `App` to render our list of Studio Ghibli characters.
+
+In App.jsx:
+
+```jsx
+import List from "./list.jsx";
+
+class App extends Component {
+  // ...
+
+  render() {
+    return (
+      <div>
+        <h1>Studio Ghibli People</h1>
+        <List list={this.state.list} />
+      </div>
+    );
+  }
+}
+```
+
+At this point, we should have a rendered list of Studio Ghibli characters in the form of list items in an unordered list.
 
 ## Takeaways
 

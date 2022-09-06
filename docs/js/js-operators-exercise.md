@@ -49,16 +49,16 @@ Use the code above to test and print the results.
 
 ```js
 let val = 5;
-let str = "5";
-let str2 = "five";
-let isPresent = false;
+let str3 = "5";
+let str4 = "five";
+let isAwake = false;
 ```
 
-- What is the value of: val == str?
-- What is the value of: val === str?
-- What is the value of: !isPresent?
-- What is the value of: (“eleven” == str2 && val >= str)?
-- What is the value of: (!isPresent || isPresent)?
+- What is the value of: val == str3?
+- What is the value of: val === str3?
+- What is the value of: !isAwake?
+- What is the value of: ("eleven" == str4 && val >= str3)?
+- What is the value of: (!isAwake || isAwake)?
 - What is the value of: 0 == false?
 - What is the value of: 0 === false?
 - What is the value of: 0 != false?
