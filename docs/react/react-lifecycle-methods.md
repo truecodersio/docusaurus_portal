@@ -15,10 +15,10 @@ One important thing to notice is that lifecycle methods can only be used in clas
 
 As stated in the introduction, a component’s lifecycle is the sequence of stages an instance of a component goes through in the DOM (or virtual DOM in React’s case). Let me give you a quick example:
 
-1. Creation of the component (`componentDidMount`)
-2. Render of the component (`render`)
-3. (Optional) Update of the component (`componentDidUpdate`)
-4. Death of the component (`componentWillUnmount`)
+1. Render of the component (`render`)
+2. Component is mounted on the DOM (`componentDidMount`)
+3. Component is updated on the DOM (`componentDidUpdate`)
+4. Component is removed from the DOM (`componentWillUnmount`)
 
 A component can be in different states of its “life”, and in React we can use those states to handle certain tasks.
 
