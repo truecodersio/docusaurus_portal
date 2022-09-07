@@ -230,16 +230,216 @@ Of course, we can also destructure from props here. By adding this line `const {
 
 For the state in functional components, it is a little bit different. Before the end of 2018, developers were not able to access state in functional components at all. Functional components were therefore just used for returning JSX logic. However, with the introduction of React Hooks, this has changed. Now we can set and access state in functional components, and for newer code, they are often preferred over class components. You will be exposed to both kinds of components on the job, requiring us to be very familiar with both. The way React hooks work is the topic of one of the following lectures, so don’t worry about it too much right now. We are setting you up to say “Hey! I remember that” when it’s introduced.
 
+### Controlled Inputs
+
+In React, a common practice when dealing with `input`, `textarea`, and `select` form fields is to control the input values with component state. These are referred to as _Controlled Inputs_. The idea is to create a binding between a components state and the input's value. When the user updates the input's value, state should be updated. When state is updated, the DOM should be re-rendered and the current input value displayed to the user.
+
+Here is an example:
+
+```jsx
+class Login extends Component {
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+      email: "",
+      password: "",
+    }
+  }
+
+  render() {
+    return (
+      <form>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            value={this.state.email}
+            onChange={(event) =>
+              this.setState({ email: event.target.value })
+            }
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            value={this.state.password}
+            onChange={(event) =>
+              this.setState({ password: event.target.value })
+            }
+          />
+        </div>
+      </form>
+    )
+  }
+}
+```
+
+### Rendered Lists
+
+_Rendered Lists_ in React are great ways to render components from array items. Take the following list of names:
+
+```js
+const names = ["Frodo", "Merry", "Pippin", "Sam", "Bilbo"];
+```
+
+We very well might want to display these names as `li` elements on the DOM. We can easily do this with a rendered list.
+
+```jsx
+class Names extends Component {
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+      names: ["Frodo", "Merry", "Pippin", "Sam", "Bilbo"]
+    }
+  }
+  
+  render() {
+    return (
+      <ul>
+        {this.state.names.map((name, idx) => <li key={idx}>{name}</li>)}
+      </ul>
+    )
+  }
+}
+```
+
+Notice what is placed inside of the `ul`. We call `map` on the names array, and return a new array where each name string is replaced with a `li` displaying the name. The `key` prop is important when using rendered lists. It should be a _unique value per element_, and is used by the ReactDOM to differentiate between items in a list. Although you can use the indices from an array, it is better to use `id` values if you have them on your data.
+
 ## How
 
-Let’s practice!
+Let’s practice by recreating a number guessing game in React.
 
-In your first react project that we created previously, let’s start passing props and utilizing state!
+We'll start with the `App.jsx` resembling the following:
 
-Head over to the exercise to get started.
+```jsx
+import { Component } from "react";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Number Guessing Game</h1>
+          <p></p>
+          <form>
+            <label htmlFor="guess">Enter a guess:</label>
+            <input
+              type="number"
+              name="guess"
+              id="guess"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </header>
+      </div>
+    )
+  }
+}
+```
+
+For our number guessing game, we will need to keep up with four values:
+
+- the number to guess
+- the guessed number from the user
+- the feedback given to the user after each guess
+- the user's score
+
+We will define these values in the constructor of the `App` class.
+
+```jsx
+class App extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.correctNum = Math.round(Math.random() * (100 - 1) + 1); // random number between 1 and 100
+    this.score = 100;
+
+    this.state = {
+      feedback: "",
+      guess: "",
+    };
+   }
+
+  // ...
+}
+```
+
+`feedback` and `guess` are defined as state whereas `correctNum` and `score` are not. This is because we intend for the DOM to be updated each time the user changes their guess and we give them feedback. We will not need to update the DOM when either we generate the number to guess per game, or their score is changed, so those values are just defined as properties on the `App` instance.
+
+Our game will progress as the user _submits_ guesses. We will control the guess input with state and use a `form` element to listen for `submit` events.
+
+Let's define a method to handle `submit` events.
+
+```jsx
+handleGuess(event) {
+  event.preventDefault();
+
+  let feedback;
+
+  if (this.state.guess < this.correctNum) {
+    feedback = "Too low";
+  } else if (this.state.guess > this.correctNum) {
+    feedback = "Too high";
+  } else {
+    feedback = `Correct! You finished with a score of ${this.score}.`;
+  }
+
+  this.setState({ feedback });
+  this.score--;
+}
+```
+
+`handleGuess` will prevent the default form submission behavior, evaluate the user's guess against the correct number, and update the feedback state.
+
+Now all that is left is to add `handleGuess` as the event handler for the `form`'s `onSubmit` prop, bind the `this` value for `handleGuess` to the `App` instance in the constructor, and control the guess input with `this.state.guess`.
+
+In `render`:
+
+```jsx
+render() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Number Guessing Game</h1>
+        <p>{this.state.feedback}</p>
+        <form onSubmit={this.handleGuess}>
+          <label htmlFor="guess">Enter a guess:</label>
+          <input
+            type="number"
+            name="guess"
+            id="guess"
+            value={this.state.guess}
+            onChange={(event) =>
+              this.setState({ guess: Number(event.target.value) })
+            }
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </header>
+    </div>
+  );
+}
+```
+
+In `constructor`:
+
+```jsx
+constructor(props) {
+  // ...
+
+  this.handleGuess = this.handleGuess.bind(this);
+}
+```
+
+Awesome! This React Number Guessing Game should be a simple, working version where the user can submit guesses and receive feedback whether their guess was above, below, or correct in relation to the generated number. 
 
 ## Takeaways
 
 1. _Props_ is an object, containing key/value pairs, that is passed from parent to child component
 2. _State_ is a property that, when updated, should trigger a re-render of a component on the virtual dom
 3. _Object destructuring_ can be used to prevent repetitive code when referencing prop and state values
+4. _Controlled Inputs_ are inputs whose `value` and `onChange` props are tied to state values
+5. _Rendered Lists_ in React are arrays of JSX elements that can be rendered to the ReactDOM
