@@ -108,7 +108,7 @@ Lastly, we’ll add our `componentWillUnmount()` lifecycle hook. This method is 
 ```jsx
 componentWillUnmount() {
     console.log("App - Unmount");
-    this.controller.abort()
+    if (process.env.NODE_ENV !== "development") this.controller.abort()
 }
 ```
 
@@ -146,7 +146,7 @@ class App extends Component {
   componentWillUnmount() {
     console.log("App - Unmount");
 
-    this.controller.abort();
+    if (process.env.NODE_ENV !== "development") this.controller.abort();
   }
 
   render() {
