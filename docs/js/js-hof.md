@@ -34,11 +34,11 @@ Arrays have a standard `map` method that takes an array and function callback, a
 ```js
 let nums = [1, 2, 3, 4, 5];
 
-nums.map((num, index, arr) => {
+let numsDoubled = nums.map((num, index, arr) => {
   return num * 2;
 });
 
-nums; // [2, 4, 6, 8, 10]
+numsDoubled; // [2, 4, 6, 8, 10]
 ```
 
 Keep in mind that the **map** method returns a **new array**. This is different behavior compared to the `forEach` method that acts on the existing array value.
