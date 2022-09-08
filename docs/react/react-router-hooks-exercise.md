@@ -17,7 +17,7 @@ You'll be in the same react repository that you worked in for **part 5**.
 
 ## Steps
 
-React Series Part 5 has two parts with multiple exercises each.
+React Series Part 6 has two parts with multiple exercises each.
 
 - [Part 1](#part-1): Setting up a Single Film page
   - [Exercise 1: Restructure Project Files](#exercise-1-creating-singlefilm-page)
