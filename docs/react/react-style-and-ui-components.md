@@ -210,6 +210,183 @@ Create a generic, reusable Loader component.
 
 ### Exercise 6: Export Components from an Entry Point File
 
+1. Import `MainLayout`, `TopNav`, `Loader` into a new `index.js` file in your `components/` folder
+2. Export all components from this entry point file
+
+   ```jsx
+   import { MainLayout } from "./layout/mainlayout/mainlayout.component";
+   import { TopNav } from "./layout/topnav/topnav.component";
+   import { Loader } from "./common/loader/loader.component";
+
+   export { MainLayout, TopNav, Loader };
+   ```
+
+> This entry point file is a common practice. We can now import any of our components from this one file directly inside of the `components/` folder.
+
+### Add React Bootstrap to the Page Views
+
+1. Update the `SingleFilmPage` component to return:
+
+   ```jsx
+   if (!isLoaded) {
+     return (
+       <MainLayout className="text-center">
+         <Loader size={40} />
+       </MainLayout>
+     );
+   }
+
+   return (
+     <MainLayout>
+       <div className="row">
+         <div className="col-md-6 mb-4">
+           <img
+             className="img-fluid"
+             src={`${item.image}`}
+             alt={`${item.title} Poster`}
+           />
+         </div>
+         <div className="col-md-6 mb-4">
+           <h1>{item.title}</h1>
+           <p>
+             Directed by {item.director}. Produced by {item.producer}.
+           </p>
+           <p>
+             The film was released in <strong>{item.release_date}</strong> and
+             garnered a <strong>{item.rt_score}</strong> aggregate score on{" "}
+             <a
+               href="https://www.rottentomatoes.com/"
+               target="_blank"
+               rel="noreferrer"
+             >
+               Rotten Tomatoes
+             </a>
+             .
+           </p>
+           <h2>Description</h2>
+           <p>{item.description}</p>
+         </div>
+         <pre></pre>
+       </div>
+     </MainLayout>
+   );
+   ```
+
+2. Update the `FilmsPage` component to return:
+
+   ```jsx
+   if (!isLoaded) {
+     return (
+       <MainLayout className="text-center">
+         <Loader size={40} />
+       </MainLayout>
+     );
+   }
+
+   let directors = getListOf(list, "director");
+   let filmsByDirector = filterFilmsByDirector(list, searchDirector);
+   let { avg_score, latest, total } = getFilmStats(filmsByDirector);
+
+   return (
+     <MainLayout>
+       <div className="">
+         <h1>Studio Ghibli Films</h1>
+         <Form>
+           <Form.Group className="mb-3" controlId="searchDirector">
+             <Form.Label>Filter by Director</Form.Label>
+             <Form.Select
+               value={searchDirector}
+               onChange={(e) => setSearchDirector(e.target.value)}
+             >
+               <option value="">All</option>
+               {directors.map((item, idx) => {
+                 return (
+                   <option key={idx} value={item}>
+                     {item}
+                   </option>
+                 );
+               })}
+             </Form.Select>
+           </Form.Group>
+         </Form>
+         <Row>
+           <Col>
+             <Card>
+               <Card.Body>
+                 <div className="d-flex justify-content-between">
+                   <small># Of Films</small>
+                   <Badge bg="dark">{total}</Badge>
+                 </div>
+               </Card.Body>
+             </Card>
+           </Col>
+           <Col>
+             <Card>
+               <Card.Body>
+                 <div className="d-flex justify-content-between">
+                   <small>Average Rating</small>
+                   <Badge bg="dark">{avg_score.toFixed(2)}</Badge>
+                 </div>
+               </Card.Body>
+             </Card>
+           </Col>
+           <Col>
+             <Card>
+               <Card.Body>
+                 <div className="d-flex justify-content-between">
+                   <small>Latest Film</small>
+                   <Badge bg="dark">{latest}</Badge>
+                 </div>
+               </Card.Body>
+             </Card>
+           </Col>
+         </Row>
+         <hr />
+         <ListGroup>
+           {filmsByDirector.map((item) => {
+             return (
+               <ListGroupItem key={item.id}>
+                 <Link to={`${item.id}`}>{item.title}</Link>
+               </ListGroupItem>
+             );
+           })}
+         </ListGroup>
+       </div>
+     </MainLayout>
+   );
+   ```
+
+3. Update the `HomePage` component to return:
+
+   ```jsx
+   return (
+     <MainLayout>
+       <h1>Learning React</h1>
+
+       <form onSubmit={onSubmit}>
+         <input
+           type="text"
+           name="listitem"
+           id="listitem"
+           value={text}
+           onChange={(e) => setText(e.target.value)}
+         />
+         <button type="submit">Add</button>
+       </form>
+
+       <ul>
+         {list.map((item, idx) => {
+           return (
+             <li key={idx} onDoubleClick={() => onDblClick(idx)}>
+               {item}
+             </li>
+           );
+         })}
+       </ul>
+     </MainLayout>
+   );
+   ```
+
 ## Helpful Links
 
 If you feel stuck, or would like to see the finished code for this exercise to check your work, check out:
