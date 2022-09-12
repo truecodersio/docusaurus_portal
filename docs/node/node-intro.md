@@ -50,48 +50,22 @@ The event loop is an important concept to understand how Node really works. As w
 
 ## How
 
-Let’s look at a quick real-world example:
+### Running JavaScript Files in Node
+
+Node.js files must be initiated using a "Command Line Interface" program on your computer.
+
+Up to this point, we’ve used our Command Prompt or Terminal quite a bit. To run JavaScript files server-side, we'll use the Node CLI in our terminals.
+
+Navigate to any existing JavaScript file on your computer (one that does not contain code that uses the DOM API). In your terminal, run: `node <FILENAME>`, making sure that you replace the placeholder in that example with your real file name. If that file contains `console.log`'s, you'll see them in your terminal now!
+
+You can also copy and paste the following code in a `.js` file, and run it to see a simple number guessing game through node.
 
 ```js
-http
-  .createServer(function (request, response) {
-    response.writeHead(200, { "Content-Type": "text/html" });
-    response.end("Hello World!");
-  })
-  .listen(8080, function () {
-    console.log("Server is listening...");
-  });
+
 ```
-
-This snippet is from our very first lesson that you’ll be following very soon. Basically this code is creating a server and saying, “any time we get a network request run this callback function”. This function happens to respond with an HTML header 1 tag displaying ‘Hello World’. So if you go to a browser and navigate to the correct address and port you would see that text on your screen.
-
-### Command Line Interface
-
-Node.js files must be initiated in the "Command Line Interface" program of your computer.
-
-Up to this point, we’ve used our ‘Command Prompt’, or ‘Terminal’.
-
-You can navigate to our project folder that contains the file "server.js".
-
-### Execute the Node.js File
-
-The file you have just created can be executed by the Node.js CLI.
-
-In your command line, write `node myfirst.js` and hit enter:
-
-```sh
-$ node myFirst.js
-Server is listening...
-```
-
-Now, your computer works as a server!
-
-If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!
-
-Start your internet browser, and type in the address: [http://localhost:8080](http://localhost:8080/)
 
 ## Takeaways
 
-1. Node.js is a **server-side platform** built on Google Chrome's Javascript Engine (V8 Engine) which **compiles Javascript code into Machine code**.
+1. Node.js is a **server-side runtime environment** built on Google Chrome's Javascript Engine (V8 Engine) which **compiles Javascript code into Machine code**.
 2. Node.js uses an **event-driven, non-blocking I/O** model that makes it lightweight and efficient. It's not a Framework, it's not a Library, it's a **runtime environment**.
 3. Node.js is **single-threaded**, which requires the **event loop** to handle asynchronous operations and pending callbacks to remain efficient and non-blocking.
