@@ -85,6 +85,7 @@ module.exports = {
         "react/react-router-exercise",
         "react/react-router-hooks",
         "react/react-router-hooks-exercise",
+        "react/react-style-and-ui-components",
       ],
     },
     {
