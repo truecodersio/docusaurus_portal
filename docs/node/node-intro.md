@@ -63,15 +63,15 @@ Navigate to any existing JavaScript file on your computer (one that does not con
 You can also copy and paste the following code in a `.js` file, and run it to see a simple server start up at [http://localhost:5000](http://localhost:5000) through node.
 
 ```js
+// import http from "http"
+// here written as CommonJS
 const http = require("http");
 
 http.createServer((request, response) => {
-  res.writeHead(200, { "content-type": "text/html" });
-  res.write("Hello World!");
-  res.end();
-});
-
-http.listen(5000, () => {
+  response.writeHead(200, { "content-type": "text/html" });
+  response.write("Hello World!");
+  response.end();
+}).listen(5000, () => {
   console.log("Server listening at http://localhost:5000...");
 });
 ```
