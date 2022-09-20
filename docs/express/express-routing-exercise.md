@@ -7,7 +7,7 @@ keywords: [javascript, node.js, express.js, routing]
 
 ## Objective
 
-Your objective is to create a server using Express.js with multiple CRUD endpoints for interacting with mock user data.
+Your objective is to create a server using Express.js with Create, Read, Update, and Delete (CRUD) endpoints for interacting with mock user data.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ Fork and clone the [node exercise repository](https://github.com/Bryantellius/no
 
 ### Exercise 1: Direct Requests to Routes
 
-In you `server.js` file:
+In your `server.js` file:
 
 1. Use a default import to import `router` from the `router/index.js` file
 2. Use `app.use()` to handle all requests matching `"/api"` with `router`
@@ -43,13 +43,25 @@ In `routes/`:
 6. Create a `post` route that matches the path `/`
 7. Create a `put` route that matches the path `/:id`
 8. Create a `delete` route that matches the path `/:id`
-9. Export `router` as the default export
+9. For each route, pass a second parameter that resembles:
+   
+   ```js
+   async (req, res, next) => {
+      try {
+         // TODO
+      } catch (error) {
+         next(error);
+      }
+   }
+   ```
+   
+10. Export `router` as the default export
 
 > We will direct paths already matching `"/api/users"` to these routes
 
 ### Exercise 3: Finish the GET Users Route
 
-In the request handler for GET requests, set up the following:
+In the try block of the request handler for GET requests, set up the following:
 
 1. Destructure `id` from `req.params`
    - `req.params` is an object that contains the parsed key/value pairs from the url parameters
@@ -62,7 +74,7 @@ In the request handler for GET requests, set up the following:
 
 ### Exercise 4: Finish the POST Users Route
 
-In the request handler for POST requests, set up the following:
+In the try block of the request handler for POST requests, set up the following:
 
 1. Declare a variable named `newUser` and assign it the value of `req.body`
    - `req.body` is an object that contains the parsed request body as JSON
@@ -71,7 +83,7 @@ In the request handler for POST requests, set up the following:
 
 ### Exercise 5: Finish the PUT Users Route
 
-In the request handler for PUT requests, set up the following:
+In the try block of the request handler for PUT requests, set up the following:
 
 1. Destructure `id` from `req.params`
    - `req.params` is an object that contains the parsed key/value pairs from the url parameters
@@ -82,7 +94,7 @@ In the request handler for PUT requests, set up the following:
 
 ### Exercise 6: Finish the DELETE Users Route
 
-In the request handler for DELETE requests, set up the following:
+In the try block of the request handler for DELETE requests, set up the following:
 
 1. Destructure `id` from `req.params`
    - `req.params` is an object that contains the parsed key/value pairs from the url parameters
