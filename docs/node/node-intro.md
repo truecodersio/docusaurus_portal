@@ -1,6 +1,8 @@
 ---
 title: "Node Intro"
 slug: "/node-intro"
+description: Introduction to Node.js
+keywords: [javascript, node.js, event driven, asynchronous, server-side]
 ---
 
 ## Why
@@ -58,10 +60,20 @@ Up to this point, we’ve used our Command Prompt or Terminal quite a bit. To ru
 
 Navigate to any existing JavaScript file on your computer (one that does not contain code that uses the DOM API). In your terminal, run: `node <FILENAME>`, making sure that you replace the placeholder in that example with your real file name. If that file contains `console.log`'s, you'll see them in your terminal now!
 
-You can also copy and paste the following code in a `.js` file, and run it to see a simple number guessing game through node.
+You can also copy and paste the following code in a `.js` file, and run it to see a simple server start up at [http://localhost:5000](http://localhost:5000) through node.
 
 ```js
+const http = require("http");
 
+http.createServer((request, response) => {
+  res.writeHead(200, { "content-type": "text/html" });
+  res.write("Hello World!");
+  res.end();
+});
+
+http.listen(5000, () => {
+  console.log("Server listening at http://localhost:5000...");
+});
 ```
 
 ## Takeaways
