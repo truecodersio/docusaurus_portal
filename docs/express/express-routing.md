@@ -1,6 +1,8 @@
 ---
 title: "Express Routing"
 slug: "/express-routing"
+description: Introduction to Express.js and Routing
+keywords: [javascript, node.js, express.js, routing, server-side]
 ---
 
 ## Why
