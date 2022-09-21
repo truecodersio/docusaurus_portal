@@ -34,7 +34,7 @@ npm install express --save
 In our index.js file, we need to import express. Then, we can create an express application by calling the express function that we import from the express module:
 
 ```js
-const express = require("express");
+import express from "express";
 
 const app = express();
 ```
@@ -215,6 +215,11 @@ npm i morgan --save-dev
 ```
 
 ```js
+// ...
+import morgan from "morgan";
+
+// ...
+
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
