@@ -89,7 +89,7 @@ In the try block of the request handler for PUT requests, set up the following:
    - `req.params` is an object that contains the parsed key/value pairs from the url parameters
 2. Declare a variable named `updatedUser` and assign it the value of `req.body`
    - `req.body` is an object that contains the parsed request body as JSON
-3. Declare a variable named `data` and assign it the value of `await db.update(id, newUser)`
+3. Declare a variable named `data` and assign it the value of `await db.update(id, updatedUser)`
 4. Send `data` as the _json_ response to the request
 
 ### Exercise 6: Finish the DELETE Users Route
