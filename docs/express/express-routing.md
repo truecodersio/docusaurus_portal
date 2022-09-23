@@ -21,17 +21,11 @@ With access to HTTP methods and middleware, Express is a great tool for creating
 
 ### Creating a Simple Express Application and API Endpoint
 
-First, we’ll need to create a new project folder and initialize npm (create our `package.json` file).
+First, we’ll need to fork and clone the [exercise project repository](https://github.com/Bryantellius/node-exercise) that has basic nodemon and babel configuration for you to be able to use ES6 Modules in Node.
 
-```sh
-npm init
-```
+Once you've forked and cloned the [exercise repo](https://github.com/Bryantellius/node-exercise), following the instructions in the `README.md` to install the dependencies and create a `.env` file.
 
-Now let’s install Express.js
-
-```sh
-npm install express --save
-```
+Then, create and checkout a new branch called `express-lesson`. You can follow along with this document on this branch, then when it's time to complete the exercise, hop back to the main branch.
 
 In our index.js file, we need to import express. Then, we can create an express application by calling the express function that we import from the express module:
 
