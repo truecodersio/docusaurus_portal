@@ -200,12 +200,15 @@ Next, we'll add a few `<tr>`'s with `<td>` elements to populate our table with r
 
 ```html
 <table>
+ <thead>
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
     <th>Email</th>
     <th>Receives Emails</th>
   </tr>
+ </thead>
+ <tbody>
   <tr>
     <td>Frodo</td>
     <td>Baggins</td>
@@ -224,6 +227,7 @@ Next, we'll add a few `<tr>`'s with `<td>` elements to populate our table with r
     <td>sam@shire.com</td>
     <td>Yes</td>
   </tr>
+ </tbody>
 </table>
 ```
 
