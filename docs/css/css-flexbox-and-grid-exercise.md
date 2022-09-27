@@ -57,7 +57,7 @@ Steps are to be completed by writing css rulesets in your `style.css` file.
 1. Create a ruleset in your `style.css` file that selects elements with the classname `prompt`
 2. Create a declaration that changes the **position** property of the selected elements to `absolute`
 3. Create a declaration that changes the **top** property of the selected elements to `0%`
-4. Create a declaration that changes the **right** property of the selected elements to `0%`
+4. Create a declaration that changes the **left** property of the selected elements to `0%`
 
 ## Exercise 7
 
