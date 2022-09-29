@@ -5,7 +5,7 @@ slug: "/js-introduction-and-variables"
 
 ## Brief Introduction to JavaScript
 
-[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is a programming used primarily by Web browsers to create a dynamic and interactive experience for the user. Most of the functions and applications that make the Internet indispensable to modern life are coded in some form of JavaScript. In the past, Web pages were static, offering little user interaction beyond clicking links and loading new pages. For the first time, JavaScript enabled animation, adaptive content and form validation on the page. Now, most modern browsers support the latest JavaScript updates.
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is a programming language used primarily by Web browsers to create a dynamic and interactive experience for the user. Most of the functions and applications that make the Internet indispensable to modern life are coded in some form of JavaScript. In the past, Web pages were static, offering little user interaction beyond clicking links and loading new pages. For the first time, JavaScript enabled animation, adaptive content and form validation on the page. Now, most modern browsers support the latest JavaScript updates.
 
 Some of the dynamic website enhancements performed by JavaScript are:
 
@@ -86,7 +86,7 @@ var x; // variable that is declared but not assigned a value
 
 ### JavaScript Data Types
 
-Now that we know we can create variable to store data in our programs, well introduce the different types of data we can use in our programs.
+Now that we know we can create variables to store data in our programs, we'll introduce the different types of data we can use in our programs.
 
 #### Primitive Data Types
 
@@ -206,7 +206,7 @@ var carName = "Volvo";
 var carName;
 ```
 
-> NOTE: The above example only works if you declare a variable using the keyword `var`. As of ES2015, using `let` or `const` will disable you ability to redeclare variables.
+> NOTE: The above example only works if you declare a variable using the keyword `var`. As of ES2015, using `let` or `const` will disable your ability to redeclare variables.
 
 #### Duck Typing
 
@@ -228,9 +228,9 @@ Duck Typing is used in many programming languages, Ruby and Python for example, 
 
 #### Type Coercion
 
-A central pillar of JavaScript involves the core concept called **Type Coercion**. Type Coercion is the interpreted nature of JavaScript to morph a data type from one to another based on the attempt to complete an action. For example, if you try and perform an arithmetic operation between a number and a string, JavaScript will change of the two values to match the other.
+A central pillar of JavaScript involves the core concept called **Type Coercion**. Type Coercion is the interpreted nature of JavaScript to morph a data type from one to another based on the attempt to complete an action. For example, if you try to perform an arithmetic operation between a number and a string, JavaScript will change one of the two values to match the other.
 
-For the most part, it makes sense. You can't perform addition when one of the two values isn't even a number. JavaScript recognizes that and will try and interpret your intention to give a result. Let's take a look:
+For the most part, it makes sense. You can't perform addition when one of the two values isn't even a number. JavaScript recognizes that and will try to interpret your intention to give a result. Let's take a look:
 
 ```js
 "12" + 12; // equals "1212", string data type
