@@ -5,9 +5,9 @@ slug: "/"
 
 `Hello World!`
 
-We're glad you here. The following docs will help you in your Web Development journey.
+We're glad you're here. The following docs will help you in your Web Development journey.
 
-You can expect each lecture doc to following sections:
+You can expect each lecture doc to have the following sections:
 
 1. What
 2. Why
