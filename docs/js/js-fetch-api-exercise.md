@@ -33,13 +33,13 @@ Inspect the `index.html` file in Visual Studio code to see the starter code. Onc
 1. Select the search button element
 2. Select the search input element
 3. Select the image element
-4. Select the feedback paragraph element
+4. Select the feedback paragraph element. This element may need to be created (in HTML or JS)
 
 ### Exercise 2: Use the Fetch API
 
 Use the Fetch API to request a gif based on the user's input term when the user clicks a button.
 
-1. Add an click event listener to the search button element
+1. Add a click event listener to the search button element
 2. The event handler function should:
    - Call `fetch`
    - Pass in the url: [https://api.giphy.com/v1/gifs/translate](https://api.giphy.com/v1/gifs/translate)
