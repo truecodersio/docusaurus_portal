@@ -11,6 +11,10 @@ Your objective is to practice OOP concepts and JS class notation syntax.
 
 ### Getting Started
 
+**Exercise Repo:**
+**[JS Object Oriented Programming](https://github.com/truecodersio/JavaScript_OOP)**
+
+
 1. Open your command line and navigate to your `repos` directory (if you do not have a `repos` folder, then you can use `mkdir repos` to create one)
 2. Use this template repository to start a new project in your repos folder: `git clone <repo_name>`
 3. cd `repo_name` to navigate into your new repo directory
