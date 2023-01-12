@@ -11,7 +11,7 @@ Your objective is to create an application where users can submit car details (m
 
 ## Getting Started
 
-Fork and Close the Exercise Repo to get started: [JavaScript ES6 Modules](https://github.com/Bryantellius/es6_modules)
+Fork and Clone the Exercise Repo to get started: [JavaScript ES6 Modules](https://github.com/Bryantellius/es6_modules)
 
 ## Steps
 
